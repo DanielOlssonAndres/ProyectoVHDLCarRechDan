@@ -2,6 +2,8 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia.vhd,1733059505,vhdl,,,,gensecuencia,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/paquete_types.vhd,1733058126,vhdl,C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia.vhd;C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd,,,paquete_types,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd,1733059893,vhdl,,,,gensecuencia_tb,,,,,,,,
+C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Debounce_Sync.vhd,1733067930,vhdl,,,,debounce_sync,,,,,,,,
+C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia.vhd,1733066517,vhdl,,,,gensecuencia,,,,,,,,
+C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/paquete_types.vhd,1733058126,vhdl,C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd,,,paquete_types,,,,,,,,
+C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/Debounce_Sync_tb.vhd,1733068608,vhdl,,,,debounce_sync_tb,,,,,,,,
+C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd,1733067233,vhdl,,,,gensecuencia_tb,,,,,,,,

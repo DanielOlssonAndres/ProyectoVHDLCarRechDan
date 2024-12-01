@@ -1,13 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'GenSecuencia'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'GenSecuencia_tb'
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:50]
-ERROR: [VRFC 10-8755] argument of operator "=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:60]
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:70]
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:78]
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:86]
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:94]
-ERROR: [VRFC 10-8755] argument of operator "/=" cannot be an 'others' aggregate [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:102]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd:8]
-INFO: [VRFC 10-8704] VHDL file 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/GenSecuencia_tb.vhd' is ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/testbench/Debounce_Sync_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Debounce_Sync_tb'

@@ -23,20 +23,23 @@ architecture BEHAVIORAL of GenSecuencia is
     constant semilla4 : vec_integrer(0 to 13) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
     constant semilla5 : vec_integrer(0 to 13) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3);
 
+    signal sec_generada_s : vec_integrer(0 to 13) := (others => 0);
+
 begin 
 
     count: process(bot_accion)
     begin
         if (rising_edge(bot_accion) and (s_enable = '1')) then
             case niv_actual is
-                when 0 => sec_generada <= semilla0;
-                when 1 => sec_generada <= semilla1;
-                when 2 => sec_generada <= semilla2;
-                when 3 => sec_generada <= semilla3;
-                when 4 => sec_generada <= semilla4;
-                when 5 => sec_generada <= semilla5;
+                when 0 => sec_generada_s <= semilla0;
+                when 1 => sec_generada_s <= semilla1;
+                when 2 => sec_generada_s <= semilla2;
+                when 3 => sec_generada_s <= semilla3;
+                when 4 => sec_generada_s <= semilla4;
+                when 5 => sec_generada_s <= semilla5;
+                when others => sec_generada_s <= (others => 0);
             end case;
         end if;
     end process;
-
+    sec_generada <= sec_generada_s;
 end BEHAVIORAL;
