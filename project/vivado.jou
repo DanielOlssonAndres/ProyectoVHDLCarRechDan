@@ -30,3 +30,7 @@ close_sim
 launch_simulation
 source Debounce_Sync_tb.tcl
 run all
+close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds.vhd w ]
+add_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds.vhd
+update_compile_order -fileset sources_1
+close_sim
