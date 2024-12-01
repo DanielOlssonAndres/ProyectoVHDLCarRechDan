@@ -3,48 +3,40 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.paquete_types.all;
 
 entity GenSecuencia is
-    generic(
-        MAX_SEC    : integer := 6; -- Máxima longitud de secuencia generable
-        DIFICULTAD : integer := 1 -- longitud de secuencia = NIVEL * DIFICULTAD + 4
-    );   
     port(
         -- Entradas
         niv_actual        : in integer; -- Indica en que nivel nos encontramos 
         bot_accion        : in std_logic; -- Evento de inicio de generador
-        fin_comparacion   : in std_logic; -- Si = 0, no se generan secuencias (enable)
-        CLK               : std_logic; -- Señal de reloj
+        s_enable          : in std_logic; -- Si = 0, no se generan secuencias
         -- Salidas
-        sec_generada      : out vec_integrer(MAX_SEC - 1 downto 0); -- Secuencia generada
-        fin_sec           : out std_logic -- Indica fin de secuencia generada
+        sec_generada      : out vec_integrer(0 to 13) -- Secuencia generada
     );
 end GenSecuencia;
 
 architecture BEHAVIORAL of GenSecuencia is
-    constant semilla : vec_integrer(29 downto 0) := 
-    (2, 3, 1, 3, 4, 2, 4, 3, 1, 3, 2, 3, 4, 2, 2, 4, 1, 1, 4, 2, 3, 2, 1, 4, 2, 3, 4, 1, 2, 3);
-    signal cuenta : integer := 0;
+
+    -- Tabla de secuencias para cada nivel
+    constant semilla0 : vec_integrer(0 to 13) := (2, 3, 1, 3, others => 0);
+    constant semilla1 : vec_integrer(0 to 13) := (1, 1, 4, 2, 3, 1, others => 0);
+    constant semilla2 : vec_integrer(0 to 13) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
+    constant semilla3 : vec_integrer(0 to 13) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
+    constant semilla4 : vec_integrer(0 to 13) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
+    constant semilla5 : vec_integrer(0 to 13) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3);
+
 begin 
-    -- Proceso que genera un valor pseudoaleatorio a partir de la semilla
-    count: process(CLK)
+
+    count: process(bot_accion)
     begin
-        if rising_edge(CLK) then
-            if cuenta < 29 - MAX_SEC then
-                cuenta <= cuenta + 1;
-            else 
-                    cuenta <=  0;
-            end if;
+        if (rising_edge(bot_accion) and (s_enable = '1')) then
+            case niv_actual is
+                when 0 => sec_generada <= semilla0;
+                when 1 => sec_generada <= semilla1;
+                when 2 => sec_generada <= semilla2;
+                when 3 => sec_generada <= semilla3;
+                when 4 => sec_generada <= semilla4;
+                when 5 => sec_generada <= semilla5;
+            end case;
         end if;
     end process;
-    
-    asignacion: process(CLK, bot_accion, fin_comparacion)
-    begin
-        if (rising_edge(CLK) and (bot_accion = '1') and (fin_comparacion = '1')) then 
-            sec_generada <= (others => 0); -- Inicializamos salida a 0
-            fas: for i in 0 to (niv_actual*DIFICULTAD + 4) loop
-                sec_generada(i) <= (semilla(cuenta + i));
-            end loop;
-            fin_sec <= '1';
-        end if;
-    end process;
-    
+
 end BEHAVIORAL;

@@ -5,87 +5,110 @@ use work.paquete_types.all;
 entity GenSecuencia_tb is
 end GenSecuencia_tb;
 
-architecture behavior of GenSecuencia_tb is
-
-    -- Component declaration
+architecture BEHAVIORAL of GenSecuencia_tb is
+    
+    -- Declaración del componente a testear
     component GenSecuencia is
-        generic(
-            MAX_SEC    : integer := 6;
-            DIFICULTAD : integer := 1
-        );
         port(
-            niv_actual        : in integer;
-            bot_accion        : in std_logic;
-            fin_comparacion   : in std_logic;
-            CLK               : in std_logic;
-            sec_generada      : out vec_integrer(MAX_SEC - 1 downto 0);
-            fin_sec           : out std_logic
-        );
+            -- Entradas
+            niv_actual        : in integer; -- Indica en que nivel nos encontramos 
+            bot_accion        : in std_logic; -- Evento de inicio de generador
+            s_enable          : in std_logic; -- Si = 0, no se generan secuencias (enable)
+            -- Salidas
+            sec_generada      : out vec_integrer(0 to 13) -- Secuencia generada
+            );
     end component;
-
-    -- Signals for the testbench
-    signal niv_actual        : integer := 2;   -- Nivel de dificultad
-    signal bot_accion        : std_logic := '0'; -- Inicia generador de secuencias
-    signal fin_comparacion   : std_logic := '1'; -- Secuencias habilitadas
-    signal CLK               : std_logic := '0'; -- Señal de reloj
-    signal sec_generada      : vec_integrer(5 downto 0); -- Secuencia generada
-    signal fin_sec           : std_logic; -- Indica fin de secuencia generada
-
-    -- Clock generation
-    constant CLK_PERIOD : time := 10 ns; -- Período del reloj
-
+    
+    -- Señales para el testbench
+        signal niv_actual    : integer; 
+        signal bot_accion    : std_logic; 
+        signal s_enable      : std_logic; 
+        signal sec_generada  : vec_integrer(0 to 13);     
 begin
-
-    -- Instancia del módulo a probar
+    -- Instanciación del componente
     uut: GenSecuencia
-        generic map (
-            MAX_SEC    => 6,
-            DIFICULTAD => 1
-        )
-        port map (
-            niv_actual        => niv_actual,
-            bot_accion        => bot_accion,
-            fin_comparacion   => fin_comparacion,
-            CLK               => CLK,
-            sec_generada      => sec_generada,
-            fin_sec           => fin_sec
-        );
+        port map(
+            niv_actual => niv_actual, 
+            bot_accion => bot_accion, 
+            s_enable => s_enable, 
+            sec_generada => sec_generada
+            );    
 
-    -- Generación del reloj
-    CLK_PROCESS: process
+    testp: process
     begin
-        CLK <= '0';
-        wait for CLK_PERIOD / 2;
-        CLK <= '1';
-        wait for CLK_PERIOD / 2;
-    end process;
-
-    -- Estímulos del testbench
-    stimulus: process
-    begin
-        -- Inicialización
+    -- Inicialización
+        niv_actual <= 0;
+        bot_accion <= '0';
+        s_enable <= '0';
+        wait for 10 ns;
+        
+    -- Prueba generación secuencia en nivel 0
+        niv_actual <= 0;
+        s_enable <= '1';
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (2, 3, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+            report "Error al generar sec en nivel 0"
+            severity error;
+        
+    -- Prueba generación secuencia en nivel 1 si s_enable = 0
+        niv_actual <= 1;
+        wait for 10 ns;
+        s_enable <= '0';
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada = (1, 1, 4, 2, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0))
+            report "Error en funcionamiento de enable en nivel 1"
+            severity error;
+            
+    -- Prueba del resto de niveles
+        niv_actual <= 1;
+        wait for 10 ns;
+        s_enable <= '1';
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (1, 1, 4, 2, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0))
+            report "Error secuencia 1"
+            severity error;
+        
+        niv_actual <= 2;
+        wait for 10 ns;
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (2, 3, 4, 1, 1, 4, 2, 3, 0, 0, 0, 0, 0, 0))
+            report "Error al generar sec en nivel 2"
+            severity error;
+            
+        niv_actual <= 3;
+        wait for 10 ns;
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, 0, 0, 0, 0))
+            report "Error al generar sec en nivel 3"
+            severity error;
+            
+        niv_actual <= 4;
+        wait for 10 ns;
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, 0, 0))
+            report "Error al generar sec en nivel 4"
+            severity error;
+            
+        niv_actual <= 5;
+        wait for 10 ns;
+        bot_accion <= '1', '0' after 10 ns;
+        wait for 30 ns;
+        assert(sec_generada /= (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3))
+            report "Error al generar sec en nivel 5"
+            severity error;
+            
+        -- Fin de simulación
         wait for 20 ns;
-
-        -- Comenzamos el proceso de generación de secuencia
-        bot_accion <= '1';   -- Iniciar generación
-        wait for CLK_PERIOD * 2;
-
-        -- Establecemos el nivel de dificultad y la secuencia se debe generar
-        niv_actual <= 3; -- Cambiamos el nivel de dificultad
-
-        -- Esperamos para ver si la secuencia se genera correctamente
-        wait for CLK_PERIOD * 10;
-
-        -- Detenemos la generación de la secuencia
-        bot_accion <= '0'; -- Detener generación
-        wait for CLK_PERIOD * 5;
-
-        -- Finalizamos la simulación
-        assert (fin_sec = '1') report "Error: La señal 'fin_sec' no se ha activado correctamente" severity error;
-        assert (sec_generada = (2, 3, 1, 3, 4, 2)) report "Error: La secuencia generada no es correcta" severity error;
-
-        -- Finalizamos la simulación
-        wait;
+        assert false
+            report "[FIN SIMULACION]: FINALIZADO CORRECTAMENTE"
+            severity failure;
+            
     end process;
 
-end behavior;
+end;
