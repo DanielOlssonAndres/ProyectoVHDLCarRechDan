@@ -3,34 +3,27 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec  1 16:51:14 2024
-# Process ID: 24364
-# Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14360 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
-# Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
-# Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
-# Running On        :MSI
+# Start of session at: Sun Dec  1 21:37:53 2024
+# Process ID: 3160
+# Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32840 C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/vivado.log
+# Journal file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project\vivado.jou
+# Running On        :PortatilMarcos
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
+# Operating System  :26100
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
 # CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :16867 MB
-# Swap memory       :1073 MB
-# Total Virtual     :17941 MB
-# Available Virtual :7131 MB
+# Host memory       :16948 MB
+# Swap memory       :2952 MB
+# Total Virtual     :19901 MB
+# Available Virtual :6543 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
+open_project C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source Debounce_Sync_tb.tcl
-close_sim
-launch_simulation
-source Debounce_Sync_tb.tcl
-run all
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds.vhd w ]
-add_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds.vhd
+close [ open C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd w ]
+add_files C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd
 update_compile_order -fileset sources_1
-close_sim
