@@ -9,7 +9,7 @@ entity GenSecuencia is
         bot_accion        : in std_logic; -- Evento de inicio de generador
         s_enable          : in std_logic; -- Si = 0, no se generan secuencias
         -- Salidas
-        sec_generada      : out vec_integrer(0 to 13) -- Secuencia generada
+        sec_generada      : out vec_integrer(0 to 14) -- Secuencia generada
     );
 end GenSecuencia;
 
@@ -21,9 +21,9 @@ architecture BEHAVIORAL of GenSecuencia is
     constant semilla2 : vec_integrer(0 to 13) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
     constant semilla3 : vec_integrer(0 to 13) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
     constant semilla4 : vec_integrer(0 to 13) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
-    constant semilla5 : vec_integrer(0 to 13) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3);
+    constant semilla5 : vec_integrer(0 to 13) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3, 0);
 
-    signal sec_generada_s : vec_integrer(0 to 13) := (others => 0);
+    signal sec_generada_s : vec_integrer(0 to 14) := (others => 0);
 
 begin 
 

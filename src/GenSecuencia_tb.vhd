@@ -15,7 +15,7 @@ architecture BEHAVIORAL of GenSecuencia_tb is
             bot_accion        : in std_logic; -- Evento de inicio de generador
             s_enable          : in std_logic; -- Si = 0, no se generan secuencias (enable)
             -- Salidas
-            sec_generada      : out vec_integrer(0 to 13) -- Secuencia generada
+            sec_generada      : out vec_integrer(0 to 14) -- Secuencia generada
             );
     end component;
     
@@ -23,7 +23,7 @@ architecture BEHAVIORAL of GenSecuencia_tb is
         signal niv_actual    : integer; 
         signal bot_accion    : std_logic; 
         signal s_enable      : std_logic; 
-        signal sec_generada  : vec_integrer(0 to 13);     
+        signal sec_generada  : vec_integrer(0 to 14);     
 begin
     -- Instanciación del componente
     uut: GenSecuencia
