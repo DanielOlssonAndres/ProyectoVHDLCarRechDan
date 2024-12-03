@@ -3,24 +3,45 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  3 22:07:10 2024
-# Process ID: 19392
-# Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26332 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
-# Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
-# Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
+# Start of session at: Tue Dec  3 23:26:13 2024
+# Process ID: 12728
+# Current directory: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27108 C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Log file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/vivado.log
+# Journal file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :22631
-# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
-# CPU Frequency     :2803 MHz
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency     :2995 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :16867 MB
-# Swap memory       :2201 MB
-# Total Virtual     :19068 MB
-# Available Virtual :7146 MB
+# Swap memory       :5476 MB
+# Total Virtual     :22344 MB
+# Available Virtual :8217 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
+open_project C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.xpr
 update_compile_order -fileset sources_1
+close [ open C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/ControladorNivel.vhd w ]
+add_files C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/ControladorNivel.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/ControladorNivel_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/ControladorNivel_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+set_property top ControladorNivel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source ControladorNivel_tb.tcl
+close_sim
+launch_simulation
+source ControladorNivel_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source ControladorNivel_tb.tcl
