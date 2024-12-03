@@ -1,1 +1,0 @@
-En este repositorio podemos encontrar toda la documentación relacionada con la memoria del proyecto
