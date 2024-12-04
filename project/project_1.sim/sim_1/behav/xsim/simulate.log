@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71

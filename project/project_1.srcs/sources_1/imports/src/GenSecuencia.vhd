@@ -16,12 +16,12 @@ end GenSecuencia;
 architecture BEHAVIORAL of GenSecuencia is
 
     -- Tabla de secuencias para cada nivel
-    constant semilla0 : vec_integrer(0 to 13) := (2, 3, 1, 3, others => 0);
-    constant semilla1 : vec_integrer(0 to 13) := (1, 1, 4, 2, 3, 1, others => 0);
-    constant semilla2 : vec_integrer(0 to 13) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
-    constant semilla3 : vec_integrer(0 to 13) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
-    constant semilla4 : vec_integrer(0 to 13) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
-    constant semilla5 : vec_integrer(0 to 13) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3, 0);
+    constant semilla0 : vec_integrer(0 to 14) := (2, 3, 1, 3, others => 0);
+    constant semilla1 : vec_integrer(0 to 14) := (1, 1, 4, 2, 3, 1, others => 0);
+    constant semilla2 : vec_integrer(0 to 14) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
+    constant semilla3 : vec_integrer(0 to 14) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
+    constant semilla4 : vec_integrer(0 to 14) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
+    constant semilla5 : vec_integrer(0 to 14) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3, 0);
 
     signal sec_generada_s : vec_integrer(0 to 14) := (others => 0);
 

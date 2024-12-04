@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  3 22:10:21 2024
-# Process ID: 24880
+# Start of session at: Wed Dec  4 00:57:05 2024
+# Process ID: 16996
 # Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25944 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20712 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
@@ -19,7 +19,7 @@
 # Host memory       :16867 MB
 # Swap memory       :2201 MB
 # Total Virtual     :19068 MB
-# Available Virtual :6771 MB
+# Available Virtual :6061 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
@@ -126,7 +126,6 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Project 1-313] Project file moved from 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
@@ -134,96 +133,38 @@ WARNING: [Board 49-151] The current board 'digilentinc.com::nexys4_ddr:1.1' is f
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1532.344 ; gain = 466.980
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1533.055 ; gain = 468.523
 update_compile_order -fileset sources_1
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd w ]
-add_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\CompSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-set_property top Decod_Leds_Sec_tb [get_filesets sim_1]
+set_property top GenSecuencia_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
 update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
+set_property is_enabled false [get_files  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg]
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Decod_Leds_Sec_tb'
+INFO: [Vivado 12-12493] Simulation top is 'GenSecuencia_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Decod_Leds_Sec_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'GenSecuencia_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Decod_Leds_Sec_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec_tb'
+"xvhdl --incr --relax -prj GenSecuencia_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GenSecuencia'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GenSecuencia_tb'
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot GenSecuencia_tb_behav xil_defaultlib.GenSecuencia_tb -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot GenSecuencia_tb_behav xil_defaultlib.GenSecuencia_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -233,88 +174,18 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.decod_leds_sec_tb
-Built simulation snapshot Decod_Leds_Sec_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Decod_Leds_Sec_tb_behav -key {Behavioral:sim_1:Functional:Decod_Leds_Sec_tb} -tclbatch {Decod_Leds_Sec_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source Decod_Leds_Sec_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decod_Leds_Sec_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1650.172 ; gain = 26.965
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Decod_Leds_Sec_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Decod_Leds_Sec_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Decod_Leds_Sec_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.decod_leds_sec_tb
-Built simulation snapshot Decod_Leds_Sec_tb_behav
+Compiling package xil_defaultlib.paquete_types
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.gensecuencia_tb
+Built simulation snapshot GenSecuencia_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "Decod_Leds_Sec_tb_behav -key {Behavioral:sim_1:Functional:Decod_Leds_Sec_tb} -tclbatch {Decod_Leds_Sec_tb.tcl} -log {simulate.log}"
+   with args "GenSecuencia_tb_behav -key {Behavioral:sim_1:Functional:GenSecuencia_tb} -tclbatch {GenSecuencia_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source Decod_Leds_Sec_tb.tcl
+source GenSecuencia_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -325,229 +196,23 @@ source Decod_Leds_Sec_tb.tcl
 #   }
 # }
 # run 1000ns
-Error: RESET NO FUNCIONA
-Time: 60 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decod_Leds_Sec_tb_behav' loaded.
+Failure: [FIN SIMULACION]: FINALIZADO CORRECTAMENTE
+Time: 300 ns  Iteration: 0  Process: /GenSecuencia_tb/testp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd
+$finish called at time : 300 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd" Line 89
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'GenSecuencia_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1650.172 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1621.574 ; gain = 38.781
+save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg
+set_property xsim.view {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg} [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Decod_Leds_Sec_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Decod_Leds_Sec_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Decod_Leds_Sec_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.decod_leds_sec_tb
-Built simulation snapshot Decod_Leds_Sec_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Decod_Leds_Sec_tb_behav -key {Behavioral:sim_1:Functional:Decod_Leds_Sec_tb} -tclbatch {Decod_Leds_Sec_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source Decod_Leds_Sec_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decod_Leds_Sec_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1650.172 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+set_property is_enabled false [get_files  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.srcs\sources_1\imports\src\GenSecuencia.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Decod_Leds_Sec_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Decod_Leds_Sec_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Decod_Leds_Sec_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.decod_leds_sec_tb
-Built simulation snapshot Decod_Leds_Sec_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Decod_Leds_Sec_tb_behav -key {Behavioral:sim_1:Functional:Decod_Leds_Sec_tb} -tclbatch {Decod_Leds_Sec_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source Decod_Leds_Sec_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Error: RESET NO FUNCIONA
-Time: 60 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decod_Leds_Sec_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1650.172 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'Decod_Leds_Sec_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'Decod_Leds_Sec_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj Decod_Leds_Sec_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Decod_Leds_Sec_tb_behav xil_defaultlib.Decod_Leds_Sec_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.decod_leds_sec_tb
-Built simulation snapshot Decod_Leds_Sec_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "Decod_Leds_Sec_tb_behav -key {Behavioral:sim_1:Functional:Decod_Leds_Sec_tb} -tclbatch {Decod_Leds_Sec_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source Decod_Leds_Sec_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Failure: [FIN]: TEST COMPLETADO CORRECTAMENTE
-Time: 360 ns  Iteration: 0  Process: /Decod_Leds_Sec_tb/tbp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-$finish called at time : 360 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" Line 71
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'Decod_Leds_Sec_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1650.172 ; gain = 0.000
-save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg
-set_property xsim.view C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg}
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  4 00:25:13 2024...

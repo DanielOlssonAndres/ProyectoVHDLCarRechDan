@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec  3 22:10:21 2024
-# Process ID: 24880
+# Start of session at: Wed Dec  4 00:57:05 2024
+# Process ID: 16996
 # Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25944 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20712 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
@@ -19,37 +19,18 @@
 # Host memory       :16867 MB
 # Swap memory       :2201 MB
 # Total Virtual     :19068 MB
-# Available Virtual :6771 MB
+# Available Virtual :6061 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd w ]
-add_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd
-update_compile_order -fileset sim_1
-set_property top Decod_Leds_Sec_tb [get_filesets sim_1]
+set_property top GenSecuencia_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg]
 launch_simulation
-source Decod_Leds_Sec_tb.tcl
-close_sim
-launch_simulation
-source Decod_Leds_Sec_tb.tcl
-close_sim
-launch_simulation
-source Decod_Leds_Sec_tb.tcl
-close_sim
-launch_simulation
-source Decod_Leds_Sec_tb.tcl
-close_sim
-launch_simulation
-source Decod_Leds_Sec_tb.tcl
-save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg
-set_property xsim.view C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg [get_filesets sim_1]
-save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg}
-close_sim
+source GenSecuencia_tb.tcl
+save_wave_config {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg
+set_property xsim.view {C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg} [get_filesets sim_1]
+set_property is_enabled false [get_files  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg]
