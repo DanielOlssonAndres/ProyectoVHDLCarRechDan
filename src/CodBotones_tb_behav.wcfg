@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CodBotones_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CodBotones_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="220.001 ns"></ZoomEndTime>
+      <Cursor1Time time="220.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group9" type="group">
+      <obj_property name="label">Botones</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/CodBotones_tb/boton1" type="logic">
+         <obj_property name="ElementShortName">boton1</obj_property>
+         <obj_property name="ObjectShortName">boton1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CodBotones_tb/boton2" type="logic">
+         <obj_property name="ElementShortName">boton2</obj_property>
+         <obj_property name="ObjectShortName">boton2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CodBotones_tb/boton3" type="logic">
+         <obj_property name="ElementShortName">boton3</obj_property>
+         <obj_property name="ObjectShortName">boton3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CodBotones_tb/boton4" type="logic">
+         <obj_property name="ElementShortName">boton4</obj_property>
+         <obj_property name="ObjectShortName">boton4</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/CodBotones_tb/boton_pulsado" type="other">
+      <obj_property name="ElementShortName">boton_pulsado</obj_property>
+      <obj_property name="ObjectShortName">boton_pulsado</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

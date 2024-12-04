@@ -1,17 +1,8 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot temporizador_tb_behav xil_defaultlib.temporizador_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CompSecuencia_tb_behav xil_defaultlib.CompSecuencia_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.temporizador [temporizador_default]
-Compiling architecture testbench of entity xil_defaultlib.temporizador_tb
-Built simulation snapshot temporizador_tb_behav
+ERROR: [VRFC 10-666] expression has 15 elements; expected 14 [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd:90]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit compsecuencia_tb in library work failed.
