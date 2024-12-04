@@ -1,5 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'temporizador_tb'

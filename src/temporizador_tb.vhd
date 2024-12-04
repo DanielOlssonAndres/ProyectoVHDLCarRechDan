@@ -15,7 +15,7 @@ architecture testbench of temporizador_tb is
             CLK           : in  std_logic;
             iniciar_cuenta: in  std_logic;
             fin_tiempo    : out std_logic;
-                    contador       : out integer -- Sólo para sim----------------------------------------------------------------
+               contador       : out integer -- Sólo para sim----------------------------------------------------------------
 
         );
     end component;
@@ -24,7 +24,7 @@ architecture testbench of temporizador_tb is
     signal CLK            : std_logic := '0';
     signal iniciar_cuenta : std_logic := '0';
     signal fin_tiempo     : std_logic;
-    signal   contador      : integer := 0; -- Sólo para sim----------------------------------------------------------------
+        signal   contador      : integer := 0; -- Sólo para sim----------------------------------------------------------------
 
 
 begin
@@ -45,19 +45,19 @@ begin
     process
     begin
         CLK <= '0';
-        wait for 25 ns;
+        wait for 10 ns;
         CLK <= '1';
-        wait for 25 ns;
+        wait for 10 ns;
     end process;
 
     -- Proceso de prueba
     process
     begin
-        wait for 100 ns;            
+        wait for 50 ns;            
         iniciar_cuenta <= '1';       
-        wait for 50 ns;
+        wait for 100 ns;
         iniciar_cuenta <= '0';       
-        wait for 1.5 sec;            
+        wait for 5000 ns;            
 
         assert false
             report "SIMULACION COMPLETADA CORRECTAMENTE" 
