@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controlador_nivel'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'controlador_nivel_tb'
