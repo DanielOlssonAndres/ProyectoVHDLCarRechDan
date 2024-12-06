@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Failure: FIN CORRECTO DE SIMULACION
-Time: 2150 ns  Iteration: 0  Process: /Controlador_de_Sec_tb/sim  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb.vhd
-$finish called at time : 2150 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb.vhd" Line 84
+Failure: SIMULACION FINALIZADA CORRECTAMENTE
+Time: 270 ns  Iteration: 0  Process: /CompSecuencia_tb/test  File: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd
+$finish called at time : 270 ns : File "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd" Line 116

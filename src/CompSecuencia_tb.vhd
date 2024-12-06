@@ -39,20 +39,22 @@ architecture Behavioral of CompSecuencia_tb is
     component CompSecuencia is
         port(
             -- Entradas
-            sec_generada      : in vec_integrer(0 to 13); -- Secuencia generada por GenSecuancia
+            sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuancia
             boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
             -- Salidas
             exito             : out std_logic; -- Indica si el usuario ha acertado
             error             : out std_logic; -- Indica si el usuario ha fallado
-            fin_comparacion   : out std_logic -- Indica el fin de la comparacion
+            fin_comparacion   : out std_logic; -- Indica el fin de la comparacion
+            indice            : out integer
         );
     end component;
     
-    signal sec_generada      : vec_integrer(0 to 13);
+    signal sec_generada      : vec_integrer(0 to 14);
     signal boton_pulsado     : integer;
     signal exito             : std_logic;
     signal error             : std_logic;
     signal fin_comparacion   : std_logic;
+    signal indice            : integer;
     
     -- Declaracion del periodo
     constant periodo_clk : time := 10 ns;
@@ -70,7 +72,8 @@ begin
             boton_pulsado => boton_pulsado,
             exito => exito,
             error => error,
-            fin_comparacion => fin_comparacion
+            fin_comparacion => fin_comparacion,
+            indice => indice
         );
     
     test: process

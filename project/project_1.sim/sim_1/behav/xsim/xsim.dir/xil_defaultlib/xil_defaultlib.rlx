@@ -2,10 +2,6 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd,1733270345,vhdl,,,,gensecuencia,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd,1733058126,vhdl,C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd,,,paquete_types,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd,1733356851,vhdl,,,,controlador_de_sec,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb.vhd,1733356323,vhdl,,,,controlador_de_sec_tb,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd,1733260148,vhdl,,,,gensecuencia_tb,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador.vhd,1733335645,vhdl,,,,temporizador,,,,,,,,
-C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador_tb.vhd,1733335833,vhdl,,,,temporizador_tb,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd,1733247271,vhdl,C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd,,,paquete_types,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd,1733500121,vhdl,,,,compsecuencia,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd,1733495187,vhdl,,,,compsecuencia_tb,,,,,,,,
