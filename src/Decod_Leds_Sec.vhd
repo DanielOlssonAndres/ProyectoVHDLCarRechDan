@@ -15,7 +15,7 @@ end Decod_Leds_Sec;
 
 architecture BEHAVIORAL of Decod_Leds_Sec is
 begin
-    asign: process(CLK)
+    asign: process(CLK, RESET)
     begin
         if RESET = '1' then 
             for i in 1 to NLEDS loop
