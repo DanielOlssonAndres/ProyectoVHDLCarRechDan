@@ -73,10 +73,10 @@ begin
         exito <= '1'; wait for 4 * CLK_PERIOD; exito <= '0'; wait for 4 * CLK_PERIOD; -- Estado 5
 
         -- Simular un error en el nivel 5
-        error <= '1'; wait for 4 * CLK_PERIOD; error <= '0'; wait for 4 * CLK_PERIOD;
+        error <= '1'; wait for 4 * CLK_PERIOD; error <= '0'; wait for CLK_PERIOD;
 
         -- Reset después de un error
-        reset <= '1'; wait for 2 * CLK_PERIOD; reset <= '0'; wait for 4 * CLK_PERIOD;
+        reset <= '1'; wait for 2 * CLK_PERIOD; reset <= '0'; wait for CLK_PERIOD;
 
         -- Repetir la secuencia nuevamente para verificar robustez
         exito <= '1'; wait for 4 * CLK_PERIOD; exito <= '0'; wait for 4 * CLK_PERIOD; -- Estado 2

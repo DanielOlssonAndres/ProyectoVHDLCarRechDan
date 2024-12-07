@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../src/controlador_nivel.vhd" \
-"../../../../../src/controlador_nivel_tb.vhd" \
+"../../../../../src/decod_display.vhd" \
+"../../../../../src/decoder_display_tb.vhd" \
 
 # Do not sort compile order
 nosort
