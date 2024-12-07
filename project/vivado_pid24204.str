@@ -1506,3 +1506,134 @@ selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 512, -95); // b (RDIRe
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // HMemoryUtils.trashcanNow. Engine heap size: 1,218 MB. GUI used memory: 88 MB. Current time: 12/7/24, 1:36:25 AM CET
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 162 MB (+4030kb) [00:08:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,218 MB. GUI used memory: 84 MB. Current time: 12/7/24, 2:06:28 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,218 MB. GUI used memory: 84 MB. Current time: 12/7/24, 2:20:13 AM CET
+// Elapsed time: 2630 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sync_button"); // R (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+// Tcl Command: 'file mkdir C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // k (dialog3)
+// Tcl Message: file mkdir C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/new 
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, false, true); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Double Click
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, false, true); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Double Click
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, true, false); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, true, false); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // am (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CHANGE_SOURCE_PROPERTIES, "Change Source Properties..."); // ap (PAResourceQtoS.SrcChooserPanel_CHANGE_SOURCE_PROPERTIES)
+dismissDialog("Configure Sources"); // ao (dialog4)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, true, false); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; sync_button.vhd ; xil_defaultlib ; <Local to Project>", 0, "<Local to Project>", 4, false, false, false, true, false); // aN (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // am (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // am (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // am (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenuItem(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // ap (RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // a (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "sync_button"); // R (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "File location:", "Choose Location...", 1); // d (PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, File location:)
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+setFolderChooser("C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // k (dialog5)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 44 seconds
+dismissDialog("Add Sources"); // c (dialog2)
+// Tcl Message: close [ open C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // a (RDIResource.BaseDialog_OK)
+selectButton("OptionPane.button", "Yes", "Define Module"); // JButton (OptionPane.button)
+dismissDialog("Define Module"); // n (dialog7)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 49m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 49m:17s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sync_button(Behavioral) (sync_button.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'L.f': 49m:19s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sync_button(Behavioral) (sync_button.vhd)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [GUI Memory]: 171 MB (+991kb) [00:49:43]
+// Elapsed Time for: 'L.f': 49m:21s
+selectCodeEditor("sync_button.vhd", 255, 620); // ac (sync_button.vhd)
+typeControlKey((HResource) null, "sync_button.vhd", 'v'); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 9, 84); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 0, 68); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 7, 72); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 199, 479); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 192, 422); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 240, 127); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 148, 170); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 104, 156); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 45, 207); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 6, 200); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 104, 411); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 140, 409); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 111, 315); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 25, 280); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 80, 281); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 64, 326); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 54, 321); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 68, 328); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 303, 409); // ac (sync_button.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 50m:03s
+// Elapsed Time for: 'L.f': 50m:05s
+// Elapsed time: 26 seconds
+selectCodeEditor("sync_button.vhd", 91, 392); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 263, 467); // ac (sync_button.vhd)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SYNCHRNZR(BEHAVIORAL) (sync_button.vhd)]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SYNCHRNZR(BEHAVIORAL) (sync_button.vhd)]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("sync_button.vhd", 108, 51); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 108, 51, false, false, false, false, true); // ac (sync_button.vhd) - Double Click
+selectCodeEditor("sync_button.vhd", 76, 54); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 76, 54, false, false, false, false, true); // ac (sync_button.vhd) - Double Click
+typeControlKey((HResource) null, "sync_button.vhd", 'c'); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 76, 181); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 76, 181, false, false, false, false, true); // ac (sync_button.vhd) - Double Click
+typeControlKey((HResource) null, "sync_button.vhd", 'v'); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 227, 217); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 195, 376); // ac (sync_button.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 51m:19s
+// Elapsed Time for: 'L.f': 51m:21s
+selectCodeEditor("sync_button.vhd", 164, 397); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 290, 222); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 290, 222, false, false, false, false, true); // ac (sync_button.vhd) - Double Click
+typeControlKey((HResource) null, "sync_button.vhd", 'v'); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 241, 453); // ac (sync_button.vhd)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 51m:33s
+// Elapsed Time for: 'L.f': 51m:35s
+// Elapsed time: 17 seconds
+selectCodeEditor("sync_button.vhd", 161, 475); // ac (sync_button.vhd)
+typeControlKey((HResource) null, "sync_button.vhd", 'c'); // ac (sync_button.vhd)
+// Elapsed time: 212 seconds
+selectCodeEditor("sync_button.vhd", 102, 352); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 199, 249); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 220, 365); // ac (sync_button.vhd)
+selectCodeEditor("sync_button.vhd", 163, 521); // ac (sync_button.vhd)
