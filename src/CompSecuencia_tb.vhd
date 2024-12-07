@@ -41,20 +41,20 @@ architecture Behavioral of CompSecuencia_tb is
             -- Entradas
             sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuancia
             boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
+            enable            : in std_logic;
             -- Salidas
             exito             : out std_logic; -- Indica si el usuario ha acertado
             error             : out std_logic; -- Indica si el usuario ha fallado
-            fin_comparacion   : out std_logic; -- Indica el fin de la comparacion
-            indice            : out integer
+            fin_comparacion   : out std_logic -- Indica el fin de la comparacion
         );
     end component;
     
     signal sec_generada      : vec_integrer(0 to 14);
     signal boton_pulsado     : integer;
+    signal enable            : std_logic;
     signal exito             : std_logic;
     signal error             : std_logic;
     signal fin_comparacion   : std_logic;
-    signal indice            : integer;
     
     -- Declaracion del periodo
     constant periodo_clk : time := 10 ns;
@@ -70,14 +70,21 @@ begin
         port map(
             sec_generada => sec_generada,
             boton_pulsado => boton_pulsado,
+            enable => enable,
             exito => exito,
             error => error,
-            fin_comparacion => fin_comparacion,
-            indice => indice
+            fin_comparacion => fin_comparacion
         );
     
     test: process
     begin
+        
+        enable <= '0';
+        wait for periodo_clk;
+        enable <= '1';
+        wait for periodo_clk;
+        
+        
         -- Probamos con la secuencia semilla0
         sec_generada <= semilla0;
         boton_pulsado <= 0;

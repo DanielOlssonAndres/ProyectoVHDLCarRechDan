@@ -2,7 +2,10 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd,1733524304,vhdl,,,,controlador_nivel,,,,,,,,
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb.vhd,1733524295,vhdl,,,,controlador_nivel_tb,,,,,,,,
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decod_display.vhd,1733530858,vhdl,,,,decodificador_display,,,,,,,,
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd,1733530788,vhdl,,,,tb_decodificador_display,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd,1733247271,vhdl,C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd,,,paquete_types,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd,1733331208,vhdl,,,,codbotones,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd,1733327455,vhdl,,,,codbotones_tb,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd,1733604387,vhdl,,,,compsecuencia,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd,1733601286,vhdl,,,,compsecuencia_tb,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decod_display.vhd,1733599940,vhdl,,,,decodificador_display,,,,,,,,
+C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd,1733599940,vhdl,,,,tb_decodificador_display,,,,,,,,

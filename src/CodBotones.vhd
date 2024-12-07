@@ -35,8 +35,6 @@ use ieee.numeric_std.all;
 entity CodBotones is
     port(
         -- Entradas
-        -- clk             : in std_logic; -- Reloj
-        -- reset           : in std_logic; -- Reset asincrono
         boton1          : in std_logic; -- Boton 1
         boton2          : in std_logic; -- Boton 2
         boton3          : in std_logic; -- Boton 3

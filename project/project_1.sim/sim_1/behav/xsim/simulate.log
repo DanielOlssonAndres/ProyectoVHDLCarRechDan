@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: SIMULACION FINALIZADA CORRECTAMENTE
+Time: 290 ns  Iteration: 0  Process: /CompSecuencia_tb/test  File: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd
+$finish called at time : 290 ns : File "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd" Line 123
