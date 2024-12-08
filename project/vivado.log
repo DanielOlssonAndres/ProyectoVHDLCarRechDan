@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Dec  7 01:31:14 2024
-# Process ID: 24204
+# Start of session at: Sun Dec  8 22:02:54 2024
+# Process ID: 20548
 # Current directory: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16480 C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26784 C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
@@ -19,16 +19,10 @@
 # Host memory       :16867 MB
 # Swap memory       :5637 MB
 # Total Virtual     :22504 MB
-# Available Virtual :5435 MB
+# Available Virtual :7009 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.xpr
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -114,33 +108,37 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1483.629 ; gain = 433.938
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1466.922 ; gain = 394.164
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_decodificador_display'
+INFO: [Vivado 12-12493] Simulation top is 'sync_buttons_leds_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_decodificador_display' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'sync_buttons_leds_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_decodificador_display_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decod_display.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'decodificador_display'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_decodificador_display'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+"xvhdl --incr --relax -prj sync_buttons_leds_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sync_buttons_leds_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_decodificador_display_behav xil_defaultlib.tb_decodificador_display -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_buttons_leds_tb_behav xil_defaultlib.sync_buttons_leds_tb -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_decodificador_display_behav xil_defaultlib.tb_decodificador_display -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_buttons_leds_tb_behav xil_defaultlib.sync_buttons_leds_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -150,17 +148,17 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.decodificador_display [decodificador_display_default]
-Compiling architecture testbench of entity xil_defaultlib.tb_decodificador_display
-Built simulation snapshot tb_decodificador_display_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Compiling architecture behavioral of entity xil_defaultlib.sync_buttons_leds [sync_buttons_leds_default]
+Compiling architecture testbench of entity xil_defaultlib.sync_buttons_leds_tb
+Built simulation snapshot sync_buttons_leds_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_decodificador_display_behav -key {Behavioral:sim_1:Functional:tb_decodificador_display} -tclbatch {tb_decodificador_display.tcl} -log {simulate.log}"
+   with args "sync_buttons_leds_tb_behav -key {Behavioral:sim_1:Functional:sync_buttons_leds_tb} -tclbatch {sync_buttons_leds_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_decodificador_display.tcl
+source sync_buttons_leds_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -171,14 +169,16 @@ source tb_decodificador_display.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decodificador_display_behav' loaded.
+Note: Fin de la simulación
+Time: 300 ns  Iteration: 0  Process: /sync_buttons_leds_tb/STIMULUS_PROCESS  File: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_buttons_leds_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1541.664 ; gain = 26.414
-save_wave_config {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg
-WARNING: [filemgmt 56-12] File 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg' cannot be added to the project because it already exists in the project, skipping this file
-set_property xsim.view {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg} [get_filesets sim_1]
-file mkdir C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/new
-close [ open C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd w ]
-add_files C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1523.090 ; gain = 14.020
+update_compile_order -fileset sim_1
+save_wave_config {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_buttons_leds_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_buttons_leds_tb_behav.wcfg
+set_property xsim.view {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_buttons_leds_tb_behav.wcfg} [get_filesets sim_1]
+update_compile_order -fileset sim_1
+move_files [get_files  C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd]
+move_files [get_files  C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd]
 update_compile_order -fileset sources_1
