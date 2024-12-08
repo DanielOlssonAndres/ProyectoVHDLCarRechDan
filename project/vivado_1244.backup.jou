@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec  8 19:38:12 2024
-# Process ID: 25668
+# Start of session at: Sun Dec  8 23:48:07 2024
+# Process ID: 1244
 # Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12224 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22628 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
@@ -19,11 +19,9 @@
 # Host memory       :16867 MB
 # Swap memory       :1186 MB
 # Total Virtual     :18053 MB
-# Available Virtual :6003 MB
+# Available Virtual :4681 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd w ]
-add_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd
-update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -after C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc

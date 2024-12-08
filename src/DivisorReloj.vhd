@@ -53,7 +53,7 @@ architecture Behavioral of DivisorReloj is
 begin
     process(clk_in, reset)
     begin
-        if reset = '1' then
+        if reset = '0' then
             contador <= 0;
             clk_temp <= '0';
         elsif rising_edge(clk_in) then

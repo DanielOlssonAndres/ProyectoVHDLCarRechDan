@@ -75,9 +75,9 @@ begin
     test: process
     begin
         -- Inicialización
-        reset <= '1';  -- Reset activado
+        reset <= '0';  -- Reset activado
         wait for 20 ns;
-        reset <= '0';  -- Desactivar reset
+        reset <= '1';  -- Desactivar reset
 
         -- Simulación durante un periodo suficiente para verificar clk_out
         wait for 2 ms;  -- Simular 2 ms para observar varias transiciones de clk_out

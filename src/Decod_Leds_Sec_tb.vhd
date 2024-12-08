@@ -19,7 +19,7 @@ end component;
     -- Señales para testbench
         signal ledDeSecuencia  : integer := 0; 
         signal CLK             : std_logic := '0';
-        signal RESET           : std_logic := '0'; 
+        signal RESET           : std_logic := '1'; 
         signal led             : std_logic_vector(4 downto 1);   
 begin
 
@@ -43,7 +43,7 @@ uut: Decod_Leds_Sec
         ledDeSecuencia <= 1;
         wait for 50 ns;
         -- Prueba de RESET
-        RESET <= '1';
+        RESET <= '0';
         wait for 10 ns;
         assert led(1) = '1'
             report "RESET NO FUNCIONA"
@@ -52,7 +52,7 @@ uut: Decod_Leds_Sec
         -- Prueba de LED2 (tras desactivación de RESET)
         ledDeSecuencia <= 2;
         wait for 50 ns;
-        RESET <= '0';
+        RESET <= '1';
         wait for 50 ns;
         -- Prueba de LED3
         ledDeSecuencia <= 3;

@@ -20,7 +20,7 @@ begin
     -- Proceso secuencial: controla los cambios de estado
     process (CLK, reset)
     begin
-        if reset = '1' then
+        if reset = '0' then
             estado_actual <= ESTADO_0; -- Reiniciar al primer estado
         elsif rising_edge(CLK) then
             estado_actual <= estado_siguiente; -- Actualizar al siguiente estado

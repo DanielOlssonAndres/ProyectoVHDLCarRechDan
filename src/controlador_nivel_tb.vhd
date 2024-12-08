@@ -23,7 +23,7 @@ architecture behavioral of controlador_nivel_tb is
     -- Señales internas para conectar al DUT (Device Under Test)
     signal exito : STD_LOGIC := '0';
     signal error : STD_LOGIC := '0';
-    signal reset : STD_LOGIC := '0';
+    signal reset : STD_LOGIC := '1';
     signal CLK : STD_LOGIC := '0';
     signal nivel_actual : STD_LOGIC_VECTOR (2 downto 0);
     signal avance_nivel : STD_LOGIC;
@@ -61,9 +61,9 @@ begin
     stim_proc: process
     begin
         -- Reset inicial
-        reset <= '1';
-        wait for CLK_PERIOD;
         reset <= '0';
+        wait for CLK_PERIOD;
+        reset <= '1';
         wait for CLK_PERIOD;
 
         -- Progresar niveles con éxito (del 1 al 5)
@@ -76,7 +76,7 @@ begin
         error <= '1'; wait for 4 * CLK_PERIOD; error <= '0'; wait for CLK_PERIOD;
 
         -- Reset después de un error
-        reset <= '1'; wait for 2 * CLK_PERIOD; reset <= '0'; wait for CLK_PERIOD;
+        reset <= '0'; wait for 2 * CLK_PERIOD; reset <= '1'; wait for CLK_PERIOD;
 
         -- Repetir la secuencia nuevamente para verificar robustez
         exito <= '1'; wait for 4 * CLK_PERIOD; exito <= '0'; wait for 4 * CLK_PERIOD; -- Estado 2

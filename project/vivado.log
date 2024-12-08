@@ -3,26 +3,28 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sun Dec  8 23:33:10 2024
-# Process ID: 19356
-# Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9796 C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\project\project_1.xpr
-# Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/vivado.log
-# Journal file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project\vivado.jou
-# Running On        :PortatilMarcos
+# Start of session at: Mon Dec  9 00:13:00 2024
+# Process ID: 24108
+# Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23720 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
+# Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
+# Running On        :MSI
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :26100
+# Operating System  :22631
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
 # CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :16948 MB
-# Swap memory       :3355 MB
-# Total Virtual     :20303 MB
-# Available Virtual :9781 MB
+# Host memory       :16867 MB
+# Swap memory       :1186 MB
+# Total Virtual     :18053 MB
+# Available Virtual :4459 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr
+open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project'
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
@@ -124,19 +126,14 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Project 1-313] Project file moved from 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
+INFO: [Project 1-313] Project file moved from 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1549.281 ; gain = 279.113
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.188 ; gain = 472.090
 update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\TOP.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 23:47:33 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 00:13:34 2024...
