@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../src/DivisorReloj.vhd" \
-"../../../../../src/DivisorReloj_tb.vhd" \
+"../../../../../src/sync_button.vhd" \
+"../../../../../src/sync_buttons_leds_tb.vhd" \
 
 # Do not sort compile order
 nosort

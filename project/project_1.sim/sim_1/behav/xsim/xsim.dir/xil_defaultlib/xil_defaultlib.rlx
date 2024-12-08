@@ -6,3 +6,5 @@ C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd,173352
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb.vhd,1733524295,vhdl,,,,controlador_nivel_tb,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decod_display.vhd,1733530858,vhdl,,,,decodificador_display,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd,1733530788,vhdl,,,,tb_decodificador_display,,,,,,,,
+C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd,1733692828,vhdl,C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_buttons_leds_tb.vhd,,,sync_buttons_leds,,,,,,,,
+C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_buttons_leds_tb.vhd,1733692907,vhdl,,,,sync_buttons_leds_tb,,,,,,,,
