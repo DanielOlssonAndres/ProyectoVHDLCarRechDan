@@ -15,8 +15,8 @@ entity TOP is
         accion   : in std_logic; -- Botón de acción del juego, que inicia la generación de secuencias
         CLK      : in std_logic; -- Entrada del reloj de la FPGA
         -- SALIDAS      
-        led      : in std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
-        display  : in std_logic_vector(SEG_DISPLAY - 1 downto 0) -- Segmentos del display a controlar
+        led      : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
+        display  : out std_logic_vector(SEG_DISPLAY - 1 downto 0) -- Segmentos del display a controlar
     );
 end TOP;
 
@@ -89,7 +89,7 @@ architecture STRUCTURAL of TOP is
 -- Decodificador de Display
     component decodificador_display is
         Port (
-            nivel_actual     : in STD_LOGIC_VECTOR(2 downto 0); -- Nivel actual (3 bits)
+            nivel_actual     : in integer; -- Nivel actual (3 bits)
             CLK              : in STD_LOGIC;                            -- Señal de reloj
             display          : out STD_LOGIC_VECTOR(6 downto 0)     -- Salida para el display de 7 segmentos
         );
@@ -117,70 +117,129 @@ architecture STRUCTURAL of TOP is
         );
     end component;
    
--- 
+-- Divisor de Reloj
+    component DivisorReloj is
+        generic (
+            FREC_SALIDA : integer := 1_000_000 -- Frecuencia de salida en Hz
+        );
+        port (
+            -- Entradas
+            clk_in   : in  std_logic; -- Reloj de entrada de la placa: 100 MHz
+            reset    : in  std_logic; -- Reset asincrono
+            -- Salidas
+            clk_out  : out std_logic  -- Reloj de salida: 1 MHz
+        );
+    end component;
+    
+-- Controlador de Nivel
+    component controlador_nivel is
+    Port ( 
+        exito : in STD_LOGIC;         -- Indica si el nivel actual fue superado con éxito
+        error : in STD_LOGIC;         -- Indica si ocurrió un error en el nivel actual
+        reset : in STD_LOGIC;         -- Señal para reiniciar el juego
+        CLK : in STD_LOGIC;           -- Señal de reloj
+        nivel_actual : out integer -- Indica el nivel actual (3 bits para 5 niveles)
+    );
+end component;
 
+-- Señales para conexiones
+    signal CLK_adap : std_logic;
+    signal sec_generada_s : vec_integrer(0 to 14);
+    signal nivel_actual_s : integer;
+    signal boton_pulsado_s : integer;
+    signal enable_s : std_logic;
+    signal pedir_tiempo_s : std_logic;
+    signal fin_tiempo_s : std_logic;
+    signal led_a_encender : integer;
+    --signal reset_s : std_logic;
+    signal exito_s : std_logic;
+    signal error_s : std_logic;
+    signal fin_comparacion_s : std_logic;
+    -------------
+    signal boton_sync_deb_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
+    signal boton_sync_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
+    ------------
+    signal accion_sync_deb_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL ANTIRREBOTES
+    signal accion_sync_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL SYNC Y ENTRA AL ANTIRREBOTES
 
-begin
+begin -------------------------------------------------- INSTANCIACIÓN DE COMPONENTES -----------------------------
 
     inst_CompSecuencia: CompSecuencia 
         port map(
-            sec_generada     =>
-            boton_pulsado    =>
-            enable           =>
-            exito            =>
-            error            =>
-            fin_comparacion  =>
+            sec_generada     => sec_generada_s,
+            boton_pulsado    => boton_pulsado_s,
+            enable           => enable_s,
+            exito            => exito_s,
+            error            => error_s,
+            fin_comparacion  => fin_comparacion_s
         );
 
     inst_CodBotones: CodBotones 
         port map(
-            boton1          =>
-            boton2          =>
-            boton3          =>
-            boton4          =>
-            boton_pulsado   =>
+            boton1          => boton_sync_deb_s(1),
+            boton2          => boton_sync_deb_s(2),
+            boton3          => boton_sync_deb_s(3),
+            boton4          => boton_sync_deb_s(4),
+            boton_pulsado   => boton_pulsado_s
+        );
+        
+    inst_GenSecuencia: GenSecuencia 
+        port map(
+            niv_actual        => nivel_actual_s,
+            bot_accion        => accion_sync_deb_s,
+            s_enable          => fin_comparacion_s,
+            sec_generada      => sec_generada_s
         );
         
     inst_Controlador_de_Sec: Controlador_de_Sec 
         generic map( TAMSEC => 14 );
         port map(
-            secuencia        =>
-            emitir_elemento  =>
-            CLK              =>
-            elemento         =>
-            fin_secuencia    =>
-            pedir_tiempo     =>
+            secuencia        => sec_generada_s,
+            emitir_elemento  => fin_tiempo_s,
+            CLK              => CLK_adap,
+            elemento         => led_a_encender,
+            fin_secuencia    => enable_s,
+            pedir_tiempo     => pedir_tiempo_s
         );
         
     inst_Decod_Leds_Sec: Decod_Leds_Sec 
         generic map( NLEDS => 4 );
         port map(
-            ledDeSecuencia  =>
-            CLK             =>
-            RESET           =>
-            led             => 
-        );
-        
-     inst_GenSecuencia: GenSecuencia 
-        port map(
-            niv_actual        =>
-            bot_accion        =>
-            s_enable          =>
-            sec_generada      =>
+            ledDeSecuencia  => led_a_encender,
+            CLK             => CLK_adap,
+            RESET           => RESET,
+            led(1)          => led(1),
+            led(2)          => led(2),
+            led(3)          => led(3),
+            led(4)          => led(4)
         );
         
     inst_decodificador_display: decodificador_display 
         port map(
-            nivel_actual     =>
-            CLK              =>
-            display          =>
+            nivel_actual     => nivel_actual_s,
+            CLK              => CLK_adap,
+            display(6)       => display(6),
+            display(5)       => display(5),
+            display(4)       => display(4),
+            display(3)       => display(3),
+            display(2)       => display(2),
+            display(1)       => display(1),
+            display(0)       => display(0)
         );
 
-    inst_sync: sync 
+    inst_gen_sync_botones: for i in 1 to 4 generate
+        botones_sync: sync
+            port map (
+                CLK      => CLK_adap,        
+                ASYNC_IN => boton(i),
+                SYNC_OUT => boton_sync_s(i)
+            );
+    end generate;
+    inst_sync_accion: sync 
         port map(
-        CLK        =>
-        ASYNC_IN   =>
-        SYNC_OUT   =>
+        CLK        => CLK_adap,
+        ASYNC_IN   => accion,
+        SYNC_OUT   => accion_sync_s
         );
         
     inst_temporizador: temporizador 
@@ -189,10 +248,26 @@ begin
             TIEMPO     => 1
         );
         port map(
-            CLK              =>
-            iniciar_cuenta   =>
-            fin_tiempo       =>
+            CLK              => CLK_adap,
+            iniciar_cuenta   => pedir_tiempo_s,
+            fin_tiempo       => fin_tiempo_s
         );
 
+    inst_DivisorReloj: DivisorReloj 
+        generic map( FREC_SALIDA => 1_000_000 );
+        port map(
+            clk_in   =>  CLK,
+            reset    =>  RESET,
+            clk_out  => CLK_adap
+        );
+        
+    inst_controlador_nivel: controlador_nivel 
+        port map( 
+            exito           => exito_s,
+            error           => error_s,
+            reset           => RESET,
+            CLK             => CLK_adap,
+            nivel_actual    => nivel_actual_s
+        );
 
 end STRUCTURAL;
