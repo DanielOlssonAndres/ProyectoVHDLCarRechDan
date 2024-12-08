@@ -193,7 +193,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         );
         
     inst_Controlador_de_Sec: Controlador_de_Sec 
-        generic map( TAMSEC => 14 );
+        generic map( TAMSEC => 14 )
         port map(
             secuencia        => sec_generada_s,
             emitir_elemento  => fin_tiempo_s,
@@ -204,7 +204,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         );
         
     inst_Decod_Leds_Sec: Decod_Leds_Sec 
-        generic map( NLEDS => 4 );
+        generic map( NLEDS => 4 )
         port map(
             ledDeSecuencia  => led_a_encender,
             CLK             => CLK_adap,
@@ -247,7 +247,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         generic map(
             CLK_FREQ   => 1_000_000,
             TIEMPO     => 1
-        );
+        )
         port map(
             CLK              => CLK_adap,
             iniciar_cuenta   => pedir_tiempo_s,
@@ -255,7 +255,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         );
 
     inst_DivisorReloj: DivisorReloj 
-        generic map( FREC_SALIDA => 1_000_000 );
+        generic map( FREC_SALIDA => 1_000_000 )
         port map(
             clk_in   =>  CLK,
             reset    =>  RESET,
