@@ -17,6 +17,7 @@ entity TOP is
         -- SALIDAS      
         led      : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
         display  : out std_logic_vector(SEG_DISPLAY - 1 downto 0) -- Segmentos del display a controlar
+
     );
 end TOP;
 
