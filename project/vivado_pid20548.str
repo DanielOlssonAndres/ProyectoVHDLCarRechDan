@@ -1443,3 +1443,7 @@ selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation S
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, sync_tb.vhd]", 14, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
 selectButton(PAResourceOtoP.OpenFileAction_OPEN_DIRECTORY, "Open Directory", "Unable to Open File"); // a (PAResourceOtoP.OpenFileAction_OPEN_DIRECTORY)
 dismissDialog("Unable to Open File"); // R.a (dialog4)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 08m:29s
+// Elapsed Time for: 'L.f': 08m:31s
