@@ -2,3 +2,6 @@ Running: xsim.dir/TB_EDGEDTCTR_behav/xsimk.exe -simmode gui -wdb TB_EDGEDTCTR_be
 Design successfully loaded
 Design Loading Memory Usage: 8432 KB (Peak: 8432 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8968 KB (Peak: 8968 KB)
+Simulation CPU Usage: 0 ms
