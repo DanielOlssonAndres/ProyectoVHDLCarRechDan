@@ -2,11 +2,9 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity sync_tb is
--- No hay puertos para un testbench.
 end sync_tb;
 
 architecture TESTBENCH of sync_tb is
-    -- Declaración de señales para conectar con el DUT (Device Under Test)
     signal CLK : std_logic := '0';
     signal ASYNC_IN : std_logic := '0';
     signal SYNC_OUT : std_logic;
@@ -15,8 +13,7 @@ architecture TESTBENCH of sync_tb is
     constant CLK_PERIOD : time := 10 ns;
 
 begin
-    -- Instancia del módulo que queremos probar (DUT)
-    DUT: entity work.sync
+    UUT: entity work.sync
         port map (
             CLK => CLK,
             ASYNC_IN => ASYNC_IN,

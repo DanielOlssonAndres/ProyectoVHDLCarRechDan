@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity tb_decodificador_display is
-    -- Testbench no tiene puertos
 end tb_decodificador_display;
 
 architecture testbench of tb_decodificador_display is
@@ -12,7 +11,7 @@ architecture testbench of tb_decodificador_display is
     signal CLK : STD_LOGIC := '0';
     signal display : STD_LOGIC_VECTOR(6 downto 0);
 
-    -- Instancia del decodificador (DUT)
+    -- Instancia del decodificador (UUT)
     component decodificador_display
         Port (
             nivel_actual : in STD_LOGIC_VECTOR(2 downto 0);
@@ -23,7 +22,7 @@ architecture testbench of tb_decodificador_display is
 
 begin
     -- Instanciar el DUT
-    DUT: decodificador_display
+    UUT: decodificador_display
         Port map (
             nivel_actual => nivel_actual,
             CLK => CLK,

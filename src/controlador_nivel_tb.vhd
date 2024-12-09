@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity controlador_nivel_tb is
--- Testbench no tiene puertos
 end controlador_nivel_tb;
 
 architecture behavioral of controlador_nivel_tb is
@@ -34,7 +33,7 @@ architecture behavioral of controlador_nivel_tb is
 
 begin
 
-    -- Instancia del DUT
+    -- Instancia del UUT
     uut: controlador_nivel
         Port map (
             exito => exito,

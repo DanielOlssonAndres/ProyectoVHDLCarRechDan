@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec  9 22:07:52 2024
-# Process ID: 15180
+# Start of session at: Mon Dec  9 22:25:37 2024
+# Process ID: 18244
 # Current directory: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14144 C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18404 C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :MSI
@@ -19,10 +19,10 @@
 # Host memory       :16867 MB
 # Swap memory       :5637 MB
 # Total Virtual     :22504 MB
-# Available Virtual :4656 MB
+# Available Virtual :9450 MB
 #-----------------------------------------------------------
-start_guopopen_project C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.xpr
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+start_gui
+open_project C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,66 +108,118 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Common 17-344] 'open_project' was cancelled
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 22:08:58 2024...
-
-ot find the directory 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1478.250 ; gain = 396.859
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1490.125 ; gain = 412.656
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd w ]
-add_files -fileset sim_1 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-set_property top sync_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'sync_tb'
+INFO: [Vivado 12-12493] Simulation top is 'TB_EDGEDTCTR'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'sync_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_EDGEDTCTR' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj sync_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_button.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sync'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sync_tb'
+"xvhdl --incr --relax -prj TB_EDGEDTCTR_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edgecntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_EDGEDTCTR'
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_tb_behav xil_defaultlib.sync_tb -log elaborate.log"
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_EDGEDTCTR_behav xil_defaultlib.TB_EDGEDTCTR -log elaborate.log"
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_tb_behav xil_defaultlib.sync_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_EDGEDTCTR_behav xil_defaultlib.TB_EDGEDTCTR -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'edgedtctr' remains a black box since it has no binding entity [C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edgecntr.vhd:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture sim of entity xil_defaultlib.tb_edgedtctr
+Built simulation snapshot TB_EDGEDTCTR_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_EDGEDTCTR_behav -key {Behavioral:sim_1:Functional:TB_EDGEDTCTR} -tclbatch {TB_EDGEDTCTR.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TB_EDGEDTCTR.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_EDGEDTCTR_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1549.605 ; gain = 40.227
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB_EDGEDTCTR'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_EDGEDTCTR' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_EDGEDTCTR_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edgecntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edbecntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_EDGEDTCTR'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_EDGEDTCTR_behav xil_defaultlib.TB_EDGEDTCTR -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_EDGEDTCTR_behav xil_defaultlib.TB_EDGEDTCTR -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -177,21 +229,17 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
-Compiling architecture testbench of entity xil_defaultlib.sync_tb
-Built simulation snapshot sync_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
+Compiling architecture sim of entity xil_defaultlib.tb_edgedtctr
+Built simulation snapshot TB_EDGEDTCTR_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "sync_tb_behav -key {Behavioral:sim_1:Functional:sync_tb} -tclbatch {sync_tb.tcl} -view {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg} -log {simulate.log}"
+   with args "TB_EDGEDTCTR_behav -key {Behavioral:sim_1:Functional:TB_EDGEDTCTR} -tclbatch {TB_EDGEDTCTR.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-open_wave_config C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg
-WARNING: Simulation object /DivisorReloj_tb/reset was not found in the design.
-WARNING: Simulation object /DivisorReloj_tb/clk_in was not found in the design.
-WARNING: Simulation object /DivisorReloj_tb/clk_out was not found in the design.
-source sync_tb.tcl
+source TB_EDGEDTCTR.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -202,72 +250,324 @@ source sync_tb.tcl
 #   }
 # }
 # run 1000ns
-Note: Fin de la simulación
-Time: 240 ns  Iteration: 0  Process: /sync_tb/STIMULUS_PROCESS  File: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_tb_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_EDGEDTCTR_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1573.785 ; gain = 19.246
-set_property is_enabled false [get_files  C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2580.324 ; gain = 0.000
+save_wave_config {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/TB_EDGEDTCTR_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/TB_EDGEDTCTR_behav.wcfg
+set_property xsim.view {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/TB_EDGEDTCTR_behav.wcfg} [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'sync_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'sync_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj sync_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_tb_behav xil_defaultlib.sync_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sync_tb_behav xil_defaultlib.sync_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "sync_tb_behav -key {Behavioral:sim_1:Functional:sync_tb} -tclbatch {sync_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source sync_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-Note: Fin de la simulación
-Time: 240 ns  Iteration: 0  Process: /sync_tb/STIMULUS_PROCESS  File: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'sync_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1573.785 ; gain = 0.000
-save_wave_config {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb_behav.wcfg
-set_property xsim.view {C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb_behav.wcfg} [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_button.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
 WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CodBotones_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\controlador_nivel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\temporizador_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\CompSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\DivisorReloj_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Decod_Leds_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\sync_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\Controlador_de_Sec_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\decoder_display_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edgecntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\GenSecuencia_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\carlo\Downloads\ProyectoVHDLCarRechDan\src\edbecntr_tb.vhd:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
 ERROR: [Common 17-180] Spawn failed: No error

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edgecntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EDGEDTCTR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edbecntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_EDGEDTCTR'
