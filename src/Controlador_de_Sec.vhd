@@ -8,6 +8,7 @@ entity Controlador_de_Sec is
         secuencia        : in vec_integrer(0 to TAMSEC); -- Secuencia de entrada
         emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
         CLK              : in std_logic; -- Reloj del sistema
+        sec_lista        : in std_logic; -- Señal que indica que la secuencia ha cambiado
         
         elemento         : out integer; -- elemento de la secuencia que es emitido
         fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
@@ -34,7 +35,7 @@ st_reg: process(CLK) -- Registro de estado
     begin
     	case cur_state is
         	when ESPERANDO =>
-                if secuencia'event then
+                if rising_edge(sec_lista) then
                     nxt_state <= EMITIENDO;
                 end if;
             when EMITIENDO =>
@@ -61,7 +62,7 @@ st_reg: process(CLK) -- Registro de estado
                 pedir_tiempo <= '1';
                 if secuencia(indice) = 0 then
                     fin_detectado <= '1';
-                elsif (emitir_elemento = '1' and emitir_elemento'event) then
+                elsif rising_edge(emitir_elemento) then
                     indice <= indice + 1;
                     pedir_tiempo <= '0';
                 end if;

@@ -9,11 +9,11 @@ vhdl xil_defaultlib  \
 "../../../../project_1.srcs/sources_1/imports/src/GenSecuencia.vhd" \
 "../../../../../src/controlador_nivel.vhd" \
 "../../../../../src/decod_display.vhd" \
-"../../../../../src/sync_button.vhd" \
 "../../../../../src/temporizador.vhd" \
 "../../../../../src/TOP.vhd" \
 "../../../../../src/edgecntr.vhd" \
 "../../../../../src/debouncer.vhd" \
+"../../../../../src/sync.vhd" \
 "../../../../../src/CodBotones_tb.vhd" \
 "../../../../../src/CompSecuencia_tb.vhd" \
 "../../../../../src/Controlador_de_Sec_tb.vhd" \

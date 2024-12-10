@@ -57,6 +57,7 @@ architecture STRUCTURAL of TOP is
             secuencia        : in vec_integrer(0 to TAMSEC); -- Secuencia de entrada
             emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
             CLK              : in std_logic; -- Reloj del sistema
+            sec_lista        : in std_logic;
         
             elemento         : out integer; -- elemento de la secuencia que es emitido
             fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
@@ -82,8 +83,10 @@ architecture STRUCTURAL of TOP is
             niv_actual        : in integer; -- Indica en que nivel nos encontramos 
             bot_accion        : in std_logic; -- Evento de inicio de generador
             s_enable          : in std_logic; -- Si = 0, no se generan secuencias
+            CLK              : in std_logic; -- Reloj del sistema
             -- Salidas
-            sec_generada      : out vec_integrer(0 to 14) -- Secuencia generada
+            sec_generada      : out vec_integrer(0 to 14); -- Secuencia generada
+            sec_lista         : out std_logic
         );
     end component;
     
@@ -96,14 +99,33 @@ architecture STRUCTURAL of TOP is
         );
     end component;
     
--- Sincronizador de Botones
+-- Sincronizador de Botones 
     component sync is
         port (
-        CLK        : in std_logic;
-        ASYNC_IN   : in std_logic;
-        SYNC_OUT   : out std_logic
+            CLK : in std_logic;
+            ASYNC_IN : in std_logic;
+            SYNC_OUT : out std_logic
         );
     end component;
+ 
+-- Detector de Flancos
+    component EDGEDTCTR is
+        port (
+            CLK : in std_logic;
+            SYNC_IN : in std_logic;
+            EDGE : out std_logic
+        );
+    end component;
+    
+-- Sistema Antirrebotes
+    component Debouncer is
+        Port (
+            BUTTON_IN : in std_logic; -- Entrada con rebotes
+            CLK       : in std_logic; -- Señal de reloj
+            BUTTON_OUT : out std_logic -- Salida filtrada
+        );
+    end component;
+    
     
 -- Temporizador
     component temporizador is
@@ -152,6 +174,7 @@ end component;
     signal pedir_tiempo_s : std_logic;
     signal fin_tiempo_s : std_logic;
     signal led_a_encender : integer;
+    signal sec_lista_s : std_logic;
     --signal reset_s : std_logic;
     signal exito_s : std_logic;
     signal error_s : std_logic;
@@ -159,11 +182,65 @@ end component;
     -------------
     signal boton_sync_deb_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
     signal boton_sync_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
+    signal boton_listo : std_logic_vector(NUM_BOTONES downto 1); -- SEÑAL DE BOTONES SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
     ------------
     signal accion_sync_deb_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL ANTIRREBOTES
     signal accion_sync_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL SYNC Y ENTRA AL ANTIRREBOTES
+    signal accion_listo : std_logic; -- SEÑAL DE ACCIÓN SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
 
 begin -------------------------------------------------- INSTANCIACIÓN DE COMPONENTES -----------------------------
+
+---- ACONDICIONAMIENTO DE ENTRADAS ---------------------------------------------
+
+-- Las señales de los botones externos entran al sincronizador
+    inst_sync: for i in 1 to 4 generate
+        botones_sync: sync
+            port map (
+                CLK      => CLK_adap,        
+                ASYNC_IN => boton(i),
+                SYNC_OUT => boton_sync_s(i)
+            );
+    end generate;
+    inst_sync_accion: sync 
+        port map(
+            CLK        => CLK_adap,
+            ASYNC_IN   => accion,
+            SYNC_OUT   => accion_sync_s
+        );
+
+-- Las señales que salen del sincronizador pasan al sistema antirrebotes
+    inst_seb: for i in 1 to 4 generate
+        botones_deb: Debouncer
+            port map (
+                BUTTON_IN    => boton_sync_s(i),
+                CLK          => CLK_adap,
+                BUTTON_OUT   => boton_sync_deb_s(i)
+            );
+    end generate;
+    inst_deb_accion: Debouncer 
+        port map (
+            BUTTON_IN    => accion_sync_s,
+            CLK          => CLK_adap,
+            BUTTON_OUT   => accion_sync_deb_s
+        );
+
+-- Las señales que salen del antirrebotes entran al detector de flanco
+    inst_edge: for i in 1 to 4 generate
+        botones_edge: EDGEDTCTR
+            port map (
+                CLK       => CLK_adap,
+                SYNC_IN   => boton_sync_deb_s(i),
+                EDGE      => boton_listo(i)
+            );
+    end generate;
+    inst_edge_accion: EDGEDTCTR 
+        port map (
+            CLK       => CLK_adap,
+            SYNC_IN   => accion_sync_deb_s,
+            EDGE      => accion_listo
+        );
+
+------------------------------------------------------------------------------------
 
     inst_CompSecuencia: CompSecuencia 
         port map(
@@ -177,19 +254,21 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
 
     inst_CodBotones: CodBotones 
         port map(
-            boton1          => boton_sync_deb_s(1),
-            boton2          => boton_sync_deb_s(2),
-            boton3          => boton_sync_deb_s(3),
-            boton4          => boton_sync_deb_s(4),
+            boton1          => boton_listo(1),
+            boton2          => boton_listo(2),
+            boton3          => boton_listo(3),
+            boton4          => boton_listo(4),
             boton_pulsado   => boton_pulsado_s
         );
         
     inst_GenSecuencia: GenSecuencia 
         port map(
             niv_actual        => nivel_actual_s,
-            bot_accion        => accion_sync_deb_s,
+            bot_accion        => accion_listo,
             s_enable          => fin_comparacion_s,
-            sec_generada      => sec_generada_s
+            CLK               => CLK_adap,
+            sec_generada      => sec_generada_s,
+            sec_lista         => sec_lista_s
         );
         
     inst_Controlador_de_Sec: Controlador_de_Sec 
@@ -198,6 +277,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             secuencia        => sec_generada_s,
             emitir_elemento  => fin_tiempo_s,
             CLK              => CLK_adap,
+            sec_lista        => sec_lista_s,
             elemento         => led_a_encender,
             fin_secuencia    => enable_s,
             pedir_tiempo     => pedir_tiempo_s
@@ -227,21 +307,6 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             display(1)       => display(1),
             display(0)       => display(0)
         );
-
-    inst_gen_sync_botones: for i in 1 to 4 generate
-        botones_sync: sync
-            port map (
-                CLK      => CLK_adap,        
-                ASYNC_IN => boton(i),
-                SYNC_OUT => boton_sync_s(i)
-            );
-    end generate;
-    inst_sync_accion: sync 
-        port map(
-        CLK        => CLK_adap,
-        ASYNC_IN   => accion,
-        SYNC_OUT   => accion_sync_s
-        );
         
     inst_temporizador: temporizador 
         generic map(
@@ -259,7 +324,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         port map(
             clk_in   =>  CLK,
             reset    =>  RESET,
-            clk_out  => CLK_adap
+            clk_out  =>  CLK_adap
         );
         
     inst_controlador_nivel: controlador_nivel 

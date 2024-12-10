@@ -48,7 +48,7 @@ end DivisorReloj;
 
 architecture Behavioral of DivisorReloj is
     constant divisor    : integer := 100_000_000 / (2 * FREC_SALIDA); -- El divisor de la frecuencia de entrada entre la de salida
-    signal contador     : integer range 1 to divisor := 0; -- El contador para dividir el reloj
+    signal contador     : integer range 0 to divisor := 0; -- El contador para dividir el reloj
     signal clk_temp     : std_logic := '0'; -- Registro de la salida
 begin
     process(clk_in, reset)
