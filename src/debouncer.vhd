@@ -2,15 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Debouncer is
+entity debouncer is
     Port (
         BUTTON_IN : in std_logic; -- Entrada con rebotes
         CLK       : in std_logic; -- Señal de reloj
         BUTTON_OUT : out std_logic -- Salida filtrada
     );
-end Debouncer;
+end debouncer;
 
-architecture Behavioral of Debouncer is
+architecture Behavioral of debouncer is
     constant DEBOUNCE_TIME : integer := 10; -- Configurable: ciclos necesarios para estabilidad
     signal stable_button : std_logic := '0'; -- Valor estable actual
     signal counter : integer := 0; -- Contador de estabilidad

@@ -1,10 +1,10 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Debouncer_tb is
-end Debouncer_tb;
+entity debouncer_tb is
+end debouncer_tb;
 
-architecture Behavioral of Debouncer_tb is
+architecture Behavioral of debouncer_tb is
     signal CLK : std_logic := '0';
     signal BUTTON_IN : std_logic := '0'; -- Simula los rebotes de un botón
     signal BUTTON_OUT : std_logic; -- Salida estable después del debounce

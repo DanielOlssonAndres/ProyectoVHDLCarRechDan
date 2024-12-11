@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Dec 11 11:06:09 2024
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Wed Dec 11 15:47:23 2024
+| Host         : PortatilMarcos running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TOP_methodology_drc_routed.rpt -pb TOP_methodology_drc_routed.pb -rpx TOP_methodology_drc_routed.rpx
 | Design       : TOP
 | Device       : xc7a100tcsg324-1
@@ -247,177 +247,177 @@ Related violations: <none>
 
 TIMING-17#43 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_deb_accion/counter_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[1].botones_debouncer/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#44 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_deb_accion/counter_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[1].botones_debouncer/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#45 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_deb_accion/counter_reg[2]/C is not reached by a timing clock
+The clock pin inst_debouncer[1].botones_debouncer/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#46 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_deb_accion/counter_reg[3]/C is not reached by a timing clock
+The clock pin inst_debouncer[1].botones_debouncer/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#47 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_deb_accion/stable_button_reg/C is not reached by a timing clock
+The clock pin inst_debouncer[1].botones_debouncer/stable_button_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#48 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[1].botones_edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[2].botones_debouncer/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#49 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[1].botones_edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[2].botones_debouncer/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#50 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[2].botones_edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[2].botones_debouncer/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#51 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[2].botones_edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[2].botones_debouncer/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#52 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[3].botones_edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[2].botones_debouncer/stable_button_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#53 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[3].botones_edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[3].botones_debouncer/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#54 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[4].botones_edge/sreg_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[3].botones_debouncer/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#55 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge[4].botones_edge/sreg_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[3].botones_debouncer/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#56 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge_accion/sreg_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[3].botones_debouncer/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#57 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_edge_accion/sreg_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[3].botones_debouncer/stable_button_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#58 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[1].botones_deb/counter_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer[4].botones_debouncer/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#59 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[1].botones_deb/counter_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer[4].botones_debouncer/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#60 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[1].botones_deb/counter_reg[2]/C is not reached by a timing clock
+The clock pin inst_debouncer[4].botones_debouncer/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#61 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[1].botones_deb/counter_reg[3]/C is not reached by a timing clock
+The clock pin inst_debouncer[4].botones_debouncer/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#62 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[1].botones_deb/stable_button_reg/C is not reached by a timing clock
+The clock pin inst_debouncer[4].botones_debouncer/stable_button_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#63 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[2].botones_deb/counter_reg[0]/C is not reached by a timing clock
+The clock pin inst_debouncer_accion/counter_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#64 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[2].botones_deb/counter_reg[1]/C is not reached by a timing clock
+The clock pin inst_debouncer_accion/counter_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[2].botones_deb/counter_reg[2]/C is not reached by a timing clock
+The clock pin inst_debouncer_accion/counter_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[2].botones_deb/counter_reg[3]/C is not reached by a timing clock
+The clock pin inst_debouncer_accion/counter_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[2].botones_deb/stable_button_reg/C is not reached by a timing clock
+The clock pin inst_debouncer_accion/stable_button_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[3].botones_deb/counter_reg[0]/C is not reached by a timing clock
+The clock pin inst_edgecntr[1].botones_edgecntr/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[3].botones_deb/counter_reg[1]/C is not reached by a timing clock
+The clock pin inst_edgecntr[1].botones_edgecntr/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[3].botones_deb/counter_reg[2]/C is not reached by a timing clock
+The clock pin inst_edgecntr[2].botones_edgecntr/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[3].botones_deb/counter_reg[3]/C is not reached by a timing clock
+The clock pin inst_edgecntr[2].botones_edgecntr/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#72 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[3].botones_deb/stable_button_reg/C is not reached by a timing clock
+The clock pin inst_edgecntr[3].botones_edgecntr/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#73 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[4].botones_deb/counter_reg[0]/C is not reached by a timing clock
+The clock pin inst_edgecntr[3].botones_edgecntr/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#74 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[4].botones_deb/counter_reg[1]/C is not reached by a timing clock
+The clock pin inst_edgecntr[4].botones_edgecntr/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[4].botones_deb/counter_reg[2]/C is not reached by a timing clock
+The clock pin inst_edgecntr[4].botones_edgecntr/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[4].botones_deb/counter_reg[3]/C is not reached by a timing clock
+The clock pin inst_edgecntr_accion/sreg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Critical Warning
 Non-clocked sequential cell  
-The clock pin inst_seb[4].botones_deb/stable_button_reg/C is not reached by a timing clock
+The clock pin inst_edgecntr_accion/sreg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Critical Warning

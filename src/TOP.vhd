@@ -10,14 +10,14 @@ entity TOP is
     );
     port(
         -- ENTRADAS
-        RESET    : in std_logic; -- Botón de RESET asíncrono
-        boton    : in std_logic_vector(NUM_BOTONES downto 1); -- Botones/Pulsadores con los que se juega
-        accion   : in std_logic; -- Botón de acción del juego, que inicia la generación de secuencias
-        CLK      : in std_logic; -- Entrada del reloj de la FPGA
+        RESET           : in std_logic; -- Botón de RESET asíncrono
+        boton           : in std_logic_vector(NUM_BOTONES downto 1); -- Botones/Pulsadores con los que se juega
+        accion          : in std_logic; -- Botón de acción del juego, que inicia la generación de secuencias
+        CLK             : in std_logic; -- Entrada del reloj de la FPGA
         -- SALIDAS      
-        led      : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
-        display  : out std_logic_vector(SEG_DISPLAY - 1 downto 0) -- Segmentos del display a controlar
-
+        led             : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
+        display         : out std_logic_vector(SEG_DISPLAY - 1 downto 0); -- Segmentos del display a controlar
+        enable_display  : out std_logic -- Habilita la cifra del display
     );
 end TOP;
 
@@ -91,11 +91,12 @@ architecture STRUCTURAL of TOP is
     end component;
     
 -- Decodificador de Display
-    component decodificador_display is
+    component decod_display is
         Port (
-            nivel_actual     : in integer; -- Nivel actual (3 bits)
-            CLK              : in STD_LOGIC;                            -- Señal de reloj
-            display          : out STD_LOGIC_VECTOR(6 downto 0)     -- Salida para el display de 7 segmentos
+            nivel_actual    : in integer; -- Nivel actual (3 bits)
+            CLK             : in STD_LOGIC;                            -- Señal de reloj
+            display         : out STD_LOGIC_VECTOR(6 downto 0);     -- Salida para el display de 7 segmentos
+            enable_display  : out STD_LOGIC -- Habilita la cifra del display
         );
     end component;
     
@@ -109,22 +110,22 @@ architecture STRUCTURAL of TOP is
     end component;
  
 -- Detector de Flancos
-    component EDGEDTCTR is
-        port (
-            CLK : in std_logic;
-            SYNC_IN : in std_logic;
-            EDGE : out std_logic
-        );
-    end component;
+--    component edgecntr is
+--        port (
+--            CLK : in std_logic;
+--            SYNC_IN : in std_logic;
+--            EDGE : out std_logic
+--        );
+--    end component;
     
--- Sistema Antirrebotes
-    component Debouncer is
-        Port (
-            BUTTON_IN : in std_logic; -- Entrada con rebotes
-            CLK       : in std_logic; -- Señal de reloj
-            BUTTON_OUT : out std_logic -- Salida filtrada
-        );
-    end component;
+---- Sistema Antirrebotes
+--    component debouncer is
+--        Port (
+--            BUTTON_IN : in std_logic; -- Entrada con rebotes
+--            CLK       : in std_logic; -- Señal de reloj
+--            BUTTON_OUT : out std_logic -- Salida filtrada
+--        );
+--    end component;
     
     
 -- Temporizador
@@ -198,47 +199,49 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             port map (
                 CLK      => CLK_adap,        
                 ASYNC_IN => boton(i),
-                SYNC_OUT => boton_sync_s(i)
+                -- SYNC_OUT => boton_sync_s(i)
+                SYNC_OUT => boton_listo(i)
             );
     end generate;
     inst_sync_accion: sync 
         port map(
             CLK        => CLK_adap,
             ASYNC_IN   => accion,
-            SYNC_OUT   => accion_sync_s
+            -- SYNC_OUT   => accion_sync_s
+            SYNC_OUT   => accion_listo
         );
 
 -- Las señales que salen del sincronizador pasan al sistema antirrebotes
-    inst_seb: for i in 1 to 4 generate
-        botones_deb: Debouncer
-            port map (
-                BUTTON_IN    => boton_sync_s(i),
-                CLK          => CLK_adap,
-                BUTTON_OUT   => boton_sync_deb_s(i)
-            );
-    end generate;
-    inst_deb_accion: Debouncer 
-        port map (
-            BUTTON_IN    => accion_sync_s,
-            CLK          => CLK_adap,
-            BUTTON_OUT   => accion_sync_deb_s
-        );
+--    inst_debouncer: for i in 1 to 4 generate
+--        botones_debouncer: debouncer
+--            port map (
+--                BUTTON_IN    => boton_sync_s(i),
+--                CLK          => CLK_adap,
+--                BUTTON_OUT   => boton_sync_deb_s(i)
+--            );
+--    end generate;
+--    inst_debouncer_accion: debouncer 
+--        port map (
+--            BUTTON_IN    => accion_sync_s,
+--            CLK          => CLK_adap,
+--            BUTTON_OUT   => accion_sync_deb_s
+--        );
 
--- Las señales que salen del antirrebotes entran al detector de flanco
-    inst_edge: for i in 1 to 4 generate
-        botones_edge: EDGEDTCTR
-            port map (
-                CLK       => CLK_adap,
-                SYNC_IN   => boton_sync_deb_s(i),
-                EDGE      => boton_listo(i)
-            );
-    end generate;
-    inst_edge_accion: EDGEDTCTR 
-        port map (
-            CLK       => CLK_adap,
-            SYNC_IN   => accion_sync_deb_s,
-            EDGE      => accion_listo
-        );
+---- Las señales que salen del antirrebotes entran al detector de flanco
+--    inst_edgecntr: for i in 1 to 4 generate
+--        botones_edgecntr: edgecntr
+--            port map (
+--                CLK       => CLK_adap,
+--                SYNC_IN   => boton_sync_deb_s(i),
+--                EDGE      => boton_listo(i)
+--            );
+--    end generate;
+--    inst_edgecntr_accion: edgecntr 
+--        port map (
+--            CLK       => CLK_adap,
+--            SYNC_IN   => accion_sync_deb_s,
+--            EDGE      => accion_listo
+--        );
 
 ------------------------------------------------------------------------------------
 
@@ -295,7 +298,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             led(4)          => led(4)
         );
         
-    inst_decodificador_display: decodificador_display 
+    inst_decod_display: decod_display 
         port map(
             nivel_actual     => nivel_actual_s,
             CLK              => CLK_adap,
@@ -305,7 +308,8 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             display(3)       => display(3),
             display(2)       => display(2),
             display(1)       => display(1),
-            display(0)       => display(0)
+            display(0)       => display(0),
+            enable_display   => enable_display
         );
         
     inst_temporizador: temporizador 

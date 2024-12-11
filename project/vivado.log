@@ -3,28 +3,26 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 11 11:01:39 2024
-# Process ID: 15828
-# Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7276 C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.xpr
-# Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/vivado.log
-# Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project\vivado.jou
-# Running On        :MSI
+# Start of session at: Wed Dec 11 16:56:40 2024
+# Process ID: 27672
+# Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28736 C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/vivado.log
+# Journal file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project\vivado.jou
+# Running On        :PortatilMarcos
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :22631
+# Operating System  :26100
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
 # CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :16867 MB
-# Swap memory       :1186 MB
-# Total Virtual     :18053 MB
-# Available Virtual :8963 MB
+# Host memory       :16948 MB
+# Swap memory       :3355 MB
+# Total Virtual     :20303 MB
+# Available Virtual :9074 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project'
+open_project C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
@@ -126,95 +124,406 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1573.762 ; gain = 517.699
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp with file C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.dcp
-launch_runs synth_1 -jobs 8
-[Wed Dec 11 11:04:07 2024] Launched synth_1...
-Run output will be captured here: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 8
-[Wed Dec 11 11:05:03 2024] Launched impl_1...
-Run output will be captured here: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1994.129 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2078.043 ; gain = 0.137
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2672.453 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2672.453 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2809.758 ; gain = 1208.816
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
-close_design
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2827.762 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
-Finished Parsing XDC File [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2827.762 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2827.762 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2827.762 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2889.078 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.078 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1577.996 ; gain = 493.215
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'comprobar_all_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'comprobar_all_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj comprobar_all_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comprobar_all_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comprobar_all_tb_behav -key {Behavioral:sim_1:Functional:comprobar_all_tb} -tclbatch {comprobar_all_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source comprobar_all_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comprobar_all_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1627.203 ; gain = 25.180
+run 2 us
+run 2 us
+save_wave_config {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg
+set_property xsim.view {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/CompSecuencia_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/DivisorReloj_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TB_EDGEDTCTR_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb_behav.wcfg C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'comprobar_all_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'comprobar_all_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj comprobar_all_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comprobar_all_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comprobar_all_tb_behav -key {Behavioral:sim_1:Functional:comprobar_all_tb} -tclbatch {comprobar_all_tb.tcl} -view {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg
+source comprobar_all_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comprobar_all_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1638.590 ; gain = 3.785
+run 2 us
+run 2 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'comprobar_all_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'comprobar_all_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj comprobar_all_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comprobar_all_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comprobar_all_tb_behav -key {Behavioral:sim_1:Functional:comprobar_all_tb} -tclbatch {comprobar_all_tb.tcl} -view {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg
+source comprobar_all_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comprobar_all_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1639.957 ; gain = 1.367
+run 2 us
+run 2 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'comprobar_all_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'comprobar_all_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj comprobar_all_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'comprobar_all_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comprobar_all_tb_behav -key {Behavioral:sim_1:Functional:comprobar_all_tb} -tclbatch {comprobar_all_tb.tcl} -view {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg
+source comprobar_all_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comprobar_all_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2640.992 ; gain = 0.000
+run 2 us
+run 2 us
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\comprobar_all_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\src\Controlador_de_Sec.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'comprobar_all_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'comprobar_all_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj comprobar_all_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Controlador_de_Sec'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
+Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "comprobar_all_tb_behav -key {Behavioral:sim_1:Functional:comprobar_all_tb} -tclbatch {comprobar_all_tb.tcl} -view {C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/comprobar_all_tb_behav.wcfg
+source comprobar_all_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'comprobar_all_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2640.992 ; gain = 0.000
+run 2 us
+run 2 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 11:13:40 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 17:17:47 2024...

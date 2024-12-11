@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1'
+HD_PWD='C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

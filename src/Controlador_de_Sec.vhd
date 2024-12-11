@@ -17,9 +17,9 @@ entity Controlador_de_Sec is
 end entity;
 
 architecture Behavioral of Controlador_de_Sec is
-   	type STATE is (ESPERANDO, EMITIENDO); 
-	signal cur_state      : STATE := ESPERANDO; 
-	signal nxt_state      : STATE := ESPERANDO;
+   	type STATE is (INICIAL,EMITIENDO,ESPERANDO); 
+	signal cur_state      : STATE := INICIAL; 
+	signal nxt_state      : STATE := INICIAL;
 	signal fin_detectado  : std_logic := '0';
 	signal indice         : integer := 0;
 begin
@@ -34,6 +34,10 @@ st_reg: process(CLK) -- Registro de estado
     nxt_st_dec: process(secuencia, fin_detectado)
     begin
     	case cur_state is
+    	    when INICIAL =>
+                if rising_edge(sec_lista) then
+                    nxt_state <= EMITIENDO;
+                end if;
         	when ESPERANDO =>
                 if rising_edge(sec_lista) then
                     nxt_state <= EMITIENDO;
@@ -50,6 +54,12 @@ st_reg: process(CLK) -- Registro de estado
     out_dec: process(cur_state, secuencia, emitir_elemento)
     begin
     	case cur_state is
+    	    when INICIAL =>
+    	        fin_secuencia <= '0';
+        	    fin_detectado <= '0';
+        	    pedir_tiempo <= '0';
+                elemento <= 0;
+                indice <= 0;
         	when ESPERANDO =>
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';

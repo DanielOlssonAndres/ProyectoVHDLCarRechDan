@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.tcl"
+  variable script "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
@@ -64,29 +66,29 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CodBotones.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/decod_display.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd
-  C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/paquete_types.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decod_display.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd
+  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -97,12 +99,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
+read_xdc C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

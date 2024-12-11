@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot GenSecuencia_tb_behav xil_defaultlib.GenSecuencia_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot comprobar_all_tb_behav xil_defaultlib.comprobar_all_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -12,6 +12,19 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package xil_defaultlib.paquete_types
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CompSecuencia [compsecuencia_default]
+Compiling architecture behavioral of entity xil_defaultlib.CodBotones [codbotones_default]
 Compiling architecture behavioral of entity xil_defaultlib.GenSecuencia [gensecuencia_default]
-Compiling architecture behavioral of entity xil_defaultlib.gensecuencia_tb
-Built simulation snapshot GenSecuencia_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decod_Leds_Sec [decod_leds_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.decod_display [decod_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [\temporizador(clk_freq=1000000)\]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
+Compiling architecture structural of entity xil_defaultlib.comprobar_all_tb
+Built simulation snapshot comprobar_all_tb_behav

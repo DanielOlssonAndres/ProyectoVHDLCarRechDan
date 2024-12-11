@@ -8,14 +8,14 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Wed Dec 11 11:04:10 2024
+  **** Start of session at: Wed Dec 11 15:45:34 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source TOP.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 523.098 ; gain = 238.133
-Command: read_checkpoint -auto_incremental -incremental C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 522.629 ; gain = 237.262
+Command: read_checkpoint -auto_incremental -incremental C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TOP -part xc7a100tcsg324-1
 Starting synth_design
@@ -27,146 +27,146 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 22432
+INFO: [Synth 8-7075] Helper process launched with PID 3672
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1393.375 ; gain = 451.871
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1391.160 ; gain = 448.039
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:24]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:197]
-INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'sync' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:12]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:197]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:197]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:197]
-INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'inst_sync_accion' of component 'sync' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:204]
-INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_deb' of component 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:213]
-INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:13]
-INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_deb' of component 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:213]
-INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_deb' of component 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:213]
-INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_deb' of component 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:213]
-INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'inst_deb_accion' of component 'Debouncer' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:220]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edge' of component 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:229]
-INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:12]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edge' of component 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:229]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edge' of component 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:229]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edge' of component 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:229]
-INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'inst_edge_accion' of component 'EDGEDTCTR' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:236]
-INFO: [Synth 8-3491] module 'CompSecuencia' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:35' bound to instance 'inst_CompSecuencia' of component 'CompSecuencia' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:245]
-INFO: [Synth 8-638] synthesizing module 'CompSecuencia' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:48]
-WARNING: [Synth 8-614] signal 'sec_actual' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
-WARNING: [Synth 8-614] signal 'i' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
-WARNING: [Synth 8-614] signal 'flag_boton' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'CompSecuencia' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:48]
-INFO: [Synth 8-3491] module 'CodBotones' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CodBotones.vhd:35' bound to instance 'inst_CodBotones' of component 'CodBotones' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:255]
-INFO: [Synth 8-638] synthesizing module 'CodBotones' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CodBotones.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'CodBotones' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CodBotones.vhd:47]
-WARNING: [Synth 8-7043] port width mismatch for port 'boton_pulsado': port width = 3, actual width = 32 (integer) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:261]
-INFO: [Synth 8-3491] module 'GenSecuencia' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:5' bound to instance 'inst_GenSecuencia' of component 'GenSecuencia' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:264]
-INFO: [Synth 8-638] synthesizing module 'GenSecuencia' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'GenSecuencia' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:25]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'sync' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:12]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:199]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:199]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'botones_sync' of component 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:199]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/sync.vhd:4' bound to instance 'inst_sync_accion' of component 'sync' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:206]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_debouncer' of component 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:13]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_debouncer' of component 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:215]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_debouncer' of component 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:215]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'botones_debouncer' of component 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:215]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/debouncer.vhd:5' bound to instance 'inst_debouncer_accion' of component 'debouncer' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:222]
+INFO: [Synth 8-3491] module 'edgecntr' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edgecntr' of component 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'edgecntr' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:12]
+INFO: [Synth 8-3491] module 'edgecntr' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edgecntr' of component 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:231]
+INFO: [Synth 8-3491] module 'edgecntr' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edgecntr' of component 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:231]
+INFO: [Synth 8-3491] module 'edgecntr' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'botones_edgecntr' of component 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:231]
+INFO: [Synth 8-3491] module 'edgecntr' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/edgecntr.vhd:4' bound to instance 'inst_edgecntr_accion' of component 'edgecntr' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:238]
+INFO: [Synth 8-3491] module 'CompSecuencia' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:35' bound to instance 'inst_CompSecuencia' of component 'CompSecuencia' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'CompSecuencia' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:48]
+WARNING: [Synth 8-614] signal 'sec_actual' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
+WARNING: [Synth 8-614] signal 'i' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
+WARNING: [Synth 8-614] signal 'flag_boton' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'CompSecuencia' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:48]
+INFO: [Synth 8-3491] module 'CodBotones' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd:35' bound to instance 'inst_CodBotones' of component 'CodBotones' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'CodBotones' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'CodBotones' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd:47]
+WARNING: [Synth 8-7043] port width mismatch for port 'boton_pulsado': port width = 3, actual width = 32 (integer) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:263]
+INFO: [Synth 8-3491] module 'GenSecuencia' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:5' bound to instance 'inst_GenSecuencia' of component 'GenSecuencia' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'GenSecuencia' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'GenSecuencia' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd:18]
 	Parameter TAMSEC bound to: 14 - type: integer 
-INFO: [Synth 8-3491] module 'Controlador_de_Sec' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:5' bound to instance 'inst_Controlador_de_Sec' of component 'Controlador_de_Sec' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:274]
-INFO: [Synth 8-638] synthesizing module 'Controlador_de_Sec' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:19]
+INFO: [Synth 8-3491] module 'Controlador_de_Sec' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:5' bound to instance 'inst_Controlador_de_Sec' of component 'Controlador_de_Sec' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'Controlador_de_Sec' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:19]
 	Parameter TAMSEC bound to: 14 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:36]
-WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:34]
-WARNING: [Synth 8-614] signal 'sec_lista' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:34]
-INFO: [Synth 8-226] default block is never used [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:52]
-WARNING: [Synth 8-614] signal 'indice' is read in the process but is not in the sensitivity list [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'Controlador_de_Sec' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:19]
+INFO: [Synth 8-226] default block is never used [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:36]
+WARNING: [Synth 8-614] signal 'cur_state' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:34]
+WARNING: [Synth 8-614] signal 'sec_lista' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:34]
+INFO: [Synth 8-226] default block is never used [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:52]
+WARNING: [Synth 8-614] signal 'indice' is read in the process but is not in the sensitivity list [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Controlador_de_Sec' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:19]
 	Parameter NLEDS bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'Decod_Leds_Sec' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:6' bound to instance 'inst_Decod_Leds_Sec' of component 'Decod_Leds_Sec' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:286]
-INFO: [Synth 8-638] synthesizing module 'Decod_Leds_Sec' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:16]
+INFO: [Synth 8-3491] module 'Decod_Leds_Sec' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:6' bound to instance 'inst_Decod_Leds_Sec' of component 'Decod_Leds_Sec' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'Decod_Leds_Sec' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:16]
 	Parameter NLEDS bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Decod_Leds_Sec' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:16]
-INFO: [Synth 8-3491] module 'decodificador_display' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/decod_display.vhd:5' bound to instance 'inst_decodificador_display' of component 'decodificador_display' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:298]
-INFO: [Synth 8-638] synthesizing module 'decodificador_display' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/decod_display.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'decodificador_display' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/decod_display.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Decod_Leds_Sec' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec.vhd:16]
+INFO: [Synth 8-3491] module 'decod_display' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decod_display.vhd:5' bound to instance 'inst_decod_display' of component 'decod_display' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'decod_display' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decod_display.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'decod_display' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decod_display.vhd:14]
 	Parameter CLK_FREQ bound to: 1000000 - type: integer 
 	Parameter TIEMPO bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador.vhd:5' bound to instance 'inst_temporizador' of component 'temporizador' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:311]
-INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador.vhd:18]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador.vhd:5' bound to instance 'inst_temporizador' of component 'temporizador' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador.vhd:18]
 	Parameter CLK_FREQ bound to: 1000000 - type: integer 
 	Parameter TIEMPO bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'temporizador' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/temporizador.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'temporizador' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador.vhd:18]
 	Parameter FREC_SALIDA bound to: 1000000 - type: integer 
-INFO: [Synth 8-3491] module 'DivisorReloj' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:36' bound to instance 'inst_DivisorReloj' of component 'DivisorReloj' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:322]
-INFO: [Synth 8-638] synthesizing module 'DivisorReloj' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:49]
+INFO: [Synth 8-3491] module 'DivisorReloj' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:36' bound to instance 'inst_DivisorReloj' of component 'DivisorReloj' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'DivisorReloj' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:49]
 	Parameter FREC_SALIDA bound to: 1000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'DivisorReloj' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:49]
-INFO: [Synth 8-3491] module 'controlador_nivel' declared at 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:4' bound to instance 'inst_controlador_nivel' of component 'controlador_nivel' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:330]
-INFO: [Synth 8-638] synthesizing module 'controlador_nivel' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'controlador_nivel' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP.vhd:24]
-WARNING: [Synth 8-7129] Port CLK in module decodificador_display is either unconnected or has no load
+INFO: [Synth 8-256] done synthesizing module 'DivisorReloj' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/DivisorReloj.vhd:49]
+INFO: [Synth 8-3491] module 'controlador_nivel' declared at 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:4' bound to instance 'inst_controlador_nivel' of component 'controlador_nivel' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:333]
+INFO: [Synth 8-638] synthesizing module 'controlador_nivel' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'controlador_nivel' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd:25]
+WARNING: [Synth 8-7129] Port CLK in module decod_display is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.578 ; gain = 567.074
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.891 ; gain = 562.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.578 ; gain = 567.074
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.891 ; gain = 562.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.578 ; gain = 567.074
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.891 ; gain = 562.770
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1508.578 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1505.891 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
-Finished Parsing XDC File [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Parsing XDC File [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1611.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1606.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1611.016 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1606.625 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'estado_actual_reg' in module 'controlador_nivel'
-WARNING: [Synth 8-327] inferring latch for variable 'i_reg' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:63]
-WARNING: [Synth 8-327] inferring latch for variable 'flag_boton_reg' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:73]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[1]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[2]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[3]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[4]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[5]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[6]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[7]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[8]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[9]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[10]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[11]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[12]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[13]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[14]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[0]' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
-WARNING: [Synth 8-327] inferring latch for variable 'fin_detectado_reg' [C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'i_reg' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_boton_reg' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[1]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[2]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[3]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[4]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[5]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[6]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[7]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[8]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[9]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[10]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[11]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[12]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[13]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[14]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_actual_reg[0]' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'fin_detectado_reg' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd:55]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -179,7 +179,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'fin_detectado_reg' [C:/User
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'estado_actual_reg' using encoding 'sequential' in module 'controlador_nivel'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -224,6 +224,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design TOP has port enable_display driven by constant 0
 WARNING: [Synth 8-3332] Sequential element (inst_CompSecuencia/i_reg[31]) is unused and will be removed from module TOP.
 WARNING: [Synth 8-3332] Sequential element (inst_CompSecuencia/i_reg[30]) is unused and will be removed from module TOP.
 WARNING: [Synth 8-3332] Sequential element (inst_CompSecuencia/i_reg[29]) is unused and will be removed from module TOP.
@@ -255,25 +256,25 @@ WARNING: [Synth 8-3332] Sequential element (inst_CompSecuencia/i_reg[4]) is unus
 WARNING: [Synth 8-3332] Sequential element (inst_CompSecuencia/sec_actual_reg[0][2]) is unused and will be removed from module TOP.
 WARNING: [Synth 8-3332] Sequential element (inst_Controlador_de_Sec/pedir_tiempo_reg_C) is unused and will be removed from module TOP.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -291,37 +292,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -352,32 +353,32 @@ Report Cell Usage:
 |13    |LD     |    25|
 |14    |LDC    |     2|
 |15    |IBUF   |     7|
-|16    |OBUF   |    11|
+|16    |OBUF   |    12|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1606.625 ; gain = 663.504
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 1611.016 ; gain = 567.074
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1611.016 ; gain = 669.512
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1606.625 ; gain = 562.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1606.625 ; gain = 663.504
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1611.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1606.625 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1606.625 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 27 instances were transformed.
   LD => LDCE: 25 instances
   LDC => LDCE: 2 instances
 
-Synth Design complete | Checksum: 5e3f78e7
+Synth Design complete | Checksum: 155f8455
 INFO: [Common 17-83] Releasing license: Synthesis
-76 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+76 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 1611.016 ; gain = 1083.465
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1611.016 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1606.625 ; gain = 1079.387
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1606.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 11:04:53 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 15:46:16 2024...

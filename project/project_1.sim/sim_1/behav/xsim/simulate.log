@@ -1,4 +1,1 @@
 Time resolution is 1 ps
-Failure: [FIN SIMULACION]: FINALIZADO CORRECTAMENTE
-Time: 250 ns  Iteration: 0  Process: /GenSecuencia_tb/testp  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd
-$finish called at time : 250 ns : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd" Line 113

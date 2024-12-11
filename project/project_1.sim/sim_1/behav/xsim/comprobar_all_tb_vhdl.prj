@@ -1,0 +1,33 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../src/CodBotones.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/paquete_types.vhd" \
+"../../../../../src/CompSecuencia.vhd" \
+"../../../../../src/Controlador_de_Sec.vhd" \
+"../../../../../src/Decod_Leds_Sec.vhd" \
+"../../../../../src/DivisorReloj.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/GenSecuencia.vhd" \
+"../../../../../src/controlador_nivel.vhd" \
+"../../../../../src/decod_display.vhd" \
+"../../../../../src/temporizador.vhd" \
+"../../../../../src/TOP.vhd" \
+"../../../../../src/edgecntr.vhd" \
+"../../../../../src/debouncer.vhd" \
+"../../../../../src/sync.vhd" \
+"../../../../../src/CodBotones_tb.vhd" \
+"../../../../../src/CompSecuencia_tb.vhd" \
+"../../../../../src/Controlador_de_Sec_tb.vhd" \
+"../../../../../src/Decod_Leds_Sec_tb.vhd" \
+"../../../../../src/DivisorReloj_tb.vhd" \
+"../../../../../src/GenSecuencia_tb.vhd" \
+"../../../../../src/controlador_nivel_tb.vhd" \
+"../../../../../src/debouncer_tb.vhd" \
+"../../../../../src/decoder_display_tb.vhd" \
+"../../../../../src/edbecntr_tb.vhd" \
+"../../../../../src/sync_tb.vhd" \
+"../../../../../src/temporizador_tb.vhd" \
+"../../../../../src/TOP_tb.vhd" \
+"../../../../../src/comprobar_all_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Dec 11 11:06:08 2024
-| Host         : MSI running 64-bit major release  (build 9200)
+| Date         : Wed Dec 11 15:47:22 2024
+| Host         : PortatilMarcos running 64-bit major release  (build 9200)
 | Command      : report_drc -file TOP_drc_routed.rpt -pb TOP_drc_routed.pb -rpx TOP_drc_routed.rpx
 | Design       : TOP
 | Device       : xc7a100tcsg324-1
@@ -64,7 +64,7 @@ Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net inst_edge[4].botones_edge/cur_state_reg_0 is a gated clock net sourced by a combinational pin inst_edge[4].botones_edge/flag_boton_reg_i_2/O, cell inst_edge[4].botones_edge/flag_boton_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net inst_edgecntr[4].botones_edgecntr/cur_state_reg_0 is a gated clock net sourced by a combinational pin inst_edgecntr[4].botones_edgecntr/flag_boton_reg_i_2/O, cell inst_edgecntr[4].botones_edgecntr/flag_boton_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 
