@@ -11,50 +11,68 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="5,000.001 ns"></ZoomEndTime>
-      <Cursor1Time time="105.000 ns"></Cursor1Time>
+      <ZoomStartTime time="2.936912 us"></ZoomStartTime>
+      <ZoomEndTime time="63.386913 us"></ZoomEndTime>
+      <Cursor1Time time="9.536912 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="210"></NameColumnWidth>
-      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/comprobar_all_tb/CLK_adap" type="logic">
       <obj_property name="ElementShortName">CLK_adap</obj_property>
       <obj_property name="ObjectShortName">CLK_adap</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/comprobar_all_tb/sec_generada_s" type="array">
       <obj_property name="ElementShortName">sec_generada_s[0:14]</obj_property>
       <obj_property name="ObjectShortName">sec_generada_s[0:14]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/nivel_actual_s" type="other">
-      <obj_property name="ElementShortName">nivel_actual_s</obj_property>
-      <obj_property name="ObjectShortName">nivel_actual_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/boton_pulsado_s" type="other">
-      <obj_property name="ElementShortName">boton_pulsado_s</obj_property>
-      <obj_property name="ObjectShortName">boton_pulsado_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/enable_s" type="logic">
-      <obj_property name="ElementShortName">enable_s</obj_property>
-      <obj_property name="ObjectShortName">enable_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/pedir_tiempo_s" type="logic">
-      <obj_property name="ElementShortName">pedir_tiempo_s</obj_property>
-      <obj_property name="ObjectShortName">pedir_tiempo_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/fin_tiempo_s" type="logic">
-      <obj_property name="ElementShortName">fin_tiempo_s</obj_property>
-      <obj_property name="ObjectShortName">fin_tiempo_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/led_a_encender" type="other">
-      <obj_property name="ElementShortName">led_a_encender</obj_property>
-      <obj_property name="ObjectShortName">led_a_encender</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/comprobar_all_tb/sec_lista_s" type="logic">
       <obj_property name="ElementShortName">sec_lista_s</obj_property>
       <obj_property name="ObjectShortName">sec_lista_s</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/nivel_actual_s" type="other">
+      <obj_property name="ElementShortName">nivel_actual_s</obj_property>
+      <obj_property name="ObjectShortName">nivel_actual_s</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/led_a_encender" type="other">
+      <obj_property name="ElementShortName">led_a_encender</obj_property>
+      <obj_property name="ObjectShortName">led_a_encender</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/pedir_tiempo_s" type="logic">
+      <obj_property name="ElementShortName">pedir_tiempo_s</obj_property>
+      <obj_property name="ObjectShortName">pedir_tiempo_s</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/fin_tiempo_s" type="logic">
+      <obj_property name="ElementShortName">fin_tiempo_s</obj_property>
+      <obj_property name="ObjectShortName">fin_tiempo_s</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/contador_s" type="other">
+      <obj_property name="ElementShortName">contador_s</obj_property>
+      <obj_property name="ObjectShortName">contador_s</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comprobar_all_tb/enable_s" type="logic">
+      <obj_property name="ElementShortName">enable_s</obj_property>
+      <obj_property name="ObjectShortName">enable_s</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/comprobar_all_tb/exito_s" type="logic">
       <obj_property name="ElementShortName">exito_s</obj_property>
@@ -63,34 +81,32 @@
    <wvobject fp_name="/comprobar_all_tb/error_s" type="logic">
       <obj_property name="ElementShortName">error_s</obj_property>
       <obj_property name="ObjectShortName">error_s</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/fin_comparacion_s" type="logic">
-      <obj_property name="ElementShortName">fin_comparacion_s</obj_property>
-      <obj_property name="ObjectShortName">fin_comparacion_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/boton_sync_deb_s" type="array">
-      <obj_property name="ElementShortName">boton_sync_deb_s[4:1]</obj_property>
-      <obj_property name="ObjectShortName">boton_sync_deb_s[4:1]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/boton_sync_s" type="array">
-      <obj_property name="ElementShortName">boton_sync_s[4:1]</obj_property>
-      <obj_property name="ObjectShortName">boton_sync_s[4:1]</obj_property>
+   <wvobject fp_name="/comprobar_all_tb/no_comparacion_s" type="logic">
+      <obj_property name="ElementShortName">no_comparacion_s</obj_property>
+      <obj_property name="ObjectShortName">no_comparacion_s</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/comprobar_all_tb/boton_listo" type="array">
       <obj_property name="ElementShortName">boton_listo[4:1]</obj_property>
       <obj_property name="ObjectShortName">boton_listo[4:1]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/accion_sync_deb_s" type="logic">
-      <obj_property name="ElementShortName">accion_sync_deb_s</obj_property>
-      <obj_property name="ObjectShortName">accion_sync_deb_s</obj_property>
-   </wvobject>
-   <wvobject fp_name="/comprobar_all_tb/accion_sync_s" type="logic">
-      <obj_property name="ElementShortName">accion_sync_s</obj_property>
-      <obj_property name="ObjectShortName">accion_sync_s</obj_property>
+   <wvobject fp_name="/comprobar_all_tb/boton_pulsado_s" type="other">
+      <obj_property name="ElementShortName">boton_pulsado_s</obj_property>
+      <obj_property name="ObjectShortName">boton_pulsado_s</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/comprobar_all_tb/accion_listo" type="logic">
       <obj_property name="ElementShortName">accion_listo</obj_property>
       <obj_property name="ObjectShortName">accion_listo</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="group27" type="group">
       <obj_property name="label">Cosas del Top</obj_property>
@@ -103,34 +119,43 @@
          <wvobject fp_name="/comprobar_all_tb/RESET_top" type="logic">
             <obj_property name="ElementShortName">RESET_top</obj_property>
             <obj_property name="ObjectShortName">RESET_top</obj_property>
+            <obj_property name="CustomSignalColor">#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
          <wvobject fp_name="/comprobar_all_tb/accion_top" type="logic">
             <obj_property name="ElementShortName">accion_top</obj_property>
             <obj_property name="ObjectShortName">accion_top</obj_property>
+            <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
          <wvobject fp_name="/comprobar_all_tb/boton_top" type="array">
             <obj_property name="ElementShortName">boton_top[4:1]</obj_property>
             <obj_property name="ObjectShortName">boton_top[4:1]</obj_property>
-         </wvobject>
-         <wvobject fp_name="/comprobar_all_tb/CLK_top" type="logic">
-            <obj_property name="ElementShortName">CLK_top</obj_property>
-            <obj_property name="ObjectShortName">CLK_top</obj_property>
+            <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
       </wvobject>
       <wvobject fp_name="group29" type="group">
          <obj_property name="label">Salidas</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/comprobar_all_tb/enable_display_top" type="logic">
             <obj_property name="ElementShortName">enable_display_top</obj_property>
             <obj_property name="ObjectShortName">enable_display_top</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
          <wvobject fp_name="/comprobar_all_tb/display_top" type="array">
             <obj_property name="ElementShortName">display_top[6:0]</obj_property>
             <obj_property name="ObjectShortName">display_top[6:0]</obj_property>
+            <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
          <wvobject fp_name="/comprobar_all_tb/led_top" type="array">
             <obj_property name="ElementShortName">led_top[4:1]</obj_property>
             <obj_property name="ObjectShortName">led_top[4:1]</obj_property>
+            <obj_property name="CustomSignalColor">#0000FF</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>

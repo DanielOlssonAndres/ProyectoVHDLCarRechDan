@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity TOP_tb is
 end TOP_tb;
+use work.paquete_types.all;
 
 architecture Behavioral of TOP_tb is
     
@@ -91,9 +92,34 @@ begin
     begin
         wait for 100 ns;
         accion <= '1';
-        wait for 5 ns;
+        wait for 1 us;
         accion <= '0';
-        wait for 1000 ns;
+        wait for 1 us;
+        
+        wait for 35 us;
+        
+        boton <= "0010";
+        wait for 1 us;
+        boton <= "0000";
+        wait for 1 us;
+        
+        boton <= "0100";
+        wait for 1 us;
+        boton <= "0000";
+        wait for 1 us;
+        
+        boton <= "0001";
+        wait for 1 us;
+        boton <= "0000";
+        wait for 1 us;
+        
+        boton <= "0100";
+        wait for 1 us;
+        boton <= "0000";
+        wait for 1 us;
+        
+        wait;
+        
     end process;
     
 end Behavioral;

@@ -10,7 +10,7 @@ entity Controlador_de_Sec is
         CLK              : in std_logic; -- Reloj del sistema
         sec_lista        : in std_logic; -- Señal que indica que la secuencia ha cambiado
         
-        elemento         : out integer; -- elemento de la secuencia que es emitido
+        elemento         : out std_logic_vector (2 downto 0); -- elemento de la secuencia que es emitido
         fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
         pedir_tiempo     : out std_logic -- Pide a un temporizador que empiece a contar
     );
@@ -58,19 +58,19 @@ st_reg: process(CLK) -- Registro de estado
     	        fin_secuencia <= '0';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento <= "000";
                 indice <= 0;
         	when ESPERANDO =>
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento <= "000";
                 indice <= 0;
             when EMITIENDO =>
                 fin_secuencia <= '0';
                 elemento <= secuencia(indice);
                 pedir_tiempo <= '1';
-                if secuencia(indice) = 0 then
+                if secuencia(indice) = "000" then
                     fin_detectado <= '1';
                 elsif rising_edge(emitir_elemento) then
                     indice <= indice + 1;
@@ -80,7 +80,7 @@ st_reg: process(CLK) -- Registro de estado
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento <= "000";
                 indice <= 0;
         end case;
     end process;

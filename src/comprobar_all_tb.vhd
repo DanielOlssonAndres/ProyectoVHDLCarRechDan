@@ -17,7 +17,7 @@ architecture STRUCTURAL of comprobar_all_tb is
             -- Salidas
             exito             : out std_logic; -- Indica si el usuario ha acertado
             error             : out std_logic; -- Indica si el usuario ha fallado
-            fin_comparacion   : out std_logic -- Indica el fin de la comparacion
+            no_comparacion   : out std_logic -- Indica el fin de la comparacion
         );
     end component;
 
@@ -121,7 +121,8 @@ architecture STRUCTURAL of comprobar_all_tb is
         port (
             CLK              : in  std_logic;    -- Señal de reloj
             iniciar_cuenta   : in  std_logic;    -- Señal para iniciar la cuenta
-            fin_tiempo       : out std_logic     -- Señal que indica que el temporizador ha acabado
+            fin_tiempo       : out std_logic;     -- Señal que indica que el temporizador ha acabado
+            contador       : out integer
         );
     end component;
    
@@ -163,7 +164,7 @@ end component;
     --signal reset_s : std_logic;
     signal exito_s : std_logic;
     signal error_s : std_logic;
-    signal fin_comparacion_s : std_logic;
+    signal no_comparacion_s : std_logic;
     -------------
     signal boton_sync_deb_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
     signal boton_sync_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
@@ -186,6 +187,8 @@ end component;
     
     constant periodo_clk : time := 10 ns;
     -- Fin
+    
+    signal contador_s          : integer;
 
 begin -------------------------------------------------- INSTANCIACIÓN DE COMPONENTES -----------------------------
 
@@ -197,14 +200,14 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             port map (
                 CLK      => CLK_adap,        
                 ASYNC_IN => boton_top(i),
-                SYNC_OUT => boton_sync_deb_s(i)
+                SYNC_OUT => boton_listo(i)
             );
     end generate;
     inst_sync_accion: sync 
         port map(
             CLK        => CLK_adap,
             ASYNC_IN   => accion_top,
-            SYNC_OUT   => accion_sync_deb_s
+            SYNC_OUT   => accion_listo
         );
 
 -- Las señales que salen del sincronizador pasan al sistema antirrebotes
@@ -224,52 +227,33 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
 --        );
 
 -- Las señales que salen del antirrebotes entran al detector de flanco
-    inst_edgecntr: for i in 1 to 4 generate
-        botones_edgecntr: edgecntr
-            port map (
-                CLK       => CLK_adap,
-                SYNC_IN   => boton_sync_deb_s(i),
-                EDGE      => boton_listo(i)
-            );
-    end generate;
-    inst_edgecntr_accion: edgecntr 
-        port map (
-            CLK       => CLK_adap,
-            SYNC_IN   => accion_sync_deb_s,
-            EDGE      => accion_listo
-        );
+--    inst_edgecntr: for i in 1 to 4 generate
+--        botones_edgecntr: edgecntr
+--            port map (
+--                CLK       => CLK_adap,
+--                SYNC_IN   => boton_sync_deb_s(i),
+--                EDGE      => boton_listo(i)
+--            );
+--    end generate;
+--    inst_edgecntr_accion: edgecntr 
+--        port map (
+--            CLK       => CLK_adap,
+--            SYNC_IN   => accion_sync_deb_s,
+--            EDGE      => accion_listo
+--        );
 
 ------------------------------------------------------------------------------------
-
-    inst_CompSecuencia: CompSecuencia 
-        port map(
-            sec_generada     => sec_generada_s,
-            boton_pulsado    => boton_pulsado_s,
-            enable           => enable_s,
-            exito            => exito_s,
-            error            => error_s,
-            fin_comparacion  => fin_comparacion_s
-        );
-
-    inst_CodBotones: CodBotones 
-        port map(
-            boton1          => boton_listo(1),
-            boton2          => boton_listo(2),
-            boton3          => boton_listo(3),
-            boton4          => boton_listo(4),
-            boton_pulsado   => boton_pulsado_s
-        );
-        
+    
     inst_GenSecuencia: GenSecuencia 
         port map(
             niv_actual        => nivel_actual_s,
             bot_accion        => accion_listo,
-            s_enable          => fin_comparacion_s,
+            s_enable          => no_comparacion_s,
             CLK               => CLK_adap,
             sec_generada      => sec_generada_s,
             sec_lista         => sec_lista_s
         );
-        
+    
     inst_Controlador_de_Sec: Controlador_de_Sec 
         generic map( TAMSEC => 14 )
         port map(
@@ -281,7 +265,19 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             fin_secuencia    => enable_s,
             pedir_tiempo     => pedir_tiempo_s
         );
-        
+    
+    inst_temporizador: temporizador 
+        generic map(
+            CLK_FREQ   => 3,
+            TIEMPO     => 1
+        )
+        port map(
+            CLK              => CLK_adap,
+            iniciar_cuenta   => pedir_tiempo_s,
+            fin_tiempo       => fin_tiempo_s,
+            contador         => contador_s
+        );
+    
     inst_Decod_Leds_Sec: Decod_Leds_Sec 
         generic map( NLEDS => 4 )
         port map(
@@ -293,7 +289,35 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             led(3)          => led_top(3),
             led(4)          => led_top(4)
         );
-        
+    
+    inst_CompSecuencia: CompSecuencia 
+        port map(
+            sec_generada     => sec_generada_s,
+            boton_pulsado    => boton_pulsado_s,
+            enable           => enable_s,
+            exito            => exito_s,
+            error            => error_s,
+            no_comparacion   => no_comparacion_s
+        );
+
+    inst_CodBotones: CodBotones 
+        port map(
+            boton1          => boton_listo(1),
+            boton2          => boton_listo(2),
+            boton3          => boton_listo(3),
+            boton4          => boton_listo(4),
+            boton_pulsado   => boton_pulsado_s
+        );
+    
+    inst_controlador_nivel: controlador_nivel 
+        port map( 
+            exito           => exito_s,
+            error           => error_s,
+            reset           => RESET_top,
+            CLK             => CLK_adap,
+            nivel_actual    => nivel_actual_s
+        );
+    
     inst_decod_display: decod_display 
         port map(
             nivel_actual     => nivel_actual_s,
@@ -307,17 +331,6 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             display(0)       => display_top(0),
             enable_display   => enable_display_top
         );
-        
-    inst_temporizador: temporizador 
-        generic map(
-            CLK_FREQ   => 1_000_000,
-            TIEMPO     => 1
-        )
-        port map(
-            CLK              => CLK_adap,
-            iniciar_cuenta   => pedir_tiempo_s,
-            fin_tiempo       => fin_tiempo_s
-        );
 
     inst_DivisorReloj: DivisorReloj 
         generic map( FREC_SALIDA => 1_000_000 )
@@ -325,15 +338,6 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
             clk_in   =>  CLK_top,
             reset    =>  RESET_top,
             clk_out  =>  CLK_adap
-        );
-        
-    inst_controlador_nivel: controlador_nivel 
-        port map( 
-            exito           => exito_s,
-            error           => error_s,
-            reset           => RESET_top,
-            CLK             => CLK_adap,
-            nivel_actual    => nivel_actual_s
         );
     
     
@@ -349,7 +353,34 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
         accion_top <= '1';
         wait for 1 us;
         accion_top <= '0';
-        wait for 1000 ns;
+        wait for 1 us;
+        
+        wait for 35 us;
+        
+        boton_top <= "0010";
+        wait for 1 us;
+        boton_top <= "0000";
+        wait for 1 us;
+        
+        boton_top <= "0100";
+        wait for 1 us;
+        boton_top <= "0000";
+        wait for 1 us;
+        
+        boton_top <= "0001";
+        wait for 1 us;
+        boton_top <= "0000";
+        wait for 1 us;
+        
+        boton_top <= "0100";
+        wait for 1 us;
+        boton_top <= "0000";
+        wait for 1 us;
+        
+        assert false 
+        report "FIN OK"
+        severity failure;
+        
     end process;
     
 
