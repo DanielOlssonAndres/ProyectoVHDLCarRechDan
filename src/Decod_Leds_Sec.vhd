@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Decod_Leds_Sec is
     generic( NLEDS: integer := 4 );
     port(
-        ledDeSecuencia  : in std_logic_vector (2 downto 0); -- Entero que simboliza el led que queremos encender
+        ledDeSecuencia  : in integer; -- Entero que simboliza el led que queremos encender
         CLK             : in std_logic; -- Señal de reloj para sincronización
         RESET           : in std_logic; -- Reset asíncrono que apaga todos los leds
         led             : out std_logic_vector(NLEDS downto 1) := (others => '0') -- leds de salida     
@@ -23,13 +23,13 @@ begin
             end loop;
         elsif rising_edge(CLK) then
             case leddeSecuencia is
-                when "001" =>
+                when 1 =>
                     led <= "0001";
-                when "010" =>
+                when 2 =>
                     led <= "0010";
-                when "011" =>
+                when 3 =>
                     led <= "0100";
-                when "100" =>
+                when 4 =>
                     led <= "1000";
                 when others =>
                     led <= "0000";

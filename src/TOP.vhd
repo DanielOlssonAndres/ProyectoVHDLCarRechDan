@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+library work;
 use work.paquete_types.all;
 
 entity TOP is
@@ -28,7 +29,7 @@ architecture STRUCTURAL of TOP is
         port(
            -- Entradas
             sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuencia
-            boton_pulsado     : in std_logic_vector (2 downto 0); -- Indica el boton que se ha pulsado
+            boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
             enable            : in std_logic; -- Habilita la comparación
             -- Salidas
             exito             : out std_logic; -- Indica si el usuario ha acertado
@@ -46,7 +47,7 @@ architecture STRUCTURAL of TOP is
             boton3          : in std_logic; -- Boton 3
             boton4          : in std_logic; -- Boton 4
             -- Salidas
-            boton_pulsado   : out std_logic_vector (2 downto 0) -- El numero equivale al boton que se ha pulsado
+            boton_pulsado   : out integer -- El numero equivale al boton que se ha pulsado
         );
     end component;
     
@@ -59,7 +60,7 @@ architecture STRUCTURAL of TOP is
             CLK              : in std_logic; -- Reloj del sistema
             sec_lista        : in std_logic;
         
-            elemento         : out std_logic_vector (2 downto 0); -- elemento de la secuencia que es emitido
+            elemento         : out integer; -- elemento de la secuencia que es emitido
             fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
             pedir_tiempo     : out std_logic -- Pide a un temporizador que empiece a contar
         );
@@ -69,7 +70,7 @@ architecture STRUCTURAL of TOP is
     component Decod_Leds_Sec is
         generic( NLEDS: integer := 4 );
         port(
-            ledDeSecuencia  : in std_logic_vector (2 downto 0); -- Entero que simboliza el led que queremos encender
+            ledDeSecuencia  : in integer; -- Entero que simboliza el led que queremos encender
             CLK             : in std_logic; -- Señal de reloj para sincronización
             RESET           : in std_logic; -- Reset asíncrono que apaga todos los leds
             led             : out std_logic_vector(NLEDS downto 1) := (others => '0') -- leds de salida     
@@ -170,11 +171,11 @@ end component;
     signal CLK_adap : std_logic;
     signal sec_generada_s : vec_integrer(0 to 14);
     signal nivel_actual_s : integer;
-    signal boton_pulsado_s : std_logic_vector (2 downto 0);
+    signal boton_pulsado_s : integer;
     signal enable_s : std_logic;
     signal pedir_tiempo_s : std_logic;
     signal fin_tiempo_s : std_logic;
-    signal led_a_encender : std_logic_vector (2 downto 0);
+    signal led_a_encender : integer;
     signal sec_lista_s : std_logic;
     --signal reset_s : std_logic;
     signal exito_s : std_logic;

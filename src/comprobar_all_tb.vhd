@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+library work;
 use work.paquete_types.all;
 
 entity comprobar_all_tb is

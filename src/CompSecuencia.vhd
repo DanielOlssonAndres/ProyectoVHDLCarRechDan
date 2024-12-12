@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+library work;
 use work.paquete_types.all;
 
 -- Uncomment the following library declaration if using
@@ -36,7 +37,7 @@ entity CompSecuencia is
     port(
         -- Entradas
         sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuencia
-        boton_pulsado     : in std_logic_vector (2 downto 0); -- Indica el boton que se ha pulsado
+        boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
         enable            : in std_logic; -- Habilita la comparación
         -- Salidas
         exito             : out std_logic; -- Indica si el usuario ha acertado
@@ -48,7 +49,7 @@ end CompSecuencia;
 architecture Behavioral of CompSecuencia is
     signal i              : integer := 0;         -- Índice actual de comparación
     signal flag_boton     : boolean := false;     -- Para evitar lecturas repetidas de la misma pulsación
-    signal sec_actual     : vec_integrer(0 to 14) := (others => "000"); -- Comprueba si la secuencia ha cambiado
+    signal sec_actual     : vec_integrer(0 to 14) := (others => 0); -- Comprueba si la secuencia ha cambiado
 
 begin
     process(sec_generada,boton_pulsado,enable)
@@ -68,13 +69,13 @@ begin
             no_comparacion <= '0';
             --exito <= '1';           -- Comptrobar
             --error <= '1';            -- Comrobar
-            if sec_generada(i) = "000" then -- Hemos llegado al final de la secuencia en cuestión
+            if sec_generada(i) = 0 then -- Hemos llegado al final de la secuencia en cuestión
                 exito <= '1'; -- Exito en la comparacinon
                 no_comparacion <= '1';
             else
-                if boton_pulsado = "000" then -- Si no hay ningun boton pulsado
+                if boton_pulsado = 0 then -- Si no hay ningun boton pulsado
                     flag_boton <= false; -- Permitimos procesar una nueva pulsación
-                elsif boton_pulsado /= "000" and flag_boton = false then -- Si hay un boton pulsado y es la primera vez que lo pulsas
+                elsif boton_pulsado /= 0 and flag_boton = false then -- Si hay un boton pulsado y es la primera vez que lo pulsas
                     flag_boton <= true; -- Bloqueamos la lectura hasta que el botón se libere
                     if boton_pulsado = sec_generada(i) then -- Si el boton es el esperado
                         i <= i + 1; -- Avanzamos en la secuencia
