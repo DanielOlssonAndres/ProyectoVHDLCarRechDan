@@ -40,26 +40,26 @@ entity CodBotones is
         boton3          : in std_logic; -- Boton 3
         boton4          : in std_logic; -- Boton 4
         -- Salidas
-        boton_pulsado   : out std_logic_vector (2 downto 0) -- El numero equivale al boton que se ha pulsado
+        boton_pulsado   : out integer -- El numero equivale al boton que se ha pulsado
     );
 end CodBotones;
 
 architecture Behavioral of CodBotones is
-    signal salida : std_logic_vector (2 downto 0) := "000"; -- Registro del output de la entidad
+    signal salida : integer := 0; -- Registro del output de la entidad
 
 begin
     process (boton1, boton2, boton3, boton4)
     begin
         if boton1 = '1' then
-            salida <= "001"; -- Boton 1 pulsado
+            salida <= 1; -- Boton 1 pulsado
         elsif boton2 = '1' then
-            salida <= "010"; -- Boton 2 pulsado
+            salida <= 2; -- Boton 2 pulsado
         elsif boton3 = '1' then
-            salida <= "011"; -- Boton 3 pulsado
+            salida <= 3; -- Boton 3 pulsado
         elsif boton4 = '1' then
-            salida <= "100"; -- Boton 4 pulsado
+            salida <= 4; -- Boton 4 pulsado
         else
-            salida <= "000"; -- Ningun boton pulsado
+            salida <= 0; -- Ningun boton pulsado
         end if;
     end process;
     

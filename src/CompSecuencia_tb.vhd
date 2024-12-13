@@ -22,7 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library work;
-use work.paquete_types.all;
+use work.newtype_package.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -40,7 +40,7 @@ architecture Behavioral of CompSecuencia_tb is
     component CompSecuencia is
         port(
             -- Entradas
-            sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuancia
+            sec_generada      : in vec_enteros(0 to 14); -- Secuencia generada por GenSecuancia
             boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
             enable            : in std_logic;
             -- Salidas
@@ -50,7 +50,7 @@ architecture Behavioral of CompSecuencia_tb is
         );
     end component;
     
-    signal sec_generada      : vec_integrer(0 to 14);
+    signal sec_generada      : vec_enteros(0 to 14);
     signal boton_pulsado     : integer;
     signal enable            : std_logic;
     signal exito             : std_logic;
@@ -61,9 +61,9 @@ architecture Behavioral of CompSecuencia_tb is
     constant periodo_clk : time := 10 ns;
     
     -- Posibles secuencias
-    constant semilla0 : vec_integrer(0 to 14) := (2, 3, 1, 3, others => 0);
-    constant semilla1 : vec_integrer(0 to 14) := (1, 1, 4, 2, 3, 1, others => 0);
-    constant semilla2 : vec_integrer(0 to 14) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
+    constant semilla0 : vec_enteros(0 to 14) := (2, 3, 1, 3, others => 0);
+    constant semilla1 : vec_enteros(0 to 14) := (1, 1, 4, 2, 3, 1, others => 0);
+    constant semilla2 : vec_enteros(0 to 14) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
     
 begin
     -- Instanciacion del componente

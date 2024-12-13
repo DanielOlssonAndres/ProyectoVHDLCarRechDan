@@ -22,7 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library work;
-use work.paquete_types.all;
+use work.newtype_package.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,7 +36,7 @@ use work.paquete_types.all;
 entity CompSecuencia is
     port(
         -- Entradas
-        sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuencia
+        sec_generada      : in vec_enteros(0 to 14); -- Secuencia generada por GenSecuencia
         boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
         enable            : in std_logic; -- Habilita la comparación
         -- Salidas
@@ -49,7 +49,7 @@ end CompSecuencia;
 architecture Behavioral of CompSecuencia is
     signal i              : integer := 0;         -- Índice actual de comparación
     signal flag_boton     : boolean := false;     -- Para evitar lecturas repetidas de la misma pulsación
-    signal sec_actual     : vec_integrer(0 to 14) := (others => 0); -- Comprueba si la secuencia ha cambiado
+    signal sec_actual     : vec_enteros(0 to 14) := (others => 0); -- Comprueba si la secuencia ha cambiado
 
 begin
     process(sec_generada,boton_pulsado,enable)

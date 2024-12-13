@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.paquete_types.all;
+library work;
+use work.newtype_package.all;
 
 entity Controlador_de_Sec_tb is
 end entity;
@@ -10,7 +11,7 @@ architecture sim of Controlador_de_Sec_tb is
 component Controlador_de_Sec is
     generic( TAMSEC: integer := 14 );
     port(
-        secuencia        : in vec_integrer(0 to TAMSEC);
+        secuencia        : in vec_enteros(0 to TAMSEC);
         emitir_elemento  : in std_logic;
         CLK              : in std_logic;
         
@@ -20,7 +21,7 @@ component Controlador_de_Sec is
     );
 end component;
 
-signal secuencia       : vec_integrer(0 to 14) := (others => 0);
+signal secuencia       : vec_enteros(0 to 14) := (others => 0);
 signal emitir_elemento : std_logic := '0';
 signal CLK             : std_logic := '0';
 signal elemento        : integer;

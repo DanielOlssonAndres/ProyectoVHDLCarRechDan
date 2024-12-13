@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.paquete_types.all;
+library work;
+use work.newtype_package.all;
 
 entity GenSecuencia_tb is
 end GenSecuencia_tb;
@@ -16,7 +17,7 @@ architecture BEHAVIORAL of GenSecuencia_tb is
             s_enable          : in std_logic; -- Si = 0, no se generan secuencias (enable)
             CLK               : in std_logic; -- Reloj del sistema
             -- Salidas
-            sec_generada      : out vec_integrer(0 to 14); -- Secuencia generada
+            sec_generada      : out vec_enteros(0 to 14); -- Secuencia generada
             sec_lista         : out std_logic -- Indica que la nueva secuencia está lista en la salida
         );
     end component;
@@ -26,7 +27,7 @@ architecture BEHAVIORAL of GenSecuencia_tb is
     signal bot_accion    : std_logic; 
     signal s_enable      : std_logic; 
     signal CLK           : std_logic := '0';
-    signal sec_generada  : vec_integrer(0 to 14);     
+    signal sec_generada  : vec_enteros(0 to 14);     
     signal sec_lista     : std_logic;
 
 begin

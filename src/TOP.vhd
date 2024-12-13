@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library work;
-use work.paquete_types.all;
+use work.newtype_package.all;
 
 entity TOP is
     generic(
@@ -28,7 +28,7 @@ architecture STRUCTURAL of TOP is
     component CompSecuencia is
         port(
            -- Entradas
-            sec_generada      : in vec_integrer(0 to 14); -- Secuencia generada por GenSecuencia
+            sec_generada      : in vec_enteros(0 to 14); -- Secuencia generada por GenSecuencia
             boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
             enable            : in std_logic; -- Habilita la comparación
             -- Salidas
@@ -55,7 +55,7 @@ architecture STRUCTURAL of TOP is
     component Controlador_de_Sec is
         generic( TAMSEC: integer := 14 );
         port(
-            secuencia        : in vec_integrer(0 to TAMSEC); -- Secuencia de entrada
+            secuencia        : in vec_enteros(0 to TAMSEC); -- Secuencia de entrada
             emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
             CLK              : in std_logic; -- Reloj del sistema
             sec_lista        : in std_logic;
@@ -86,7 +86,7 @@ architecture STRUCTURAL of TOP is
             s_enable          : in std_logic; -- Si = 0, no se generan secuencias
             CLK              : in std_logic; -- Reloj del sistema
             -- Salidas
-            sec_generada      : out vec_integrer(0 to 14); -- Secuencia generada
+            sec_generada      : out vec_enteros(0 to 14); -- Secuencia generada
             sec_lista         : out std_logic
         );
     end component;
@@ -132,7 +132,7 @@ architecture STRUCTURAL of TOP is
 -- Temporizador
     component temporizador is
         generic (
-            CLK_FREQ   : integer := 1_000_000;  -- Frecuencia del reloj en Hz
+            CLK_FREQ   : integer := 3;  -- Frecuencia del reloj en Hz
             TIEMPO     : integer := 1            -- Tiempo a contar en segundos
         );
         port (
@@ -169,7 +169,7 @@ end component;
 
 -- Señales para conexiones
     signal CLK_adap : std_logic;
-    signal sec_generada_s : vec_integrer(0 to 14);
+    signal sec_generada_s : vec_enteros(0 to 14);
     signal nivel_actual_s : integer;
     signal boton_pulsado_s : integer;
     signal enable_s : std_logic;

@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library work;
-use work.paquete_types.all;
+use work.newtype_package.all;
 
 entity GenSecuencia is
     port(
@@ -11,7 +11,7 @@ entity GenSecuencia is
         s_enable          : in std_logic; -- Si = 0, no se generan secuencias
         CLK               : in std_logic; -- Señal de reloj
         -- Salidas
-        sec_generada      : out vec_integrer(0 to 14); -- Secuencia generada
+        sec_generada      : out vec_enteros(0 to 14); -- Secuencia generada
         sec_lista         : out std_logic -- Indica que la nueva secuencia está lista en la salida
     );
 end GenSecuencia;
@@ -19,14 +19,14 @@ end GenSecuencia;
 architecture BEHAVIORAL of GenSecuencia is
 
     -- Tabla de secuencias para cada nivel
-    constant semilla0 : vec_integrer(0 to 14) := (2, 3, 1, 3, others => 0);
-    constant semilla1 : vec_integrer(0 to 14) := (1, 1, 4, 2, 3, 1, others => 0);
-    constant semilla2 : vec_integrer(0 to 14) := (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
-    constant semilla3 : vec_integrer(0 to 14) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
-    constant semilla4 : vec_integrer(0 to 14) := (1, 1, 1, 3, 2, 4, 4, 2, 2, 3, 1, 2, others => 0);
-    constant semilla5 : vec_integrer(0 to 14) := (3, 3, 2, 4, 1, 3, 2, 4, 2, 3, 1, 1, 2, 3, 0);
+    constant semilla0 : vec_enteros(0 to 14) := (2, 3, 1, 3, others => 0);
+    constant semilla1 : vec_enteros(0 to 14) := (1, 3, 4, 2, 3, 1, others => 0);
+    constant semilla2 : vec_enteros(0 to 14) := (2, 3, 4, 1, 2, 4, 2, 3, others => 0);
+    constant semilla3 : vec_enteros(0 to 14) := (2, 4, 1, 2, 3, 2, 3, 4, 1, 2, others => 0);
+    constant semilla4 : vec_enteros(0 to 14) := (1, 4, 1, 3, 2, 4, 3, 2, 4, 3, 1, 2, others => 0);
+    constant semilla5 : vec_enteros(0 to 14) := (3, 1, 2, 4, 1, 3, 2, 4, 2, 3, 1, 4, 2, 3, 0);
 
-    signal sec_generada_s : vec_integrer(0 to 14) := (others => 0);
+    signal sec_generada_s : vec_enteros(0 to 14) := (others => 0);
     signal sec_lista_s    : std_logic := '0'; -- Señal interna para gestionar sec_lista
 
 begin 

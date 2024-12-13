@@ -33,7 +33,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity TOP_tb is
 end TOP_tb;
-use work.paquete_types.all;
+library work;
+use work.newtype_package.all;
 
 architecture Behavioral of TOP_tb is
     
@@ -90,6 +91,9 @@ begin
     
     test: process
     begin
+        
+        boton <= "0000";
+        
         wait for 100 ns;
         accion <= '1';
         wait for 1 us;
@@ -118,7 +122,18 @@ begin
         boton <= "0000";
         wait for 1 us;
         
-        wait;
+        wait for 6 us;
+        
+        accion <= '1';
+        wait for 1 us;
+        accion <= '0';
+        wait for 1 us;
+        
+        wait for 45 us;
+        
+        assert false
+        report "Sim terminada"
+        severity failure;
         
     end process;
     

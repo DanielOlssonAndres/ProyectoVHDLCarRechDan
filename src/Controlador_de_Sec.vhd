@@ -1,12 +1,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library work;
-use work.paquete_types.all;
+use work.newtype_package.all;
 
 entity Controlador_de_Sec is
     generic( TAMSEC: integer := 14 );
     port(
-        secuencia        : in vec_integrer(0 to TAMSEC); -- Secuencia de entrada
+        secuencia        : in vec_enteros(0 to TAMSEC); -- Secuencia de entrada
         emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
         CLK              : in std_logic; -- Reloj del sistema
         sec_lista        : in std_logic; -- Señal que indica que la secuencia ha cambiado
@@ -23,6 +23,7 @@ architecture Behavioral of Controlador_de_Sec is
 	signal nxt_state      : STATE := INICIAL;
 	signal fin_detectado  : std_logic := '0';
 	signal indice         : integer := 0;
+	signal elemento_s     : integer := 0;
 begin
 
 st_reg: process(CLK) -- Registro de estado
@@ -59,17 +60,17 @@ st_reg: process(CLK) -- Registro de estado
     	        fin_secuencia <= '0';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento_s <= 0;
                 indice <= 0;
         	when ESPERANDO =>
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento_s <= 0;
                 indice <= 0;
             when EMITIENDO =>
                 fin_secuencia <= '0';
-                elemento <= secuencia(indice);
+                elemento_s <= secuencia(indice);
                 pedir_tiempo <= '1';
                 if secuencia(indice) = 0 then
                     fin_detectado <= '1';
@@ -81,9 +82,11 @@ st_reg: process(CLK) -- Registro de estado
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';
         	    pedir_tiempo <= '0';
-                elemento <= 0;
+                elemento_s <= 0;
                 indice <= 0;
         end case;
     end process;
+    
+    elemento <= elemento_s;
     
 end architecture;

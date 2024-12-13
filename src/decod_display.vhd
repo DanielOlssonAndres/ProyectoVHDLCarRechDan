@@ -12,28 +12,34 @@ entity decod_display is
 end decod_display;
 
 architecture behavioral of decod_display is
+    
+    signal display_s : STD_LOGIC_VECTOR(6 downto 0) := "0000001";
+    
 begin
     enable_display <= '0'; -- Habilitar la cifra del display
     process (CLK)
     begin
         if rising_edge(CLK) then
             case nivel_actual is
-                -- Mapear el nivel actual al patrón del display
+                -- Mapear el nivel actual al patrón del display_s
                 when 0 => -- Nivel 0
-                    display <= "0000001"; -- Número 0
+                    display_s <= "0000001"; -- Número 0
                 when 1 => -- Nivel 1
-                    display <= "0000110"; -- Número 1
+                    display_s <= "0000110"; -- Número 1
                 when 2 => -- Nivel 2
-                    display <= "1011011"; -- Número 2
+                    display_s <= "1011011"; -- Número 2
                 when 3 => -- Nivel 3
-                    display <= "1001111"; -- Número 3
+                    display_s <= "1001111"; -- Número 3
                 when 4 => -- Nivel 4
-                    display <= "1100110"; -- Número 4
+                    display_s <= "1100110"; -- Número 4
                 when 5 => -- Nivel 5
-                    display <= "1101101"; -- Número 5
+                    display_s <= "1101101"; -- Número 5
                 when others =>
-                    display <= "0000001"; -- Default: Número 0
+                    display_s <= "0000001"; -- Default: Número 0
             end case;
         end if;
     end process;
+    
+    display <= display_s;
+    
 end behavioral;
