@@ -9,7 +9,7 @@ architecture Behavioral of Decod_Leds_Sec_tb is
     component Decod_Leds_Sec is
     generic( NLEDS: integer := 4 );
     port(
-        ledDeSecuencia  : in integer; -- Entero que simboliza el led que queremos encender
+        ledDeSecuencia  : in std_logic_vector(0 to 2); -- Entero que simboliza el led que queremos encender
         CLK             : in std_logic; -- Señal de reloj para sincronización
         RESET           : in std_logic; -- Reset asíncrono que apaga todos los leds
         led             : out std_logic_vector(NLEDS downto 1) -- leds de salida     
@@ -17,7 +17,7 @@ architecture Behavioral of Decod_Leds_Sec_tb is
 end component;
 
     -- Señales para testbench
-        signal ledDeSecuencia  : integer := 0; 
+        signal ledDeSecuencia  : std_logic_vector(0 to 2) := "000"; 
         signal CLK             : std_logic := '0';
         signal RESET           : std_logic := '1'; 
         signal led             : std_logic_vector(4 downto 1);   
@@ -40,7 +40,7 @@ uut: Decod_Leds_Sec
     tbp: process
     begin
         -- Prueba LED1
-        ledDeSecuencia <= 1;
+        ledDeSecuencia <= "001";
         wait for 50 ns;
         -- Prueba de RESET
         RESET <= '0';
@@ -50,19 +50,19 @@ uut: Decod_Leds_Sec
             severity error;
         wait for 50 ns;
         -- Prueba de LED2 (tras desactivación de RESET)
-        ledDeSecuencia <= 2;
+        ledDeSecuencia <= "010";
         wait for 50 ns;
         RESET <= '1';
         wait for 50 ns;
         -- Prueba de LED3
-        ledDeSecuencia <= 3;
+        ledDeSecuencia <= "011";
         wait for 50 ns;
         -- Prueba de LED4
-        ledDeSecuencia <= 4;
+        ledDeSecuencia <= "100";
         wait for 50 ns;
         
         -- Prueba si se manda un 0
-        ledDeSecuencia <= 0;
+        ledDeSecuencia <= "000";
         wait for 50 ns;    
         
         -- FIN DE SIMULACIÓN

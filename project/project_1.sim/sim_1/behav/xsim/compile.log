@@ -1,14 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CodBotones_tb'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia_tb'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Controlador_de_Sec_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Controlador_de_Sec_tb'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'GenSecuencia_tb'
-ERROR: [VRFC 10-2989] 'vec_enteros' is not declared [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd:22]
-ERROR: [VRFC 10-2989] 'vec_enteros' is not declared [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd:32]
-ERROR: [VRFC 10-2989] 'sec_generada' is not declared [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd:43]
-ERROR: [VRFC 10-3095] actual of formal out port 'sec_generada' cannot be an expression [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd:43]
-ERROR: [VRFC 10-9458] unit 'behavioral' is ignored due to previous errors [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd:11]
-INFO: [VRFC 10-8704] VHDL file 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/GenSecuencia_tb.vhd' is ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decodificador_display_tb'

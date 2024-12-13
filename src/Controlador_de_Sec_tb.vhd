@@ -13,7 +13,7 @@ architecture sim of Controlador_de_Sec_tb is
     component Controlador_de_Sec is
         generic( TAMSEC: integer := 14 );
         port(
-            secuencia        : in std_logic_vector(0 to 44);
+            secuencia        : in std_logic_vector(0 to (3*TAMSEC) + 2);
             emitir_elemento  : in std_logic;
             CLK              : in std_logic;
             
