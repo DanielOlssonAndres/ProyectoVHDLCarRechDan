@@ -132,7 +132,7 @@ architecture STRUCTURAL of TOP is
 -- Temporizador
     component temporizador is
         generic (
-            CLK_FREQ   : integer := 3;  -- Frecuencia del reloj en Hz
+            CLK_FREQ   : integer := 1_000_000;  -- Frecuencia del reloj en Hz
             TIEMPO     : integer := 1            -- Tiempo a contar en segundos
         );
         port (

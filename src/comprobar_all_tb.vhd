@@ -169,13 +169,13 @@ end component;
     signal error_s : std_logic;
     signal no_comparacion_s : std_logic;
     -------------
-    signal boton_sync_deb_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
-    signal boton_sync_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
-    signal boton_listo : std_logic_vector(4 downto 1); -- SEÑAL DE BOTONES SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
+    --signal boton_sync_deb_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
+    --signal boton_sync_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
+    signal boton_listo : std_logic_vector(4 downto 1) := "0000"; -- SEÑAL DE BOTONES SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
     ------------
-    signal accion_sync_deb_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL ANTIRREBOTES
-    signal accion_sync_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL SYNC Y ENTRA AL ANTIRREBOTES
-    signal accion_listo : std_logic; -- SEÑAL DE ACCIÓN SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
+    --signal accion_sync_deb_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL ANTIRREBOTES
+    --signal accion_sync_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL SYNC Y ENTRA AL ANTIRREBOTES
+    signal accion_listo : std_logic := '0'; -- SEÑAL DE ACCIÓN SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
     
     
     -- Entradas y salidas de TOP
@@ -229,7 +229,7 @@ begin -------------------------------------------------- INSTANCIACIÓN DE COMPO
 --            BUTTON_OUT   => accion_sync_deb_s
 --        );
 
--- Las señales que salen del antirrebotes entran al detector de flanco
+---- Las señales que salen del antirrebotes entran al detector de flanco
 --    inst_edgecntr: for i in 1 to 4 generate
 --        botones_edgecntr: edgecntr
 --            port map (

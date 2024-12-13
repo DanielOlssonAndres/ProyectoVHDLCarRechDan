@@ -25,15 +25,15 @@ begin
                 when "000" => -- Nivel 0
                     display_s <= "0000001"; -- Número 0
                 when "001" => -- Nivel 1
-                    display_s <= "0000110"; -- Número 1
+                    display_s <= "1001111"; -- Número 1
                 when "010" => -- Nivel 2
-                    display_s <= "1011011"; -- Número 2
+                    display_s <= "0010010"; -- Número 2
                 when "011" => -- Nivel 3
-                    display_s <= "1001111"; -- Número 3
+                    display_s <= "0000110"; -- Número 3
                 when "100" => -- Nivel 4
-                    display_s <= "1100110"; -- Número 4
+                    display_s <= "1001100"; -- Número 4
                 when "101" => -- Nivel 5
-                    display_s <= "1101101"; -- Número 5
+                    display_s <= "0100100"; -- Número 5
                 when others =>
                     display_s <= "0000001"; -- Default: Número 0
             end case;

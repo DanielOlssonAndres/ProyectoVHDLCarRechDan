@@ -11,6 +11,7 @@ vhdl xil_defaultlib  \
 "../../../../../src/temporizador.vhd" \
 "../../../../../src/TOP.vhd" \
 "../../../../../src/sync.vhd" \
+"../../../../../src/top_prueba.vhd" \
 "../../../../../src/CodBotones_tb.vhd" \
 "../../../../../src/CompSecuencia_tb.vhd" \
 "../../../../../src/Controlador_de_Sec_tb.vhd" \

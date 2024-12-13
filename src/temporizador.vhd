@@ -19,6 +19,7 @@ architecture Behavioral of temporizador is
     constant CUENTA_MAX  : integer := CLK_FREQ * TIEMPO;  -- Total de ciclos de reloj
     signal contador_s    : integer := 0;                  -- Contador interno
     signal activo        : std_logic := '0';              -- Flag del temporizador
+    signal fin_tiempo_s  : std_logic := '0';
 begin
     process(CLK)
     begin
@@ -32,14 +33,17 @@ begin
                     contador_s <= contador_s + 1;
                     --contador <= contador_s;
                 else
-                    fin_tiempo <= '1';  -- Finaliza el tiempo
+                    fin_tiempo_s <= '1';  -- Finaliza el tiempo
                     contador_s <= 0;      -- Reinicia el 
                     --contador <= 0;
                     activo <= '0';      -- Detiene el temporizador
                 end if;
             else
-                fin_tiempo <= '0';  -- Reinicia la salida
+                fin_tiempo_s <= '0';  -- Reinicia la salida
             end if;
         end if;
     end process;
+    
+    fin_tiempo <= fin_tiempo_s;
+    
 end Behavioral;
