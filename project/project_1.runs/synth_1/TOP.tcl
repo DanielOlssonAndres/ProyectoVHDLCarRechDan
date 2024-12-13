@@ -73,7 +73,6 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
   C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd
   C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones.vhd
   C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia.vhd

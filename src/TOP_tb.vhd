@@ -21,40 +21,32 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-entity TOP_tb is
-end TOP_tb;
 --library work;
 --use work.newtype_package.all;
 --library xil_defaultlib;
 --use xil_defaultlib.newtype_package.all;
 
+entity TOP_tb is
+end TOP_tb;
+
+
 architecture Behavioral of TOP_tb is
     
     component TOP is
-        generic(
-            NUM_LEDS      : integer := 4;
-            NUM_BOTONES   : integer := 4;
-            SEG_DISPLAY   : integer := 7
-        );
+--        generic(
+--            NUM_LEDS      : integer := 4;
+--            NUM_BOTONES   : integer := 4;
+--            SEG_DISPLAY   : integer := 7
+--        );
         port(
             -- ENTRADAS
             RESET           : in std_logic; -- Botón de RESET asíncrono
-            boton           : in std_logic_vector(NUM_BOTONES downto 1); -- Botones/Pulsadores con los que se juega
+            boton           : in std_logic_vector(4 downto 1); -- Botones/Pulsadores con los que se juega
             accion          : in std_logic; -- Botón de acción del juego, que inicia la generación de secuencias
             CLK             : in std_logic; -- Entrada del reloj de la FPGA
             -- SALIDAS      
-            led             : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
-            display         : out std_logic_vector(SEG_DISPLAY - 1 downto 0); -- Segmentos del display a controlar
+            led             : out std_logic_vector(4 downto 1); -- Leds que producen la secuencia del juego
+            display         : out std_logic_vector(6 downto 0); -- Segmentos del display a controlar
             enable_display  : out std_logic -- Habilita la cifra del display
     
         );

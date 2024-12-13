@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/Decod_Leds_Sec_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec_tb'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/decoder_display_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'decodificador_display_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'

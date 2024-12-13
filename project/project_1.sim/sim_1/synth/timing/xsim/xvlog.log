@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/synth/timing/xsim/TOP_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CompSecuencia
+INFO: [VRFC 10-311] analyzing module Controlador_de_Sec
+INFO: [VRFC 10-311] analyzing module Decod_Leds_Sec
+INFO: [VRFC 10-311] analyzing module DivisorReloj
+INFO: [VRFC 10-311] analyzing module GenSecuencia
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-311] analyzing module controlador_nivel
+INFO: [VRFC 10-311] analyzing module decod_display
+INFO: [VRFC 10-311] analyzing module sync
+INFO: [VRFC 10-311] analyzing module sync_0
+INFO: [VRFC 10-311] analyzing module sync_1
+INFO: [VRFC 10-311] analyzing module sync_2
+INFO: [VRFC 10-311] analyzing module sync_3
+INFO: [VRFC 10-311] analyzing module temporizador
+INFO: [VRFC 10-311] analyzing module glbl

@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 12 20:08:34 2024
-# Process ID: 18744
+# Start of session at: Fri Dec 13 15:17:34 2024
+# Process ID: 24240
 # Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14724 C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\project\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21024 C:\Users\marco\OneDrive\Documentos\GitHub\ProyectoVHDLCarRechDan\project\project_1.xpr
 # Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/vivado.log
 # Journal file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project\vivado.jou
 # Running On        :PortatilMarcos
@@ -19,34 +19,34 @@
 # Host memory       :16948 MB
 # Swap memory       :1073 MB
 # Total Virtual     :18022 MB
-# Available Virtual :5829 MB
+# Available Virtual :6685 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr
-close [ open C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/newtype_package.vhd w ]
-add_files C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/newtype_package.vhd
-vlib my_lib   ;# Crear la biblioteca
-vlib my_lib   ;# Crear la biblioteca
 reset_run synth_1
 launch_runs synth_1 -jobs 8
 wait_on_run synth_1
+launch_simulation
+source TOP_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+reorder_files -before C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
+add_files -fileset sim_1 -norecurse C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
+reorder_files -fileset sim_1 -after C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/temporizador_tb.vhd C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
 reset_run synth_1
 launch_runs synth_1 -jobs 8
 wait_on_run synth_1
-export_ip_user_files -of_objects  [get_files C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/newtype_package.vhd] -no_script -reset -force -quiet
-remove_files  C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/newtype_package.vhd
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
+close_design
 launch_simulation -mode post-synthesis -type functional
 reset_run synth_1
 launch_runs synth_1 -jobs 8
 wait_on_run synth_1
 close_design
+launch_simulation -mode post-synthesis -type functional
+close_sim
+launch_simulation
+source TOP_tb.tcl
+launch_simulation -mode post-synthesis -type functional
+close_sim
 launch_simulation -mode post-synthesis -type functional

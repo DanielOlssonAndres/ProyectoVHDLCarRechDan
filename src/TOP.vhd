@@ -4,20 +4,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use work.newtype_package.all;
 
 entity TOP is
-    generic(
-        NUM_LEDS      : integer := 4;
-        NUM_BOTONES   : integer := 4;
-        SEG_DISPLAY   : integer := 7
-    );
+--    generic(
+--        NUM_LEDS      : integer := 4;
+--        NUM_BOTONES   : integer := 4;
+--        SEG_DISPLAY   : integer := 7
+--    );
     port(
         -- ENTRADAS
         RESET           : in std_logic; -- Botón de RESET asíncrono
-        boton           : in std_logic_vector(NUM_BOTONES downto 1); -- Botones/Pulsadores con los que se juega
+        boton           : in std_logic_vector(4 downto 1); -- Botones/Pulsadores con los que se juega
         accion          : in std_logic; -- Botón de acción del juego, que inicia la generación de secuencias
         CLK             : in std_logic; -- Entrada del reloj de la FPGA
         -- SALIDAS      
-        led             : out std_logic_vector(NUM_LEDS downto 1); -- Leds que producen la secuencia del juego
-        display         : out std_logic_vector(SEG_DISPLAY - 1 downto 0); -- Segmentos del display a controlar
+        led             : out std_logic_vector(4 downto 1); -- Leds que producen la secuencia del juego
+        display         : out std_logic_vector(6 downto 0); -- Segmentos del display a controlar
         enable_display  : out std_logic -- Habilita la cifra del display
     );
 end TOP;
@@ -182,9 +182,9 @@ end component;
     signal error_s : std_logic;
     signal no_comparacion_s : std_logic;
     -------------
-    signal boton_sync_deb_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
-    signal boton_sync_s : std_logic_vector(NUM_BOTONES downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
-    signal boton_listo : std_logic_vector(NUM_BOTONES downto 1); -- SEÑAL DE BOTONES SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
+    signal boton_sync_deb_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL ANTIRREBOTES
+    signal boton_sync_s : std_logic_vector(4 downto 1); -- BOTONES QUE SALEN DEL SYNC Y ENTRAN AL ANTIRREBOTES
+    signal boton_listo : std_logic_vector(4 downto 1); -- SEÑAL DE BOTONES SINCRONCIZADA, ANTIRREBOTES Y CON DETECTOR DE FLANCO
     ------------
     signal accion_sync_deb_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL ANTIRREBOTES
     signal accion_sync_s : std_logic; -- BOTÓN ACCIÓN QUE SALE DEL SYNC Y ENTRA AL ANTIRREBOTES
