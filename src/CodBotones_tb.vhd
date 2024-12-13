@@ -44,7 +44,7 @@ architecture Behavioral of CodBotones_tb is
             boton3          : in std_logic; -- Boton 3
             boton4          : in std_logic; -- Boton 4
             -- Salidas
-            boton_pulsado   : out integer range 0 to 4 -- El numero equivale al boton que se ha pulsado
+            boton_pulsado   : out std_logic_vector(0 to 2) -- El numero equivale al boton que se ha pulsado
         );
     end component;
     
@@ -52,7 +52,7 @@ architecture Behavioral of CodBotones_tb is
     signal boton2          : std_logic;
     signal boton3          : std_logic;
     signal boton4          : std_logic;
-    signal boton_pulsado   : integer range 0 to 4;
+    signal boton_pulsado   : std_logic_vector(0 to 2);
     
     -- Declaracion del periodo
     constant periodo_clk : time := 20 ns;

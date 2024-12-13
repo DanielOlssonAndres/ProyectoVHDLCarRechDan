@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/synth/func/xsim/comprobar_all_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/synth/func/xsim/TOP_tb_func_synth.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia'
 INFO: [VRFC 10-3107] analyzing entity 'Controlador_de_Sec'
 INFO: [VRFC 10-3107] analyzing entity 'Decod_Leds_Sec'
@@ -16,7 +16,7 @@ INFO: [VRFC 10-3107] analyzing entity 'TOP'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'CodBotones_tb'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd" into library xil_defaultlib
-ERROR: [VRFC 10-2987] 'newtype_package' is not compiled in library 'xil_defaultlib' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd:25]
+ERROR: [VRFC 10-2987] 'newtype_package' is not compiled in library 'xil_defaultlib' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd:27]
 INFO: [VRFC 10-3107] analyzing entity 'CompSecuencia_tb'
-ERROR: [VRFC 10-9458] unit 'compsecuencia_tb' is ignored due to previous errors [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd:36]
+ERROR: [VRFC 10-9458] unit 'compsecuencia_tb' is ignored due to previous errors [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd:38]
 INFO: [VRFC 10-8704] VHDL file 'C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/CompSecuencia_tb.vhd' is ignored due to errors

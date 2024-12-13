@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-library work;
-use work.newtype_package.all;
+--library work;
+--use work.newtype_package.all;
 
 entity TOP is
     generic(
@@ -28,8 +28,8 @@ architecture STRUCTURAL of TOP is
     component CompSecuencia is
         port(
            -- Entradas
-            sec_generada      : in vec_enteros(0 to 14); -- Secuencia generada por GenSecuencia
-            boton_pulsado     : in integer; -- Indica el boton que se ha pulsado
+            sec_generada      : in std_logic_vector(0 to 44); -- Secuencia generada por GenSecuencia
+            boton_pulsado     : in std_logic_vector(0 to 2); -- Indica el boton que se ha pulsado
             enable            : in std_logic; -- Habilita la comparación
             -- Salidas
             exito             : out std_logic; -- Indica si el usuario ha acertado
@@ -47,7 +47,7 @@ architecture STRUCTURAL of TOP is
             boton3          : in std_logic; -- Boton 3
             boton4          : in std_logic; -- Boton 4
             -- Salidas
-            boton_pulsado   : out integer -- El numero equivale al boton que se ha pulsado
+            boton_pulsado   : out std_logic_vector(0 to 2) -- El numero equivale al boton que se ha pulsado
         );
     end component;
     
@@ -55,12 +55,12 @@ architecture STRUCTURAL of TOP is
     component Controlador_de_Sec is
         generic( TAMSEC: integer := 14 );
         port(
-            secuencia        : in vec_enteros(0 to TAMSEC); -- Secuencia de entrada
+            secuencia        : in std_logic_vector(0 to (3*TAMSEC)+2); -- Secuencia de entrada
             emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
             CLK              : in std_logic; -- Reloj del sistema
             sec_lista        : in std_logic;
         
-            elemento         : out integer; -- elemento de la secuencia que es emitido
+            elemento         : out std_logic_vector(0 to 2); -- elemento de la secuencia que es emitido
             fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
             pedir_tiempo     : out std_logic -- Pide a un temporizador que empiece a contar
         );
@@ -70,7 +70,7 @@ architecture STRUCTURAL of TOP is
     component Decod_Leds_Sec is
         generic( NLEDS: integer := 4 );
         port(
-            ledDeSecuencia  : in integer; -- Entero que simboliza el led que queremos encender
+            ledDeSecuencia  : in std_logic_vector(0 to 2); -- Entero que simboliza el led que queremos encender
             CLK             : in std_logic; -- Señal de reloj para sincronización
             RESET           : in std_logic; -- Reset asíncrono que apaga todos los leds
             led             : out std_logic_vector(NLEDS downto 1) := (others => '0') -- leds de salida     
@@ -81,12 +81,12 @@ architecture STRUCTURAL of TOP is
     component GenSecuencia is
         port(
             -- Entradas
-            niv_actual        : in integer; -- Indica en que nivel nos encontramos 
+            niv_actual        : in std_logic_vector(0 to 2); -- Indica en que nivel nos encontramos 
             bot_accion        : in std_logic; -- Evento de inicio de generador
             s_enable          : in std_logic; -- Si = 0, no se generan secuencias
             CLK              : in std_logic; -- Reloj del sistema
             -- Salidas
-            sec_generada      : out vec_enteros(0 to 14); -- Secuencia generada
+            sec_generada      : out std_logic_vector(0 to 44); -- Secuencia generada
             sec_lista         : out std_logic
         );
     end component;
@@ -94,7 +94,7 @@ architecture STRUCTURAL of TOP is
 -- Decodificador de Display
     component decod_display is
         Port (
-            nivel_actual    : in integer; -- Nivel actual (3 bits)
+            nivel_actual    : in std_logic_vector(0 to 2); -- Nivel actual (3 bits)
             CLK             : in STD_LOGIC;                            -- Señal de reloj
             display         : out STD_LOGIC_VECTOR(6 downto 0);     -- Salida para el display de 7 segmentos
             enable_display  : out STD_LOGIC -- Habilita la cifra del display
@@ -163,19 +163,19 @@ architecture STRUCTURAL of TOP is
         error : in STD_LOGIC;         -- Indica si ocurrió un error en el nivel actual
         reset : in STD_LOGIC;         -- Señal para reiniciar el juego
         CLK : in STD_LOGIC;           -- Señal de reloj
-        nivel_actual : out integer -- Indica el nivel actual (3 bits para 5 niveles)
+        nivel_actual : out std_logic_vector(0 to 2) -- Indica el nivel actual (3 bits para 5 niveles)
     );
 end component;
 
 -- Señales para conexiones
     signal CLK_adap : std_logic;
-    signal sec_generada_s : vec_enteros(0 to 14);
-    signal nivel_actual_s : integer;
-    signal boton_pulsado_s : integer;
+    signal sec_generada_s : std_logic_vector(0 to 44);
+    signal nivel_actual_s : std_logic_vector(0 to 2);
+    signal boton_pulsado_s : std_logic_vector(0 to 2);
     signal enable_s : std_logic;
     signal pedir_tiempo_s : std_logic;
     signal fin_tiempo_s : std_logic;
-    signal led_a_encender : integer;
+    signal led_a_encender : std_logic_vector(0 to 2);
     signal sec_lista_s : std_logic;
     --signal reset_s : std_logic;
     signal exito_s : std_logic;

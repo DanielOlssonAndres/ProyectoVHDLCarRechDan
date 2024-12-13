@@ -10,8 +10,8 @@ entity temporizador is
     port (
         CLK            : in  std_logic;    -- Señal de reloj
         iniciar_cuenta : in  std_logic;    -- Señal para iniciar la cuenta
-        fin_tiempo     : out std_logic;     -- Señal que indica que el temporizador ha acabado
-        contador       : out integer -- Sólo para sim----------------------------------------------------------------
+        fin_tiempo     : out std_logic     -- Señal que indica que el temporizador ha acabado
+        --contador       : out integer -- Sólo para sim----------------------------------------------------------------
     );
 end temporizador;
 
@@ -30,11 +30,11 @@ begin
             if activo = '1' then
                 if contador_s < CUENTA_MAX then
                     contador_s <= contador_s + 1;
-                    contador <= contador_s;
+                    --contador <= contador_s;
                 else
                     fin_tiempo <= '1';  -- Finaliza el tiempo
                     contador_s <= 0;      -- Reinicia el 
-                    contador <= 0;
+                    --contador <= 0;
                     activo <= '0';      -- Detiene el temporizador
                 end if;
             else

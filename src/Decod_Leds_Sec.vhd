@@ -1,12 +1,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Esta entidad se encarga de recibir un número entero (integrer) y encender el led correspondiente a dicho entero
+-- Esta entidad se encarga de recibir un número entero y encender el led correspondiente a dicho entero
 
 entity Decod_Leds_Sec is
     generic( NLEDS: integer := 4 );
     port(
-        ledDeSecuencia  : in integer; -- Entero que simboliza el led que queremos encender
+        ledDeSecuencia  : in std_logic_vector(0 to 2); -- Entero que simboliza el led que queremos encender
         CLK             : in std_logic; -- Señal de reloj para sincronización
         RESET           : in std_logic; -- Reset asíncrono que apaga todos los leds
         led             : out std_logic_vector(NLEDS downto 1) -- leds de salida     
@@ -26,13 +26,13 @@ begin
             end loop;
         elsif rising_edge(CLK) then
             case leddeSecuencia is
-                when 1 =>
+                when "001" =>
                     led_s <= "0001";
-                when 2 =>
+                when "010" =>
                     led_s <= "0010";
-                when 3 =>
+                when "011" =>
                     led_s <= "0100";
-                when 4 =>
+                when "100" =>
                     led_s <= "1000";
                 when others =>
                     led_s <= "0000";

@@ -7,7 +7,7 @@ entity controlador_nivel is
         error : in STD_LOGIC;         -- Indica si ocurrió un error en el nivel actual
         reset : in STD_LOGIC;         -- Señal para reiniciar el juego
         CLK : in STD_LOGIC;           -- Señal de reloj
-        nivel_actual : out integer    -- Indica el nivel actual (3 bits para 5 niveles)
+        nivel_actual : out std_logic_vector(0 to 2)    -- Indica el nivel actual (3 bits para 5 niveles)
     );
 end controlador_nivel;
 
@@ -37,11 +37,11 @@ begin
     process (estado_actual, exito, error, exito_prev, error_prev)
     begin
         -- Valores inicializados
-        nivel_actual <= 0;
+        nivel_actual <= "000";
 
         case estado_actual is
             when ESTADO_0 =>
-                nivel_actual <= 0;
+                nivel_actual <= "000";
                 if (exito = '1' and exito_prev = '0') then
                     estado_siguiente <= ESTADO_1;
                 elsif (error = '1' and error_prev = '0') then
@@ -51,7 +51,7 @@ begin
                 end if;
 
             when ESTADO_1 =>
-                nivel_actual <= 1;
+                nivel_actual <= "001";
                 if (exito = '1' and exito_prev = '0') then
                     estado_siguiente <= ESTADO_2;
                 elsif (error = '1' and error_prev = '0') then
@@ -61,7 +61,7 @@ begin
                 end if;
 
             when ESTADO_2 =>
-                nivel_actual <= 2;
+                nivel_actual <= "010";
                 if (exito = '1' and exito_prev = '0') then
                     estado_siguiente <= ESTADO_3;
                 elsif (error = '1' and error_prev = '0') then
@@ -71,7 +71,7 @@ begin
                 end if;
 
             when ESTADO_3 =>
-                nivel_actual <= 3;
+                nivel_actual <= "011";
                 if (exito = '1' and exito_prev = '0') then
                     estado_siguiente <= ESTADO_4;
                 elsif (error = '1' and error_prev = '0') then
@@ -81,7 +81,7 @@ begin
                 end if;
 
             when ESTADO_4 =>
-                nivel_actual <= 4;
+                nivel_actual <= "100";
                 if (exito = '1' and exito_prev = '0') then
                     estado_siguiente <= ESTADO_5;
                 elsif (error = '1' and error_prev = '0') then
@@ -91,7 +91,7 @@ begin
                 end if;
 
             when ESTADO_5 =>
-                nivel_actual <= 5;
+                nivel_actual <= "101";
                 if (error = '1' and error_prev = '0') then
                     estado_siguiente <= ESTADO_0;
                 else

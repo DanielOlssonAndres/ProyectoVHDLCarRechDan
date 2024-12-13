@@ -1,34 +1,36 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-library work;
-use work.newtype_package.all;
+--library work;
+--use work.newtype_package.all;
+--library xil_defaultlib;
+--use xil_defaultlib.newtype_package.all;
 
 entity Controlador_de_Sec_tb is
 end entity;
 
 architecture sim of Controlador_de_Sec_tb is
 
-component Controlador_de_Sec is
-    generic( TAMSEC: integer := 14 );
-    port(
-        secuencia        : in vec_enteros(0 to TAMSEC);
-        emitir_elemento  : in std_logic;
-        CLK              : in std_logic;
-        
-        elemento         : out integer;
-        fin_secuencia    : out std_logic;
-        pedir_tiempo     : out std_logic
-    );
-end component;
-
-signal secuencia       : vec_enteros(0 to 14) := (others => 0);
-signal emitir_elemento : std_logic := '0';
-signal CLK             : std_logic := '0';
-signal elemento        : integer;
-signal fin_secuencia   : std_logic;
-signal pedir_tiempo    : std_logic;
-
-constant CLK_T : time := 10 ns;
+    component Controlador_de_Sec is
+        generic( TAMSEC: integer := 14 );
+        port(
+            secuencia        : in std_logic_vector(0 to 44);
+            emitir_elemento  : in std_logic;
+            CLK              : in std_logic;
+            
+            elemento         : out std_logic_vector(0 to 2);
+            fin_secuencia    : out std_logic;
+            pedir_tiempo     : out std_logic
+        );
+    end component;
+    
+    signal secuencia       : std_logic_vector(0 to 44) := (others => '0');
+    signal emitir_elemento : std_logic := '0';
+    signal CLK             : std_logic := '0';
+    signal elemento        : std_logic_vector(0 to 2);
+    signal fin_secuencia   : std_logic;
+    signal pedir_tiempo    : std_logic;
+    
+    constant CLK_T : time := 10 ns;
 
 begin
     -- Unit Under Test
@@ -70,13 +72,13 @@ begin
     sim: process
     begin
         -- Primera secuencia
-        secuencia <= (others => 0);
+        secuencia <= (others => '0');
         wait for 50 ns;
-        secuencia <= (2, 3, 4, 1, 1, 4, 2, 3, others => 0);
+        secuencia <= ("010" & "011" & "001" & "011" & "000000000000000000000000000000000");
         wait for 1000 ns;
 
         -- Nueva secuencia
-        secuencia <= (2, 3, 4, 3, 3, 2, 2, 1, 1, 3, 4, 2, others => 0);
+        secuencia <= ("001" & "011" & "100" & "010" & "011" & "001" & "000000000000000000000000000");
         wait for 1000 ns;
 
         wait for 100 ns;

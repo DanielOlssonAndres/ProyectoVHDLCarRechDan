@@ -1,7 +1,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-library work;
-use work.newtype_package.all;
+--library work;
+--use work.newtype_package.all;
+--library xil_defaultlib;
+--use xil_defaultlib.newtype_package.all;
 
 entity comprobar_all_tb is
 end comprobar_all_tb;

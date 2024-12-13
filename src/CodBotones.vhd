@@ -23,15 +23,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity CodBotones is
     port(
         -- Entradas
@@ -40,26 +31,26 @@ entity CodBotones is
         boton3          : in std_logic; -- Boton 3
         boton4          : in std_logic; -- Boton 4
         -- Salidas
-        boton_pulsado   : out integer -- El numero equivale al boton que se ha pulsado
+        boton_pulsado   : out std_logic_vector(0 to 2) -- El numero equivale al boton que se ha pulsado
     );
 end CodBotones;
 
 architecture Behavioral of CodBotones is
-    signal salida : integer := 0; -- Registro del output de la entidad
+    signal salida : std_logic_vector(0 to 2) := (others => '0'); -- Registro del output de la entidad
 
 begin
     process (boton1, boton2, boton3, boton4)
     begin
         if boton1 = '1' then
-            salida <= 1; -- Boton 1 pulsado
+            salida <= "001"; -- Boton 1 pulsado
         elsif boton2 = '1' then
-            salida <= 2; -- Boton 2 pulsado
+            salida <= "010"; -- Boton 2 pulsado
         elsif boton3 = '1' then
-            salida <= 3; -- Boton 3 pulsado
+            salida <= "011"; -- Boton 3 pulsado
         elsif boton4 = '1' then
-            salida <= 4; -- Boton 4 pulsado
+            salida <= "100"; -- Boton 4 pulsado
         else
-            salida <= 0; -- Ningun boton pulsado
+            salida <= "000"; -- Ningun boton pulsado
         end if;
     end process;
     

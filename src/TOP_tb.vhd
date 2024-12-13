@@ -33,8 +33,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity TOP_tb is
 end TOP_tb;
-library work;
-use work.newtype_package.all;
+--library work;
+--use work.newtype_package.all;
+--library xil_defaultlib;
+--use xil_defaultlib.newtype_package.all;
 
 architecture Behavioral of TOP_tb is
     

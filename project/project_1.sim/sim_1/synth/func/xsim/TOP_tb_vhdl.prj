@@ -1,6 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"comprobar_all_tb_func_synth.vhd" \
+"TOP_tb_func_synth.vhd" \
 "../../../../../../src/CodBotones_tb.vhd" \
 "../../../../../../src/CompSecuencia_tb.vhd" \
 "../../../../../../src/Controlador_de_Sec_tb.vhd" \
