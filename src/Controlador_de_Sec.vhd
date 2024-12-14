@@ -38,27 +38,34 @@ st_reg: process(CLK, RESET) -- Registro de estado
         end if;
     end process;
     
-    nxt_st_dec: process(secuencia, fin_detectado)
+    nxt_st_dec: process(CLK, sec_lista, fin_detectado, RESET)
     begin
+    if RESET = '0' then
+        nxt_state <= INICIAL;
+    elsif rising_edge(CLK) then
     	case cur_state is
     	    when INICIAL =>
-                if rising_edge(sec_lista) then
+                if sec_lista = '1' then
                     nxt_state <= EMITIENDO;
                 end if;
         	when ESPERANDO =>
-                if rising_edge(sec_lista) then
+                if sec_lista ='1' then
                     nxt_state <= EMITIENDO;
                 end if;
             when EMITIENDO =>
             	if fin_detectado = '1' then
             	   nxt_state <= ESPERANDO;
             	end if;
+            	if RESET = '0' then
+            	   nxt_state <= INICIAL;
+                end if;
             when others =>
-            	nxt_state <= ESPERANDO;
+            	nxt_state <= INICIAL;
         end case;
+    end if;
     end process;
     
-    out_dec: process(cur_state, secuencia, emitir_elemento)
+    out_dec: process(cur_state, sec_lista, emitir_elemento)
     begin
     	case cur_state is
     	    when INICIAL =>
@@ -81,8 +88,9 @@ st_reg: process(CLK, RESET) -- Registro de estado
                     fin_detectado <= '1';
                 elsif rising_edge(emitir_elemento) then
                     indice <= indice + 3;
-                    pedir_tiempo <= '0';
+                    elemento_s <= secuencia(indice) & secuencia(indice + 1) & secuencia(indice + 2);
                 end if;
+
             when others =>
         	    fin_secuencia <= '1';
         	    fin_detectado <= '0';

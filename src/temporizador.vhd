@@ -4,8 +4,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity temporizador is
     generic (
-        CLK_FREQ : integer := 1_000_000;  -- Frecuencia del reloj en Hz
-        TIEMPO   : integer := 1            -- Tiempo a contar en segundos
+        CLK_FREQ : integer := 100_000_000;  -- Frecuencia del reloj en Hz
+        TIEMPO   : integer := 2            -- Tiempo a contar en segundos
     );
     port (
         CLK            : in  std_logic;    -- Señal de reloj
@@ -21,11 +21,12 @@ architecture Behavioral of temporizador is
     signal activo        : std_logic := '0';              -- Flag del temporizador
     signal fin_tiempo_s  : std_logic := '0';
 begin
-    process(CLK)
+    process(CLK, activo)
     begin
         if rising_edge(CLK) then
-            if iniciar_cuenta = '1' then
+            if iniciar_cuenta = '1' and activo = '0' then
                 activo <= '1';  -- Activa el temporizador
+                fin_tiempo_s <= '0';
             end if;
 
             if activo = '1' then
@@ -39,7 +40,7 @@ begin
                     activo <= '0';      -- Detiene el temporizador
                 end if;
             else
-                fin_tiempo_s <= '0';  -- Reinicia la salida
+                --fin_tiempo_s <= '0';  -- Reinicia la salida
             end if;
         end if;
     end process;
