@@ -12,6 +12,7 @@ entity Controlador_de_Sec is
         emitir_elemento  : in std_logic; -- Evento que indica que un elemento de la secuencia debe emitirse
         CLK              : in std_logic; -- Reloj del sistema
         sec_lista        : in std_logic; -- Señal que indica que la secuencia ha cambiado
+        RESET            : in std_logic; -- Señal de RESET asíncrono
         
         elemento         : out std_logic_vector(0 to 2); -- elemento de la secuencia que es emitido
         fin_secuencia    : out std_logic; -- Salida que indica que se ha llegado al final de la secuencia de entrada
@@ -28,9 +29,11 @@ architecture Behavioral of Controlador_de_Sec is
 	signal elemento_s     : std_logic_vector(0 to 2) := "000";
 begin
 
-st_reg: process(CLK) -- Registro de estado
+st_reg: process(CLK, RESET) -- Registro de estado
     begin
-        if rising_edge(CLK) then
+        if RESET = '0' then
+            cur_state <= INICIAL;
+        elsif rising_edge(CLK) then
         	cur_state <= nxt_state;
         end if;
     end process;
