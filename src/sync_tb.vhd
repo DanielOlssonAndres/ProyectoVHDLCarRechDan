@@ -5,6 +5,15 @@ entity sync_tb is
 end sync_tb;
 
 architecture TESTBENCH of sync_tb is
+    
+    component sync is
+        port (
+        CLK : in std_logic;
+        ASYNC_IN : in std_logic;
+        SYNC_OUT : out std_logic
+        );
+    end component;
+    
     signal CLK : std_logic := '0';
     signal ASYNC_IN : std_logic := '0';
     signal SYNC_OUT : std_logic;
@@ -13,7 +22,7 @@ architecture TESTBENCH of sync_tb is
     constant CLK_PERIOD : time := 10 ns;
 
 begin
-    UUT: entity work.sync
+    UUT: sync
         port map (
             CLK => CLK,
             ASYNC_IN => ASYNC_IN,

@@ -1,4 +1,1 @@
 Time resolution is 1 ps
-Failure: FIN SIM
-Time: 2210 us  Iteration: 0  Process: /ALL_tb/acciones  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/ALL_tb.vhd
-$finish called at time : 2210 us : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/ALL_tb.vhd" Line 339

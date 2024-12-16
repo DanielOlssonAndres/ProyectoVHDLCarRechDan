@@ -34,6 +34,7 @@ begin
             error_s <= '0';
             indice <= 0;
             fin_comparacion_s <= '0';
+            boton_anterior <= "000";
         elsif rising_edge(CLK) then
             if sec_generada(indice) = '0' and sec_generada(indice + 1) = '0' and sec_generada(indice + 2) = '0' then
                 fin_comparacion_s <= '1';

@@ -43,7 +43,7 @@ architecture Behavioral of ALL_tb is
     
     component DivisorReloj is
         generic (
-            FREC_SALIDA : integer := 1_000_000 -- Frecuencia de salida en Hz
+            FREC_SALIDA : integer -- Frecuencia de salida en Hz
         );
         port (
             clk_in   : in  std_logic; -- Reloj de entrada de la placa: 100 MHz
@@ -308,11 +308,11 @@ begin
         
         wait for 1000 us;
         
-        boton_s <= "0100";
+        boton_s <= "0100"; -- 2
         wait for 10 us;
         boton_s <= "0000";
         wait for 10 us; 
-        boton_s <= "0010";
+        boton_s <= "0010"; -- 3
         wait for 10 us;
         boton_s <= "0000";
         wait for 10 us;         
@@ -331,7 +331,27 @@ begin
         accion_s <= '1';
         wait for 5 us;
         accion_s <= '0';     
-       
+        
+        wait for 1500 us;
+        
+        reset <= '0';
+        
+--        boton_s <= "1000";
+--        wait for 10 us;
+--        boton_s <= "0000";
+--        wait for 10 us; 
+--        boton_s <= "0010";
+--        wait for 10 us;
+--        boton_s <= "0000";
+--        wait for 10 us;         
+--        boton_s <= "0001";
+--        wait for 10 us;
+--        boton_s <= "0000";
+--        wait for 10 us;
+--        boton_s <= "0010";
+--        wait for 10 us; 
+--        boton_s <= "0000";
+        
         wait for 1000 us;
         
         assert false
