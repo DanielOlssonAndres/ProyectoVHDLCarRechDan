@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\olsso\Documents\Universidad\4.1\Sistemas_Electronicos_Digitales\ProyectoVHDLCarRechDan\project\project_1.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

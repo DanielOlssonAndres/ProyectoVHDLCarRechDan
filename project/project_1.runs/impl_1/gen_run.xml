@@ -1,87 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734111230">
-  <File Type="ROUTE-PWR" Name="GenSecuencia_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="GenSecuencia.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="GenSecuencia_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="GenSecuencia_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="GenSecuencia_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="GenSecuencia.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="GenSecuencia_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="GenSecuencia_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="GenSecuencia_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="GenSecuencia_opt.dcp"/>
-  <File Type="OPT-DRC" Name="GenSecuencia_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="GenSecuencia.hwdef"/>
-  <File Type="PWROPT-DCP" Name="GenSecuencia_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="GenSecuencia_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="GenSecuencia_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="GenSecuencia_placed.dcp"/>
-  <File Type="PLACE-IO" Name="GenSecuencia_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="GenSecuencia_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="GenSecuencia_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="GenSecuencia_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="GenSecuencia_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="GenSecuencia_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="GenSecuencia_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="GenSecuencia.bin"/>
-  <File Type="PLACE-TIMING" Name="GenSecuencia_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="GenSecuencia_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="GenSecuencia_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="GenSecuencia_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="GenSecuencia.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="GenSecuencia_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="GenSecuencia_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="GenSecuencia_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="GenSecuencia.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="GenSecuencia_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="GenSecuencia_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="GenSecuencia_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="GenSecuencia_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="GenSecuencia_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="GenSecuencia_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="GenSecuencia_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="GenSecuencia_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="GenSecuencia_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="GenSecuencia_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="GenSecuencia_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="GenSecuencia_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="GenSecuencia_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="GenSecuencia_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="GenSecuencia_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="GenSecuencia_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="GenSecuencia_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="GenSecuencia_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="GenSecuencia_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="GenSecuencia_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="GenSecuencia_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="GenSecuencia_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="GenSecuencia_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOP_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOP_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOP_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TOP_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="GenSecuencia.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TOP_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TOP_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="GenSecuencia.nky"/>
-  <File Type="BITSTR-BMM" Name="GenSecuencia_bd.bmm"/>
-  <File Type="PDI-FILE" Name="GenSecuencia.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="GenSecuencia_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="GenSecuencia_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="GenSecuencia.rcfi"/>
-  <File Type="CFI_FILE" Name="GenSecuencia.cfi"/>
-  <File Type="RNPI_FILE" Name="GenSecuencia.rnpi"/>
-  <File Type="NPI_FILE" Name="GenSecuencia.npi"/>
-  <File Type="RBD_FILE" Name="GenSecuencia.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1734354524">
+  <File Type="ROUTE-PWR" Name="TOPsinComp_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TOPsinComp.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="TOPsinComp_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TOPsinComp_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="TOPsinComp.msk"/>
+  <File Type="ROUTE-CLK" Name="TOPsinComp_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TOPsinComp.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TOPsinComp_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="TOPsinComp.bit"/>
+  <File Type="BG-DRC" Name="TOPsinComp.drc"/>
+  <File Type="BG-BGN" Name="TOPsinComp.bgn"/>
+  <File Type="BG-BIN" Name="TOPsinComp.bin"/>
+  <File Type="BITSTR-RBT" Name="TOPsinComp.rbt"/>
+  <File Type="BITSTR-NKY" Name="TOPsinComp.nky"/>
+  <File Type="BITSTR-BMM" Name="TOPsinComp_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TOPsinComp.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TOPsinComp_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="TOPsinComp.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="GenSecuencia.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="GenSecuencia.sysdef"/>
-  <File Type="BG-BGN" Name="GenSecuencia.bgn"/>
-  <File Type="BG-DRC" Name="GenSecuencia.drc"/>
-  <File Type="RDI-RDI" Name="GenSecuencia.vdi"/>
+  <File Type="BITSTR-LTX" Name="TOPsinComp.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="GenSecuencia_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="GenSecuencia_postroute_physopted.rqs"/>
+  <File Type="OPT-DRC" Name="TOPsinComp_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TOPsinComp.hwdef"/>
+  <File Type="PLACE-IO" Name="TOPsinComp_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TOPsinComp_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TOPsinComp_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TOPsinComp_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TOPsinComp_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="TOPsinComp_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TOPsinComp_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TOPsinComp_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TOPsinComp_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TOPsinComp_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="TOPsinComp_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TOPsinComp_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TOPsinComp_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TOPsinComp_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TOPsinComp_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TOPsinComp_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TOPsinComp_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TOPsinComp_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TOPsinComp_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TOPsinComp_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="TOPsinComp_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="TOPsinComp_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="TOPsinComp_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TOPsinComp_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TOPsinComp_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TOPsinComp_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TOPsinComp_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TOPsinComp_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TOPsinComp_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TOPsinComp_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TOPsinComp_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TOPsinComp_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TOPsinComp_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TOPsinComp_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TOPsinComp_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="TOPsinComp.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="TOPsinComp_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="TOPsinComp_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="TOPsinComp.rcfi"/>
+  <File Type="CFI_FILE" Name="TOPsinComp.cfi"/>
+  <File Type="RNPI_FILE" Name="TOPsinComp.rnpi"/>
+  <File Type="NPI_FILE" Name="TOPsinComp.npi"/>
+  <File Type="RBD_FILE" Name="TOPsinComp.rbd"/>
+  <File Type="ROUTE-RQS" Name="TOPsinComp_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TOPsinComp_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
@@ -167,9 +153,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../src/TOPsinComp.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="GenSecuencia"/>
+      <Option Name="TopModule" Val="TOPsinComp"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -213,5 +205,6 @@
     <Step Id="write_bitstream">
       <Option Id="BinFile">1</Option>
     </Step>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

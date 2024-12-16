@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1'
+HD_PWD='C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log GenSecuencia.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GenSecuencia.tcl
+EAStep vivado -log TOPsinComp.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOPsinComp.tcl

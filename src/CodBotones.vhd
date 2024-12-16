@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04.12.2024 12:39:55
--- Design Name: 
--- Module Name: CodBotones - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
@@ -26,28 +5,26 @@ use ieee.numeric_std.all;
 entity CodBotones is
     port(
         -- Entradas
-        boton1          : in std_logic; -- Boton 1
-        boton2          : in std_logic; -- Boton 2
-        boton3          : in std_logic; -- Boton 3
-        boton4          : in std_logic; -- Boton 4
+        boton          : in std_logic_vector(1 to 4); -- Boton 1
         -- Salidas
         boton_pulsado   : out std_logic_vector(0 to 2) -- El numero equivale al boton que se ha pulsado
     );
 end CodBotones;
 
 architecture Behavioral of CodBotones is
+
     signal salida : std_logic_vector(0 to 2) := (others => '0'); -- Registro del output de la entidad
 
 begin
-    process (boton1, boton2, boton3, boton4)
+    process (boton)
     begin
-        if boton1 = '1' then
+        if boton(1) = '1' then
             salida <= "001"; -- Boton 1 pulsado
-        elsif boton2 = '1' then
+        elsif boton(2) = '1' then
             salida <= "010"; -- Boton 2 pulsado
-        elsif boton3 = '1' then
+        elsif boton(3) = '1' then
             salida <= "011"; -- Boton 3 pulsado
-        elsif boton4 = '1' then
+        elsif boton(4) = '1' then
             salida <= "100"; -- Boton 4 pulsado
         else
             salida <= "000"; -- Ningun boton pulsado
@@ -55,4 +32,5 @@ begin
     end process;
     
     boton_pulsado <= salida; -- Guardo el registro en la salida
+    
 end Behavioral;

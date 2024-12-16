@@ -1,4 +1,4 @@
 Time resolution is 1 ps
-Failure: Sim terminada
-Time: 98100 ns  Iteration: 0  Process: /TOP_tb/test  File: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd
-$finish called at time : 98100 ns : File "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/TOP_tb.vhd" Line 130
+Failure: FIN SIM
+Time: 2210 us  Iteration: 0  Process: /ALL_tb/acciones  File: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/ALL_tb.vhd
+$finish called at time : 2210 us : File "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/ALL_tb.vhd" Line 339

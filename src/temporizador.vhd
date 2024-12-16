@@ -11,7 +11,6 @@ entity temporizador is
         CLK            : in  std_logic;    -- Señal de reloj
         iniciar_cuenta : in  std_logic;    -- Señal para iniciar la cuenta
         fin_tiempo     : out std_logic     -- Señal que indica que el temporizador ha acabado
-        --contador       : out integer -- Sólo para sim----------------------------------------------------------------
     );
 end temporizador;
 
@@ -21,9 +20,9 @@ architecture Behavioral of temporizador is
     signal activo        : std_logic := '0';              -- Flag del temporizador
     signal fin_tiempo_s  : std_logic := '0';
 begin
-    process(CLK, activo)
+    process(CLK)
     begin
-        if rising_edge(CLK) then
+        if rising_edge(CLK) and iniciar_cuenta = '1' then
             if iniciar_cuenta = '1' and activo = '0' then
                 activo <= '1';  -- Activa el temporizador
                 fin_tiempo_s <= '0';
@@ -32,15 +31,12 @@ begin
             if activo = '1' then
                 if contador_s < CUENTA_MAX then
                     contador_s <= contador_s + 1;
-                    --contador <= contador_s;
                 else
                     fin_tiempo_s <= '1';  -- Finaliza el tiempo
-                    contador_s <= 0;      -- Reinicia el 
-                    --contador <= 0;
+                    contador_s <= 0;      -- Reinicia el contador
                     activo <= '0';      -- Detiene el temporizador
                 end if;
             else
-                --fin_tiempo_s <= '0';  -- Reinicia la salida
             end if;
         end if;
     end process;

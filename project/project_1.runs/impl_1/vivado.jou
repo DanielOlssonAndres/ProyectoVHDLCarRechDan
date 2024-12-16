@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec 13 18:34:41 2024
-# Process ID: 18032
-# Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1
-# Command line: vivado.exe -log GenSecuencia.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source GenSecuencia.tcl -notrace
-# Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1/GenSecuencia.vdi
-# Journal file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1\vivado.jou
-# Running On        :PortatilMarcos
+# Start of session at: Mon Dec 16 14:10:11 2024
+# Process ID: 16820
+# Current directory: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1
+# Command line: vivado.exe -log TOPsinComp.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOPsinComp.tcl -notrace
+# Log file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1/TOPsinComp.vdi
+# Journal file: C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/project/project_1.runs/impl_1\vivado.jou
+# Running On        :MSI
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :26100
+# Operating System  :22631
 # Processor Detail  :11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
 # CPU Frequency     :2803 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :16948 MB
-# Swap memory       :1073 MB
-# Total Virtual     :18022 MB
-# Available Virtual :3672 MB
+# Host memory       :16867 MB
+# Swap memory       :1084 MB
+# Total Virtual     :17951 MB
+# Available Virtual :6351 MB
 #-----------------------------------------------------------
-source GenSecuencia.tcl -notrace
+source TOPsinComp.tcl -notrace
