@@ -1,10 +1,159 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot ALL_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.ALL_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot TOP_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.TOP_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3146] binding entity '\DivisorReloj\' does not have generic 'frec_salida' [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/ALL_tb.vhd:46]
-ERROR: [VRFC 10-718] formal port <clk_in> does not exist in entity <\DivisorReloj\>.  Please compare the definition of block <\DivisorReloj\> to its component declaration and its instantion to detect the mismatch. [C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/ALL_tb.vhd:49]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "TOP_tb_time_impl.sdf", for root module "TOP_tb/uut".
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/boton_top_IBUF[1]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/boton_top_IBUF[2]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/boton_top_IBUF[3]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/boton_top_IBUF[4]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[0]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[1]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[2]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[3]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[4]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[5]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/display_top_OBUF[6]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/FSM_sequential_estado_actual[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_10 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_11 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_12 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_13 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_14 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_15 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_16 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_17 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_18 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_19 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_20 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_21 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_22 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_23 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_24 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_25 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_27 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_29 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_3 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_30 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_31 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_32 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_33 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_34 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_35 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_37 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_38 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_39 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_4 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_40 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_41 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_42 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_5 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[0]_i_6 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[0]_i_7 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[0]_i_8 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[0]_i_9 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/boton_anterior_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice[0]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice[0]_i_3 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[3] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[4] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[4]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_CompSecuencia/indice_reg[5] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_nxt_state_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_state[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_state_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_state_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_onehot_state_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/FSM_sequential_estado_actual[2]_i_3 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_Control_Juego/boton_anterior[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[2]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[3]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[4]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[5]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador[5]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[3] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[4] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_DivisorReloj/contador_reg[5] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_EDGEDTCTR/FSM_onehot_nxt_state[2]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_EDGEDTCTR/sreg_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_EDGEDTCTR/sreg_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_EDGEDTCTR/sreg_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual[0]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual[1]_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual[2]_i_2 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual_reg[1] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/FSM_sequential_estado_actual_reg[2] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/boton_anterior[0]_i_26 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/boton_anterior[0]_i_28 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/boton_anterior[0]_i_36 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[0]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[1]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[2]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[4]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[5]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_controlador_nivel/display_top_OBUF[6]_inst_i_1 in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/inst_sync/sreg_reg[0] in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/led_top_OBUF[1]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/led_top_OBUF[2]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/led_top_OBUF[3]_inst in the HDL hierarchy, annotation will be skipped.
+WARNING: [XSIM 43-3477] Unable to find hierarchical path /TOP_tb/uut/led_top_OBUF[4]_inst in the HDL hierarchy, annotation will be skipped.
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "TOP_tb_time_impl.sdf", for root module "TOP_tb/uut".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CompSecuencia
+Compiling module simprims_ver.FDPE_default
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.Control_Juego
+Compiling module xil_defaultlib.DivisorReloj
+Compiling module xil_defaultlib.EDGEDTCTR
+Compiling module xil_defaultlib.controlador_nivel
+Compiling module simprims_ver.SRL16E_default
+Compiling module xil_defaultlib.sync
+Compiling module xil_defaultlib.TOP
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot TOP_tb_time_impl

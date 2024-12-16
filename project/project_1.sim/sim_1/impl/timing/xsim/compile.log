@@ -1,16 +1,11 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/impl/timing/xsim/ALL_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.sim/sim_1/impl/timing/xsim/TOP_tb_time_impl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CompSecuencia
 INFO: [VRFC 10-311] analyzing module Control_Juego
-INFO: [VRFC 10-311] analyzing module Controlador_de_Sec
-INFO: [VRFC 10-311] analyzing module Decod_Leds_Sec
 INFO: [VRFC 10-311] analyzing module DivisorReloj
 INFO: [VRFC 10-311] analyzing module EDGEDTCTR
 INFO: [VRFC 10-311] analyzing module TOP
 INFO: [VRFC 10-311] analyzing module controlador_nivel
 INFO: [VRFC 10-311] analyzing module sync
-INFO: [VRFC 10-311] analyzing module temporizador
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'controlador_nivel'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/ALL_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ALL_tb'

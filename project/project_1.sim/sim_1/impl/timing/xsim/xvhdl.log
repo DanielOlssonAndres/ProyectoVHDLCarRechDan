@@ -1,4 +1,2 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/controlador_nivel.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'controlador_nivel'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/src/ALL_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ALL_tb'

@@ -17,7 +17,7 @@ architecture behavioral of controlador_nivel is
     -- Definición de los estados
     type state_type is (ESTADO_0, ESTADO_1, ESTADO_2, ESTADO_3, ESTADO_4, ESTADO_5);
     signal estado_actual : state_type := ESTADO_0;
-    signal estado_siguiente : state_type := ESTADO_0; -- Inicialización a ESTADO_0
+    signal estado_siguiente : state_type := ESTADO_0;
 
 begin
 
@@ -34,55 +34,53 @@ begin
     end process;
 
     -- Proceso combinacional: define la lógica de transición de estados
-    pr2: process (CLK)
+    pr2: process (estado_actual, exito, error)
     begin
-        if reset = '0' then
-            estado_siguiente <= ESTADO_0;
-        else
+        estado_siguiente <= estado_actual; -- Asignación por defecto
         case estado_actual is
             when ESTADO_0 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_1;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
                 end if;
             when ESTADO_1 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_2;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
                 end if;
             when ESTADO_2 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_3;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
                 end if;
             when ESTADO_3 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_4;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
-                end if;                
+                end if;
             when ESTADO_4 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_5;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
-                end if;                
+                end if;
             when ESTADO_5 =>
-                if (exito = '1') then
+                if exito = '1' then
                     estado_siguiente <= ESTADO_5;
-                elsif (error = '1') then
+                elsif error = '1' then
                     estado_siguiente <= ESTADO_0;
-                end if;            
+                end if;
             when others =>
                 estado_siguiente <= ESTADO_0;
         end case;
-        end if;
     end process;
-    
-    pr3: process (CLK)
+
+    -- Proceso combinacional: define el nivel actual en base al estado actual
+    pr3: process (estado_actual)
     begin
         case estado_actual is
             when ESTADO_0 =>
@@ -103,4 +101,3 @@ begin
     end process;
 
 end behavioral;
-

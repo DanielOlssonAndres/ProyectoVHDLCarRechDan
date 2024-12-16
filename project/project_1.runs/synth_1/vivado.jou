@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 00:01:45 2024
-# Process ID: 1788
+# Start of session at: Tue Dec 17 00:25:07 2024
+# Process ID: 8760
 # Current directory: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1
 # Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
 # Log file: C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.runs/synth_1/TOP.vds
@@ -19,6 +19,6 @@
 # Host memory       :16948 MB
 # Swap memory       :1073 MB
 # Total Virtual     :18022 MB
-# Available Virtual :2053 MB
+# Available Virtual :1456 MB
 #-----------------------------------------------------------
 source TOP.tcl -notrace
