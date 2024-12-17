@@ -1,15 +1,15 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
-entity EDGEDTCTR is
+entity edgecntr is
     port (
         CLK : in std_logic;
         SYNC_IN : in std_logic;
         EDGE : out std_logic
     );
-end EDGEDTCTR;
+end edgecntr;
 
-architecture BEHAVIORAL of EDGEDTCTR is
+architecture Behavioral of edgecntr is
     signal sreg : std_logic_vector(2 downto 0);
 begin
     process (CLK)
@@ -22,4 +22,4 @@ begin
     with sreg select
         EDGE <= '1' when "100",
         '0' when others;
-end BEHAVIORAL;
+end Behavioral;

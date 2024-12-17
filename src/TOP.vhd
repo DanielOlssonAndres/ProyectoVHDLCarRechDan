@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity TOP is
     port (
@@ -15,7 +15,7 @@ entity TOP is
     );
 end TOP;
 
-architecture STRUCTURAL of TOP is
+architecture Structural of TOP is
     
     -- signal CLK_crudo : std_logic := '0';
     signal CLK_s : std_logic := '0';
@@ -69,7 +69,7 @@ architecture STRUCTURAL of TOP is
         );
     end component;
     
-    component EDGEDTCTR is
+    component edgecntr is
         port (
             CLK : in std_logic;
             SYNC_IN : in std_logic;
@@ -201,14 +201,14 @@ begin
         
         
     loopedge: for i in 1 to 4 generate
-        inst_edge: EDGEDTCTR
+        inst_edge: edgecntr
             port map(
                 CLK => CLK_s,
                 SYNC_IN => botonsync(i),
                 EDGE => boton(i)
             );  
     end generate;
-    inst_EDGEDTCTR: EDGEDTCTR
+    inst_edgecntr: edgecntr
         port map(
             CLK => CLK_s,
             SYNC_IN => accionsync,
@@ -299,4 +299,4 @@ begin
         );
     
     
-end architecture;
+end Structural;

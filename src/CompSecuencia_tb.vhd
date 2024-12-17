@@ -1,9 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
---library work;
---use work.newtype_package.all;
---library xil_defaultlib;
---use xil_defaultlib.newtype_package.all;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity CompSecuencia_tb is
 end CompSecuencia_tb;

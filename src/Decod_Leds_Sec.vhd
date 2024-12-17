@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity Decod_Leds_Sec is
     generic( NLEDS: integer := 4 );
@@ -9,7 +9,7 @@ entity Decod_Leds_Sec is
     );
 end Decod_Leds_Sec;
 
-architecture DATAFLOW of Decod_Leds_Sec is
+architecture Dataflow of Decod_Leds_Sec is
     
     signal led_s : std_logic_vector(NLEDS downto 1) := "0000";
     
@@ -24,4 +24,4 @@ begin
 
     led <= led_s;
     
-end DATAFLOW;
+end Dataflow;

@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity ALL_tb is
 end ALL_tb;
@@ -59,7 +59,7 @@ architecture Behavioral of ALL_tb is
         );
     end component;
     
-    component EDGEDTCTR is
+    component edgecntr is
         port (
             CLK : in std_logic;
             SYNC_IN : in std_logic;
@@ -192,14 +192,14 @@ begin
         
         
     loopedge: for i in 1 to 4 generate
-        inst_edge: EDGEDTCTR
+        inst_edge: edgecntr
             port map(
                 CLK => CLK_s,
                 SYNC_IN => botonsync(i),
                 EDGE => boton(i)
             );  
     end generate;
-    inst_EDGEDTCTR: EDGEDTCTR
+    inst_edgecntr: edgecntr
         port map(
             CLK => CLK_s,
             SYNC_IN => accionsync,
@@ -291,7 +291,7 @@ begin
     
 ------------------------------------------------------------------------    
     
-    clkgen: process -- Reloj de 100MHz
+    clk_gen: process -- Reloj de 100MHz
     begin
         CLK_crudo <= '1';
         wait for 5 ns;
@@ -299,7 +299,7 @@ begin
         wait for 5 ns;
     end process;
     
-acciones: process
+    test: process
     begin
         wait for 10 us;
         accion_s <= '1';

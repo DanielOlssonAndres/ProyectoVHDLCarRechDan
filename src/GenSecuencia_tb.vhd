@@ -1,14 +1,10 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
---library work;
---use work.newtype_package.all;
---library xil_defaultlib;
---use xil_defaultlib.newtype_package.all;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity GenSecuencia_tb is
 end GenSecuencia_tb;
 
-architecture BEHAVIORAL of GenSecuencia_tb is
+architecture Behavioral of GenSecuencia_tb is
     
     -- Declaración del componente a testear
     component GenSecuencia is
@@ -45,7 +41,7 @@ begin
         );    
 
     -- Generador de reloj  
-   clkgen: process 
+   clk_gen: process 
    begin
        CLK <= '0';
        wait for 5 ns;
@@ -53,7 +49,7 @@ begin
        wait for 5 ns;
    end process;
    
-    testp: process
+    test: process
     begin
         -- Inicialización
         niv_actual <= "000";
@@ -117,5 +113,5 @@ begin
             
     end process;
 
-end;
+end Behavioral;
 

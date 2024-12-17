@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity Controlador_de_Sec is
     generic( TAMSEC: integer := 14 );
@@ -51,4 +51,4 @@ principal: process(CLK, enable, emitir_elemento)
     fin_secuencia <= fin_secuencia_s;
     elemento <= elemento_s;
     
-end architecture;
+end Behavioral;

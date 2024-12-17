@@ -1,10 +1,10 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity sync_tb is
 end sync_tb;
 
-architecture TESTBENCH of sync_tb is
+architecture Behavioral of sync_tb is
     
     component sync is
         port (
@@ -22,7 +22,7 @@ architecture TESTBENCH of sync_tb is
     constant CLK_PERIOD : time := 10 ns;
 
 begin
-    UUT: sync
+    uut: sync
         port map (
             CLK => CLK,
             ASYNC_IN => ASYNC_IN,
@@ -30,7 +30,7 @@ begin
         );
 
     -- Generador del reloj
-    CLK_PROCESS: process
+    clk_gen: process
     begin
         while true loop
             CLK <= '0';
@@ -41,7 +41,7 @@ begin
     end process;
 
     -- Estímulos para ASYNC_IN
-    STIMULUS_PROCESS: process
+    test: process
     begin
         -- Estado inicial
         wait for 20 ns;
@@ -59,4 +59,4 @@ begin
         wait;
     end process;
 
-end TESTBENCH;
+end Behavioral;

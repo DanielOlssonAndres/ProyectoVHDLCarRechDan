@@ -1,5 +1,5 @@
-library IEEE; 
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity sync is
     port (
@@ -9,7 +9,7 @@ entity sync is
     );
 end sync;
 
-architecture BEHAVIORAL of sync is
+architecture Behavioral of sync is
     signal sreg : std_logic_vector(1 downto 0);
     begin
         process (CLK)
@@ -19,4 +19,4 @@ architecture BEHAVIORAL of sync is
             sreg <= sreg(0) & async_in;
             end if;
         end process;
-end BEHAVIORAL;
+end Behavioral;

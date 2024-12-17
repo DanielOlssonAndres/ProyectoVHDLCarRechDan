@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity GenSecuencia is
     port(
@@ -10,7 +10,7 @@ entity GenSecuencia is
     );
 end GenSecuencia;
 
-architecture DATAFLOW of GenSecuencia is
+architecture Dataflow of GenSecuencia is
 
     -- Tabla de secuencias para cada nivel
     constant semilla0 : std_logic_vector(0 to 44) := ("010" & "011" & "001" & "011" & "000000000000000000000000000000000");
@@ -36,5 +36,5 @@ begin
     -- Asignaciones a las salidas
     sec_generada <= sec_generada_s;
 
-end DATAFLOW;
+end Dataflow;
 

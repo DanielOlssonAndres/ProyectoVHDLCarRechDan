@@ -1,10 +1,10 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity controlador_nivel_tb is
 end controlador_nivel_tb;
 
-architecture behavioral of controlador_nivel_tb is
+architecture Behavioral of controlador_nivel_tb is
 
     -- Componentes internos
     component controlador_nivel is
@@ -46,7 +46,7 @@ begin
         );
 
     -- Generador de reloj
-    process
+    clk_gen: process
     begin
         while true loop
             CLK <= '0';
@@ -57,7 +57,7 @@ begin
     end process;
 
     -- Estímulos para la simulación
-    stim_proc: process
+    test: process
     begin
         -- Reset inicial
         reset <= '0';
@@ -85,5 +85,5 @@ begin
         wait;
     end process;
 
-end behavioral;
+end Behavioral;
 

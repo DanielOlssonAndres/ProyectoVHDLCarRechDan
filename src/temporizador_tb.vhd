@@ -1,10 +1,10 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity temporizador_tb is
 end temporizador_tb;
 
-architecture testbench of temporizador_tb is
+architecture Behavioral of temporizador_tb is
 
     component temporizador
         generic (
@@ -12,11 +12,9 @@ architecture testbench of temporizador_tb is
             TIEMPO   : integer := 1           -- Tiempo a contar en segundos
         );
         port (
-            CLK           : in  std_logic;
-            iniciar_cuenta: in  std_logic;
-            fin_tiempo    : out std_logic;
-               contador       : out integer -- Sólo para sim----------------------------------------------------------------
-
+            CLK             : in  std_logic;
+            iniciar_cuenta  : in  std_logic;
+            fin_tiempo      : out std_logic
         );
     end component;
 
@@ -24,8 +22,6 @@ architecture testbench of temporizador_tb is
     signal CLK            : std_logic := '0';
     signal iniciar_cuenta : std_logic := '0';
     signal fin_tiempo     : std_logic;
-        signal   contador      : integer := 0; -- Sólo para sim----------------------------------------------------------------
-
 
 begin
     -- Unit Under Test
@@ -37,12 +33,11 @@ begin
         port map (
             CLK           => CLK,
             iniciar_cuenta=> iniciar_cuenta,
-            fin_tiempo    => fin_tiempo,
-            contador => contador
+            fin_tiempo    => fin_tiempo
         );
 
     -- Generador de reloj
-    process
+    clk_gen: process
     begin
         CLK <= '0';
         wait for 10 ns;
@@ -51,7 +46,7 @@ begin
     end process;
 
     -- Proceso de prueba
-    process
+    test: process
     begin
         wait for 50 ns;            
         iniciar_cuenta <= '1';       
@@ -64,4 +59,4 @@ begin
             severity FAILURE;
 
     end process;
-end testbench;
+end Behavioral;

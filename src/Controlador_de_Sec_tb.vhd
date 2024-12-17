@@ -1,14 +1,10 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
---library work;
---use work.newtype_package.all;
---library xil_defaultlib;
---use xil_defaultlib.newtype_package.all;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity Controlador_de_Sec_tb is
-end entity;
+end Controlador_de_Sec_tb;
 
-architecture sim of Controlador_de_Sec_tb is
+architecture Behavioral of Controlador_de_Sec_tb is
 
     component Controlador_de_Sec is
         generic( TAMSEC: integer := 14 );
@@ -46,7 +42,7 @@ begin
         );
 
     -- Generación del reloj
-    clkgen: process
+    clk_gen: process
     begin
         while true loop
             CLK <= '1';
@@ -57,7 +53,7 @@ begin
     end process;
 
     -- Simulación del temporizador
-    temp: process
+    temp_gen: process
     begin
         wait on pedir_tiempo;
         if pedir_tiempo = '1' then
@@ -69,7 +65,7 @@ begin
     end process;
 
     -- Estímulos
-    sim: process
+    test: process
     begin
         -- Primera secuencia
         secuencia <= (others => '0');
@@ -87,4 +83,4 @@ begin
             severity failure;
     end process;
 
-end architecture;
+end Behavioral;

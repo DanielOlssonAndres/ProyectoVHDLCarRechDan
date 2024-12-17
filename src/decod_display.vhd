@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity decod_display is
     Port (
@@ -9,7 +9,7 @@ entity decod_display is
     );
 end decod_display;
 
-architecture DATAFLOW of decod_display is
+architecture Dataflow of decod_display is
 begin
     -- Habilitar siempre la cifra del display
     enable_display <= "11111110";
@@ -22,4 +22,4 @@ begin
                "1001100" when nivel_actual = "100" else -- Número 4
                "0100100" when nivel_actual = "101" else -- Número 5
                "0000001"; -- Default: Número 0
-end DATAFLOW;
+end Dataflow;

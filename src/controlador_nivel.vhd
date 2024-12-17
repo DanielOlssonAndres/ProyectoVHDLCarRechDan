@@ -1,5 +1,5 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
 entity controlador_nivel is
     Port ( 
@@ -13,7 +13,7 @@ entity controlador_nivel is
     );
 end controlador_nivel;
 
-architecture behavioral of controlador_nivel is
+architecture Behavioral of controlador_nivel is
     -- Definición de los estados
     type state_type is (ESTADO_0, ESTADO_1, ESTADO_2, ESTADO_3, ESTADO_4, ESTADO_5);
     signal estado_actual : state_type := ESTADO_0;
@@ -100,4 +100,4 @@ begin
         end case;
     end process;
 
-end behavioral;
+end Behavioral;

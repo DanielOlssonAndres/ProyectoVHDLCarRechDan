@@ -1,11 +1,11 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
 
-entity TB_EDGEDTCTR is
-end TB_EDGEDTCTR;
+entity edgecntr_tb is
+end edgecntr_tb;
 
-architecture SIM of TB_EDGEDTCTR is
-    component EDGEDTCTR
+architecture Behavioral of edgecntr_tb is
+    component edgecntr is
         port (
             CLK : in std_logic;
             SYNC_IN : in std_logic;
@@ -19,7 +19,7 @@ architecture SIM of TB_EDGEDTCTR is
 
     constant CLK_PERIOD : time := 10 ns;
 begin
-    UUT: EDGEDTCTR
+    uut: edgecntr
         port map (
             CLK => CLK,
             SYNC_IN => SYNC_IN,
@@ -27,7 +27,7 @@ begin
         );
 
     -- Generador de reloj
-    CLK_GEN: process
+    clk_gen: process
     begin
         while true loop
             CLK <= '0';
@@ -38,7 +38,7 @@ begin
     end process;
 
     -- Estímulos
-    STIMULI: process
+    test: process
     begin
         -- Espera inicial
         wait for CLK_PERIOD;
@@ -66,4 +66,4 @@ begin
         -- Fin de simulación
         wait;
     end process;
-end SIM;
+end Behavioral;
