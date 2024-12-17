@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Dec 17 00:26:35 2024
-| Host         : PortatilMarcos
+| Date         : Tue Dec 17 01:26:47 2024
+| Host         : MSI
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--
 -------------------------------------

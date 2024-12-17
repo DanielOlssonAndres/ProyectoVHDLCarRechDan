@@ -299,7 +299,7 @@ begin
         wait for 5 ns;
     end process;
     
-    acciones: process
+acciones: process
     begin
         wait for 10 us;
         accion_s <= '1';
@@ -334,23 +334,21 @@ begin
         
         wait for 1500 us;
         
-        reset <= '0';
-        
---        boton_s <= "1000";
---        wait for 10 us;
---        boton_s <= "0000";
---        wait for 10 us; 
---        boton_s <= "0010";
---        wait for 10 us;
---        boton_s <= "0000";
---        wait for 10 us;         
---        boton_s <= "0001";
---        wait for 10 us;
---        boton_s <= "0000";
---        wait for 10 us;
---        boton_s <= "0010";
---        wait for 10 us; 
---        boton_s <= "0000";
+        boton_s <= "1000";
+        wait for 10 us;
+        boton_s <= "0000";
+        wait for 10 us; 
+        boton_s <= "0010";
+        wait for 10 us;
+        boton_s <= "0000";
+        wait for 10 us;         
+        boton_s <= "0001";
+        wait for 10 us;
+        boton_s <= "0000";
+        wait for 10 us;
+        boton_s <= "0010";
+        wait for 10 us; 
+        boton_s <= "0000";
         
         wait for 1000 us;
         
