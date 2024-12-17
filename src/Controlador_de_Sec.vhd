@@ -20,18 +20,24 @@ architecture Behavioral of Controlador_de_Sec is
 	signal indice          : integer := 0;
 	signal elemento_s      : std_logic_vector(0 to 2) := "000";
 	signal pedir_tiempo_s  : std_logic := '0';
+	signal flag_primero : std_logic := '0';
 begin
 
 principal: process(CLK, enable, emitir_elemento) 
     begin
         if rising_edge(emitir_elemento) then
-            indice <= indice + 3;
+            if flag_primero = '0' then
+                flag_primero <= '1';
+            elsif flag_primero = '1' then
+                indice <= indice + 3;
+            end if;
         end if;
         if enable = '0' then
             fin_secuencia_s <= '0';
         	pedir_tiempo_s <= '0';
             elemento_s <= "000";
             indice <= 0;
+            flag_primero <= '0';
         elsif rising_edge(CLK) then
             elemento_s <= secuencia(indice) & secuencia(indice + 1) & secuencia(indice + 2);
             pedir_tiempo_s <= '1';

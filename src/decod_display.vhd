@@ -5,14 +5,14 @@ entity decod_display is
     Port (
         nivel_actual    : in std_logic_vector(0 to 2); -- Nivel actual (3 bits)
         display         : out std_logic_vector(6 downto 0); -- Salida para el display de 7 segmentos
-        enable_display  : out std_logic -- Habilita la cifra del display
+        enable_display  : out std_logic_vector (7 downto 0) -- Habilita la cifra del display
     );
 end decod_display;
 
 architecture DATAFLOW of decod_display is
 begin
     -- Habilitar siempre la cifra del display
-    enable_display <= '0';
+    enable_display <= "11111110";
 
     -- Lógica combinacional para mapear el nivel actual al patrón del display
     display <= "0000001" when nivel_actual = "000" else -- Número 0

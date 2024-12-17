@@ -17,7 +17,7 @@ architecture Behavioral of TOP_tb is
             boton_top           : in std_logic_vector(1 to 4); -- Botonera para introducir la secuencia
             -- Salidas
             display_top         : out std_logic_vector(6 downto 0); -- Salida para el display de 7 segmentos
-            enable_display_top  : out std_logic; -- Habilita la cifra del display
+            enable_display_top  : out std_logic_vector(7 downto 0); -- Habilita la cifra del display
             led_top             : out std_logic_vector(4 downto 1) -- LEDs de salida
         );
     end component;
@@ -27,7 +27,7 @@ architecture Behavioral of TOP_tb is
     signal accion_top          : std_logic; -- Botón para iniciar la reproducción de la secuencia a repetir
     signal boton_top           : std_logic_vector(1 to 4); -- Botonera para introducir la secuencia
     signal display_top         : std_logic_vector(6 downto 0); -- Salida para el display de 7 segmentos
-    signal enable_display_top  : std_logic; -- Habilita la cifra del display
+    signal enable_display_top  : std_logic_vector(7 downto 0); -- Habilita la cifra del display
     signal led_top             : std_logic_vector(4 downto 1); -- LEDs de salida
     
 begin
@@ -54,10 +54,11 @@ begin
     test: process
     begin
         
+        accion_top <= '0';
         RESET_top <= '1';
         boton_top <= "0000";
         
-        wait for 10 us;
+        wait for 50 us;
         accion_top <= '1';
         wait for 5 us;
         accion_top <= '0';

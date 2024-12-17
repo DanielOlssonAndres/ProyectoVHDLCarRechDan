@@ -10,7 +10,7 @@ entity TOP is
         boton_top           : in std_logic_vector(1 to 4); -- Botonera para introducir la secuencia
         -- Salidas
         display_top         : out std_logic_vector(6 downto 0); -- Salida para el display de 7 segmentos
-        enable_display_top  : out std_logic; -- Habilita la cifra del display
+        enable_display_top  : out std_logic_vector(7 downto 0); -- Habilita la cifra del display
         led_top             : out std_logic_vector(4 downto 1) -- LEDs de salida
     );
 end TOP;
@@ -141,7 +141,7 @@ architecture STRUCTURAL of TOP is
     Port (
         nivel_actual    : in std_logic_vector(0 to 2); -- Nivel actual (3 bits)
         display         : out std_logic_vector(6 downto 0); -- Salida para el display de 7 segmentos
-        enable_display  : out std_logic -- Habilita la cifra del display
+        enable_display  : out std_logic_vector(7 downto 0) -- Habilita la cifra del display
     );
     end component;
     
@@ -178,7 +178,7 @@ architecture STRUCTURAL of TOP is
 begin
     
     inst_DivisorReloj: DivisorReloj
-        generic map( FREC_SALIDA => 1_000_000 )
+        generic map( FREC_SALIDA => 100_000 )
         port map(
             clk_in   => CLK_top,
             clk_out  => CLK_s
@@ -258,7 +258,7 @@ begin
  
     inst_temporizador: temporizador
         generic map(
-        CLK_FREQ => 100,
+        CLK_FREQ => 100_000,
         TIEMPO   => 1           
         ) 
         port map(

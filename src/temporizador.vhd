@@ -17,30 +17,32 @@ end temporizador;
 architecture Behavioral of temporizador is
     constant CUENTA_MAX  : integer := CLK_FREQ * TIEMPO;  -- Total de ciclos de reloj
     signal contador_s    : integer := 0;                  -- Contador interno
-    signal activo        : std_logic := '0';              -- Flag del temporizador
     signal fin_tiempo_s  : std_logic := '0';
+    
 begin
-    process(CLK)
-    begin
-        if rising_edge(CLK) and iniciar_cuenta = '1' then
-            if iniciar_cuenta = '1' and activo = '0' then
-                activo <= '1';  -- Activa el temporizador
-                fin_tiempo_s <= '0';
-            end if;
 
-            if activo = '1' then
-                if contador_s < CUENTA_MAX then
-                    contador_s <= contador_s + 1;
-                else
-                    fin_tiempo_s <= '1';  -- Finaliza el tiempo
-                    contador_s <= 0;      -- Reinicia el contador
-                    activo <= '0';      -- Detiene el temporizador
-                end if;
+mainpr: process(CLK)
+begin
+    if rising_edge(CLK) then 
+        if iniciar_cuenta = '0' then
+            contador_s <= 0;
+            fin_tiempo_s <= '0';
+        else
+            if contador_s < CUENTA_MAX/2 then
+                fin_tiempo_s <= '1';  -- El valor de fin_tiempo_s se pone a '1'
+                contador_s <= contador_s + 1;  -- Se incrementa el contador
+            elsif contador_s < CUENTA_MAX then
+                fin_tiempo_s <= '0';  -- El valor de fin_tiempo_s se pone a '0'
+                contador_s <= contador_s + 1;  -- Se incrementa el contador
             else
+                contador_s <= 0;  -- Reseteo del contador
+                fin_tiempo_s <= '0';  -- Puede ser necesario resetear fin_tiempo_s también
             end if;
         end if;
-    end process;
-    
+    end if;
+end process;
+
+        
     fin_tiempo <= fin_tiempo_s;
     
 end Behavioral;

@@ -1,7 +1,7 @@
-Running: xsim.dir/TOP_tb_behav/xsimk.exe -simmode gui -wdb TOP_tb_behav.wdb -simrunnum 0 -socket 49942
+Running: xsim.dir/TOP_tb_behav/xsimk.exe -simmode gui -wdb TOP_tb_behav.wdb -simrunnum 0 -socket 55573
 Design successfully loaded
-Design Loading Memory Usage: 8512 KB (Peak: 8512 KB)
+Design Loading Memory Usage: 8420 KB (Peak: 8420 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 17016 KB (Peak: 17016 KB)
-Simulation CPU Usage: 30 ms
+Simulation Memory Usage: 13808 KB (Peak: 13808 KB)
+Simulation CPU Usage: 0 ms
