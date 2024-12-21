@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.ALL;
-use iee.numeric_std.all;
+use ieee.numeric_std.all;
 
 entity temporizador is
     generic (

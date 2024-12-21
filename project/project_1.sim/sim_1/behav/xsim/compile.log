@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/Controlador_de_Sec.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Controlador_de_Sec'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/olsso/Documents/Universidad/4.1/Sistemas_Electronicos_Digitales/ProyectoVHDLCarRechDan/src/TOP_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TOP_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'temporizador'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'

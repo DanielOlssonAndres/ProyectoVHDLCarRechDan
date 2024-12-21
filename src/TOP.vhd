@@ -258,7 +258,7 @@ begin
  
     inst_temporizador: temporizador
         generic map(
-        CLK_FREQ => 100_000,
+        CLK_FREQ => 100,
         TIEMPO   => 1           
         ) 
         port map(

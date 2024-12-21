@@ -15,8 +15,8 @@ Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
-Compiling architecture behavioral of entity xil_defaultlib.EDGEDTCTR [edgedtctr_default]
-Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [divisorreloj_default]
+Compiling architecture behavioral of entity xil_defaultlib.edgecntr [edgecntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.DivisorReloj [\DivisorReloj(frec_salida=100000...]
 Compiling architecture behavioral of entity xil_defaultlib.Control_Juego [control_juego_default]
 Compiling architecture behavioral of entity xil_defaultlib.controlador_nivel [controlador_nivel_default]
 Compiling architecture dataflow of entity xil_defaultlib.GenSecuencia [gensecuencia_default]

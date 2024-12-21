@@ -20,11 +20,12 @@ vhdl xil_defaultlib  \
 "../../../../../src/DivisorReloj_tb.vhd" \
 "../../../../../src/GenSecuencia_tb.vhd" \
 "../../../../../src/controlador_nivel_tb.vhd" \
-"../../../../../src/edbecntr_tb.vhd" \
 "../../../../../src/sync_tb.vhd" \
 "../../../../../src/temporizador_tb.vhd" \
 "../../../../../src/TOP_tb.vhd" \
 "../../../../../src/ALL_tb.vhd" \
+"../../../../../src/decod_display_tb.vhd" \
+"../../../../project_1.srcs/sim_1/imports/src/edgecntr_tb.vhd" \
 
 # Do not sort compile order
 nosort
