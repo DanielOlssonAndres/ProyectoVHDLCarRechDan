@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'temporizador'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/TOP.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TOP'
