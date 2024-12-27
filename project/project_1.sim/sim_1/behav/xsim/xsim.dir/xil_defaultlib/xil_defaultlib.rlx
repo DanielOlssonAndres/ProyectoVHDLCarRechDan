@@ -2,7 +2,7 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sim_1/imports/src/edgecntr_tb.vhd,1734798693,vhdl,,,,edgecntr_tb,,,,,,,,
+C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sim_1/imports/src/edgecntr_tb.vhd,1735342038,vhdl,,,,edgecntr_tb,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.srcs/sources_1/imports/src/GenSecuencia.vhd,1734798693,vhdl,,,,gensecuencia,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/ALL_tb.vhd,1734798693,vhdl,,,,all_tb,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones.vhd,1734798693,vhdl,,,,codbotones,,,,,,,,
@@ -25,6 +25,6 @@ C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decod_display.vhd,1734798693
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/decod_display_tb.vhd,1734798693,vhdl,,,,decod_display_tb,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/edgecntr.vhd,1734798693,vhdl,,,,edgecntr,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync.vhd,1734798693,vhdl,,,,sync,,,,,,,,
-C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd,1734798693,vhdl,,,,sync_tb,,,,,,,,
+C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/sync_tb.vhd,1735338692,vhdl,,,,sync_tb,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador.vhd,1734800237,vhdl,,,,temporizador,,,,,,,,
 C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/temporizador_tb.vhd,1734798693,vhdl,,,,temporizador_tb,,,,,,,,

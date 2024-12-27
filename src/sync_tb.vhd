@@ -41,22 +41,22 @@ begin
     end process;
 
     -- Estímulos para ASYNC_IN
-    test: process
+test: process
     begin
-        -- Estado inicial
+        -- Tiempo inicial (sin cambios)
         wait for 20 ns;
         ASYNC_IN <= '1'; -- Pulso alto
         wait for 30 ns;
-        ASYNC_IN <= '0'; -- Regreso a bajo
+        ASYNC_IN <= '0'; -- Regresa a bajo
         wait for 40 ns;
-        ASYNC_IN <= '1'; -- Otro pulso
+        ASYNC_IN <= '1'; -- Otro pulso alto
         wait for 50 ns;
-        ASYNC_IN <= '0'; -- Regreso a bajo
+        ASYNC_IN <= '0'; -- Regresa a bajo
 
-        -- Finalización de la simulación
+        -- Fin de la simulación
         wait for 100 ns;
         assert false report "Fin de la simulación" severity note;
-        wait;
+        wait; -- Detiene la simulación
     end process;
 
 end Behavioral;
