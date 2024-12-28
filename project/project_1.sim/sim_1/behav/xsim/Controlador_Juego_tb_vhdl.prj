@@ -26,6 +26,7 @@ vhdl xil_defaultlib  \
 "../../../../../src/ALL_tb.vhd" \
 "../../../../../src/decod_display_tb.vhd" \
 "../../../../project_1.srcs/sim_1/imports/src/edgecntr_tb.vhd" \
+"../../../../project_1.srcs/sim_1/new/Controlador_Juego_tb.vhd" \
 
 # Do not sort compile order
 nosort
