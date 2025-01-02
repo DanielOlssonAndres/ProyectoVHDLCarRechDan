@@ -61,7 +61,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys4_ddr"/>
-    <Option Name="WTXSimLaunchSim" Val="299"/>
+    <Option Name="WTXSimLaunchSim" Val="304"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -311,12 +311,18 @@
       </File>
       <File Path="$PPRDIR/../src/Controlador_Juego_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../src/controlador_nivel_tb_behav.wcfg">
+        <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Controlador_Juego_tb"/>
+        <Option Name="TopModule" Val="controlador_nivel_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -349,6 +355,7 @@
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../src/sync_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../src/edgecntr_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../src/Controlador_Juego_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/../src/controlador_nivel_tb_behav.wcfg"/>
         <Option Name="xsim.simulate.runtime" Val="500 us"/>
       </Config>
     </FileSet>
