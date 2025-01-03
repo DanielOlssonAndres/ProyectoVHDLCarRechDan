@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Controlador_de_Sec_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Controlador_de_Sec_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="60.451 ns"></ZoomEndTime>
+      <Cursor1Time time="46.100 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/Controlador_de_Sec_tb/secuencia" type="array">
+      <obj_property name="ElementShortName">secuencia[0:44]</obj_property>
+      <obj_property name="ObjectShortName">secuencia[0:44]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/emitir_elemento" type="logic">
+      <obj_property name="ElementShortName">emitir_elemento</obj_property>
+      <obj_property name="ObjectShortName">emitir_elemento</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/elemento" type="array">
+      <obj_property name="ElementShortName">elemento[0:2]</obj_property>
+      <obj_property name="ObjectShortName">elemento[0:2]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/fin_secuencia" type="logic">
+      <obj_property name="ElementShortName">fin_secuencia</obj_property>
+      <obj_property name="ObjectShortName">fin_secuencia</obj_property>
+      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/pedir_tiempo" type="logic">
+      <obj_property name="ElementShortName">pedir_tiempo</obj_property>
+      <obj_property name="ObjectShortName">pedir_tiempo</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Controlador_de_Sec_tb/CLK_T" type="other">
+      <obj_property name="ElementShortName">CLK_T</obj_property>
+      <obj_property name="ObjectShortName">CLK_T</obj_property>
+   </wvobject>
+</wave_config>

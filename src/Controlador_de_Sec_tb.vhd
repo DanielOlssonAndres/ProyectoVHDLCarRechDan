@@ -76,8 +76,7 @@ begin
         enable <= '1';
 
         -- Primera secuencia: 4 elementos válidos, luego final
-        secuencia <= "010011001011000000000000000000000000000000000";
-        wait for 20 ns; -- Sincronizar con reloj
+        secuencia <= ("010" & "011" & "001" & "011" & "000000000000000000000000000000000");        wait for 20 ns; -- Sincronizar con reloj
 
         -- Procesar cada elemento hasta el final de la secuencia
         while fin_secuencia = '0' loop
@@ -92,8 +91,7 @@ begin
         enable <= '0';
         wait for 20 ns;
         enable <= '1';
-        secuencia <= "011000111001010011001100000000000000000000000";
-        wait for 20 ns;
+        secuencia <= ("001" & "011" & "100" & "010" & "011" & "001" & "000000000000000000000000000");        wait for 20 ns;
 
         while fin_secuencia = '0' loop
             wait for 50 ns;
