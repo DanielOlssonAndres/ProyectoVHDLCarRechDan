@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Controlador_de_Sec_tb_behav xil_defaultlib.Controlador_de_Sec_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot temporizador_tb_behav xil_defaultlib.temporizador_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,7 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.Controlador_de_Sec [controlador_de_sec_default]
-Compiling architecture behavioral of entity xil_defaultlib.controlador_de_sec_tb
-Built simulation snapshot Controlador_de_Sec_tb_behav
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.temporizador [temporizador_default]
+Compiling architecture behavioral of entity xil_defaultlib.temporizador_tb
+Built simulation snapshot temporizador_tb_behav
