@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: SIMULACION FINALIZADA CORRECTAMENTE
+Time: 220 ns  Iteration: 0  Process: /CodBotones_tb/test  File: C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd
+$finish called at time : 220 ns : File "C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/src/CodBotones_tb.vhd" Line 71

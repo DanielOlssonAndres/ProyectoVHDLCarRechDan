@@ -2,3 +2,6 @@ Running: xsim.dir/Decod_Leds_Sec_tb_behav/xsimk.exe -simmode gui -wdb Decod_Leds
 Design successfully loaded
 Design Loading Memory Usage: 8452 KB (Peak: 8452 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8960 KB (Peak: 8960 KB)
+Simulation CPU Usage: 0 ms
