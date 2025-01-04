@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CompSecuencia_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CompSecuencia_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="250.001 ns"></ZoomEndTime>
+      <Cursor1Time time="250.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/CompSecuencia_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/sec_generada" type="array">
+      <obj_property name="ElementShortName">sec_generada[0:44]</obj_property>
+      <obj_property name="ObjectShortName">sec_generada[0:44]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/boton_pulsado" type="array">
+      <obj_property name="ElementShortName">boton_pulsado[0:2]</obj_property>
+      <obj_property name="ObjectShortName">boton_pulsado[0:2]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/exito" type="logic">
+      <obj_property name="ElementShortName">exito</obj_property>
+      <obj_property name="ObjectShortName">exito</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/periodo_clk" type="other">
+      <obj_property name="ElementShortName">periodo_clk</obj_property>
+      <obj_property name="ObjectShortName">periodo_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/semilla0" type="array">
+      <obj_property name="ElementShortName">semilla0[0:44]</obj_property>
+      <obj_property name="ObjectShortName">semilla0[0:44]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/semilla1" type="array">
+      <obj_property name="ElementShortName">semilla1[0:44]</obj_property>
+      <obj_property name="ObjectShortName">semilla1[0:44]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CompSecuencia_tb/semilla2" type="array">
+      <obj_property name="ElementShortName">semilla2[0:44]</obj_property>
+      <obj_property name="ObjectShortName">semilla2[0:44]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
