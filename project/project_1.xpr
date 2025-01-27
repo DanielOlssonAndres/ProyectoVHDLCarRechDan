@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/carlo/Downloads/ProyectoVHDLCarRechDan/project/project_1.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/marco/OneDrive/Documentos/GitHub/ProyectoVHDLCarRechDan/project/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="69f8c1676e494fd69e3cc275a25e773c"/>
@@ -92,14 +92,6 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/src/GenSecuencia.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../src/GenSecuencia.vhd"/>
-          <Attr Name="ImportTime" Val="1733066517"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../src/CodBotones.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -168,6 +160,14 @@
       </File>
       <File Path="$PPRDIR/../src/Control_Juego.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/src/GenSecuencia.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../src/GenSecuencia.vhd"/>
+          <Attr Name="ImportTime" Val="1734450188"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
